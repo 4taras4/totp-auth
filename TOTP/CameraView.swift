@@ -19,6 +19,11 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     var qrCodeFrameView:UIView?
     var userList: [NSManagedObject] = []
 
+    @IBAction func addCustomAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "addCustom")
+        self.present(controller, animated: true, completion: nil)
+    }
     @IBAction func backAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

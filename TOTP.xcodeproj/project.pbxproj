@@ -32,6 +32,7 @@
 		1BB62E213BE2C5F82F254FAB /* Pods_TOTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */; };
 		22F0D86F0D0B0F83C0FC94F8 /* Pods_TOTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
+		F39E8FB71E85BED8000A8C49 /* ManualUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E649B4C26C58D22DFF5E5C37 /* Pods-TOTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECCA8137AEB95A70A4DF1B91 /* Pods-TOTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */,
+				F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */,
 				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
 			);
 			name = View;
@@ -623,6 +626,7 @@
 				1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */,
 				1A1CEAC91E8549D50008F075 /* User.swift in Sources */,
 				1A1CEAEA1E8564100008F075 /* PersistentToken.swift in Sources */,
+				F39E8FB71E85BED8000A8C49 /* ManualUserViewController.swift in Sources */,
 				1A3BFF4E1E827B3F008B0C81 /* CameraView.swift in Sources */,
 				1A1CEAE71E8564100008F075 /* Crypto.swift in Sources */,
 				1A1CEAE81E8564100008F075 /* Generator.swift in Sources */,
