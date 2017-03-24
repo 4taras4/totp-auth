@@ -1,31 +1,17 @@
+*.DS_Store
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+xcuserdata/
 
 ## Build generated
 build/
 DerivedData/
-
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
-
-## Other
-*.moved-aside
-*.xcuserstate
-
-## Obj-C/Swift specific
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
 
 ## Playgrounds
 timeline.xctimeline
@@ -43,7 +29,25 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
+Pods/Alamofire/
+Pods/CountryPickerSwift/
+Pods/Crashlytics/
+Pods/CryptoSwift/
+Pods/Fabric/
+Pods/Firebase/
+Pods/FirebaseCore/
+Pods/FirebaseAnalytics/
+Pods/FirebaseInstanceID/
+Pods/FirebaseMessaging/
+Pods/GoogleInterchangeUtilities/
+Pods/GoogleSymbolUtilities/
+Pods/GoogleToolboxForMac/
+Pods/libPhoneNumber-iOS/
+Pods/Realm/
+Pods/RealmSwift/
+Pods/RxSwift/
+Pods/SwiftyJSON/
 
 # Carthage
 #
@@ -52,14 +56,4 @@ playground.xcworkspace
 
 Carthage/Build
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
+.gitkeep
