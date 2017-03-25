@@ -13,12 +13,7 @@ class TOTPApi {
     
     static let sharedInstance = TOTPApi()
    
-    func add(name:String?, issuer:String?, token: String? ) {
-        
-   
-    }
-    
-    func refreshToken(name:String, issuer:String, secretData: String) -> String {
+       func refreshToken(name:String, issuer:String, secretData: String) -> String {
         guard let secretData = MF_Base32Codec.data(fromBase32String: secretData),!secretData.isEmpty else {
             print("Invalid secret")
             return "invalid code"

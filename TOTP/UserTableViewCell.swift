@@ -12,16 +12,14 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var passCode: UILabel!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var issuer: UILabel!
+    @IBOutlet weak var timer: Circle!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

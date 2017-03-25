@@ -25,6 +25,7 @@ class ManualUserViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var issuerFiled: UITextField!
     @IBOutlet weak var tokenField: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let nameString = nameField.text else {
@@ -45,16 +46,4 @@ class ManualUserViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
