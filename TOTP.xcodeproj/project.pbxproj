@@ -23,7 +23,6 @@
 		1A3BFF331E827911008B0C81 /* TOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF321E827911008B0C81 /* TOTPTests.swift */; };
 		1A3BFF3E1E827911008B0C81 /* TOTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF3D1E827911008B0C81 /* TOTPUITests.swift */; };
 		1A3BFF4E1E827B3F008B0C81 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */; };
-		1A5A03F71E8515AC00E0D072 /* KeyhcainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F61E8515AC00E0D072 /* KeyhcainApi.swift */; };
 		1A5A03F91E851F7600E0D072 /* TOTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F81E851F7600E0D072 /* TOTPApi.swift */; };
 		1A6CADCB1E85682D0080D665 /* injectXcodePath.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1A6CADBF1E85682D0080D665 /* injectXcodePath.sh */; };
 		1A6CADCC1E85682D0080D665 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADC61E85682D0080D665 /* README.md */; };
@@ -33,6 +32,8 @@
 		22F0D86F0D0B0F83C0FC94F8 /* Pods_TOTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
 		F39E8FB71E85BED8000A8C49 /* ManualUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */; };
+		F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBA1E85CD75000A8C49 /* Circle.swift */; };
+		F39E8FBD1E85DAF3000A8C49 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBC1E85DAF3000A8C49 /* HUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +76,6 @@
 		1A3BFF3D1E827911008B0C81 /* TOTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPUITests.swift; sourceTree = "<group>"; };
 		1A3BFF3F1E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		1A5A03F61E8515AC00E0D072 /* KeyhcainApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyhcainApi.swift; sourceTree = "<group>"; };
 		1A5A03F81E851F7600E0D072 /* TOTPApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOTPApi.swift; sourceTree = "<group>"; };
 		1A6CADBC1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADBE1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
@@ -98,6 +98,8 @@
 		E649B4C26C58D22DFF5E5C37 /* Pods-TOTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECCA8137AEB95A70A4DF1B91 /* Pods-TOTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualUserViewController.swift; sourceTree = "<group>"; };
+		F39E8FBA1E85CD75000A8C49 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		F39E8FBC1E85DAF3000A8C49 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +209,6 @@
 			children = (
 				1A3BFF1F1E827910008B0C81 /* ViewController.swift */,
 				1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */,
-				1A5A03F61E8515AC00E0D072 /* KeyhcainApi.swift */,
 				1A5A03F81E851F7600E0D072 /* TOTPApi.swift */,
 			);
 			name = Presenter;
@@ -288,6 +289,8 @@
 		1A8236E51E83F51900D1A4D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F39E8FBA1E85CD75000A8C49 /* Circle.swift */,
+				F39E8FBC1E85DAF3000A8C49 /* HUD.swift */,
 				1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */,
 				F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */,
 				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
@@ -616,11 +619,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */,
 				1A1CEAEB1E8564100008F075 /* Token+URL.swift in Sources */,
 				1A3BFF201E827910008B0C81 /* ViewController.swift in Sources */,
 				1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */,
 				1A1CEAE91E8564100008F075 /* Keychain.swift in Sources */,
-				1A5A03F71E8515AC00E0D072 /* KeyhcainApi.swift in Sources */,
 				1A6CADCC1E85682D0080D665 /* README.md in Sources */,
 				1A1CEAEC1E8564100008F075 /* Token.swift in Sources */,
 				1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */,
@@ -631,6 +634,7 @@
 				1A1CEAE71E8564100008F075 /* Crypto.swift in Sources */,
 				1A1CEAE81E8564100008F075 /* Generator.swift in Sources */,
 				1A8236FE1E840CF500D1A4D7 /* TableListGenerator.swift in Sources */,
+				F39E8FBD1E85DAF3000A8C49 /* HUD.swift in Sources */,
 				1A6CADCE1E856AE50080D665 /* UserTableViewCell.swift in Sources */,
 				1A5A03F91E851F7600E0D072 /* TOTPApi.swift in Sources */,
 			);

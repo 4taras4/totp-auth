@@ -27,6 +27,73 @@ extension ViewController: UITableViewDataSource {
             cell.issuer.text = person.issuer
             let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token!)
             cell.passCode.text = token
-            return cell
+            if token != "invalid code" {
+                let width = UIScreen.main.bounds.width
+                let circleView = Circle(frame: CGRect(x:width - 60, y:40, width: 40, height: 40))
+                cell.addSubview(circleView)
+                circleView.animateCircle(duration: 30.0)
+            }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let person = userList[indexPath.row]
+        let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token!)
+        UIPasteboard.general.string = token
+        self.noticeSuccess("Copied!", autoClear: true, autoClearTime: 1)
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+            self.deleteRowAtIndexPath(indexPath: indexPath as NSIndexPath)
+            
+        }
+        return [delete]
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        do {
+           try realm.write {
+            let sourceObject = userList[sourceIndexPath.row]
+            let destinationObject = userList[destinationIndexPath.row]
+            let destinationObjectOrder = destinationObject.name
+            
+            if sourceIndexPath.row < destinationIndexPath.row {
+                for index in sourceIndexPath.row...destinationIndexPath.row {
+                    let object = userList[index]
+                    //object.name -= 1
+                }
+            } else {
+                for index in (destinationIndexPath.row..<sourceIndexPath.row).reversed() {
+                    let object = userList[index]
+                    //object.name += 1
+                }
+            }
+            sourceObject.name = destinationObjectOrder
+            }
+        } catch {
+            print(Error.self)
+        }
+    }
+    
+    func tableView(tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return false
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    private func deleteRowAtIndexPath(indexPath: NSIndexPath) {
+        let realm = try! Realm()
+        let objectToDelete = userList[indexPath.row]
+        do {
+            try realm.write() {
+                realm.delete(objectToDelete)
+            }
+            tableView.deleteRows(at: [indexPath as IndexPath], with: .fade)
+        } catch {
+            print("Could not delete site")
+        }
     }
 }

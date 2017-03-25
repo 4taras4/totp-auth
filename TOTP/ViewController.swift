@@ -18,9 +18,10 @@ class ViewController: UIViewController, UITableViewDelegate  {
     weak var myTimer: Timer?
     let timer : DispatchSourceTimer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
     var userList: Results<User>!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.editButtonPressed))
         readAndUpdateTable()
         tableView.delegate = self
         tableView.dataSource = self
@@ -38,33 +39,17 @@ class ViewController: UIViewController, UITableViewDelegate  {
 
     func readAndUpdateTable() {
         userList = realm.objects(User.self)
+        self.tableView.setEditing(false, animated: true)
         self.tableView.reloadData()
     }
     
-    func updateGitHub() {
-        let name = "4taras4"
-        let issuer = "GitHub"
-        let secretString = "znftv4acphaepkcr"
-        guard let secretData = MF_Base32Codec.data(fromBase32String: secretString),
-            !secretData.isEmpty else {
-                print("Invalid secret")
-                return
+    func editButtonPressed(){
+        tableView.setEditing(!tableView.isEditing, animated: true)
+        if tableView.isEditing == true {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.editButtonPressed))
+        } else {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.editButtonPressed))
         }
-        
-        guard let generator = Generator(
-            factor: .timer(period: 30),
-            secret: secretData,
-            algorithm: .sha1,
-            digits: 6) else {
-                print("Invalid generator parameters")
-                return
-        }
-        let token  = Token(name: name, issuer: issuer, generator: generator)
-        let  passGit = token.currentPassword
-        DispatchQueue.main.async {
-            print(passGit!)
-        }
-
     }
 }
 
