@@ -51,38 +51,6 @@ extension ViewController: UITableViewDataSource {
         return [delete]
     }
     
-    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        do {
-           try realm.write {
-            let sourceObject = userList[sourceIndexPath.row]
-            let destinationObject = userList[destinationIndexPath.row]
-            let destinationObjectOrder = destinationObject.name
-            
-            if sourceIndexPath.row < destinationIndexPath.row {
-                for index in sourceIndexPath.row...destinationIndexPath.row {
-                    let object = userList[index]
-                    //object.name -= 1
-                }
-            } else {
-                for index in (destinationIndexPath.row..<sourceIndexPath.row).reversed() {
-                    let object = userList[index]
-                    //object.name += 1
-                }
-            }
-            sourceObject.name = destinationObjectOrder
-            }
-        } catch {
-            print(Error.self)
-        }
-    }
-    
-    func tableView(tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-    
-    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
     
     private func deleteRowAtIndexPath(indexPath: NSIndexPath) {
         let realm = try! Realm()

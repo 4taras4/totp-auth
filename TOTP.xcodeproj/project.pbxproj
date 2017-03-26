@@ -31,6 +31,10 @@
 		1BB62E213BE2C5F82F254FAB /* Pods_TOTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */; };
 		22F0D86F0D0B0F83C0FC94F8 /* Pods_TOTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
+		F3158B4A1E8857B80006243A /* CryptTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B491E8857B80006243A /* CryptTest.swift */; };
+		F3158B4C1E8858440006243A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4B1E8858440006243A /* Generator.swift */; };
+		F3158B4E1E885B210006243A /* KeychainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4D1E885B210006243A /* KeychainTest.swift */; };
+		F3158B501E885B660006243A /* SerializationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4F1E885B660006243A /* SerializationTest.swift */; };
 		F39E8FB71E85BED8000A8C49 /* ManualUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */; };
 		F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBA1E85CD75000A8C49 /* Circle.swift */; };
 		F39E8FBD1E85DAF3000A8C49 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBC1E85DAF3000A8C49 /* HUD.swift */; };
@@ -97,6 +101,10 @@
 		DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E649B4C26C58D22DFF5E5C37 /* Pods-TOTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECCA8137AEB95A70A4DF1B91 /* Pods-TOTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3158B491E8857B80006243A /* CryptTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptTest.swift; sourceTree = "<group>"; };
+		F3158B4B1E8858440006243A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		F3158B4D1E885B210006243A /* KeychainTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTest.swift; sourceTree = "<group>"; };
+		F3158B4F1E885B660006243A /* SerializationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationTest.swift; sourceTree = "<group>"; };
 		F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualUserViewController.swift; sourceTree = "<group>"; };
 		F39E8FBA1E85CD75000A8C49 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		F39E8FBC1E85DAF3000A8C49 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
@@ -180,6 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				1A3BFF321E827911008B0C81 /* TOTPTests.swift */,
+				F3158B4B1E8858440006243A /* Generator.swift */,
+				F3158B491E8857B80006243A /* CryptTest.swift */,
+				F3158B4D1E885B210006243A /* KeychainTest.swift */,
+				F3158B4F1E885B660006243A /* SerializationTest.swift */,
 				1A3BFF341E827911008B0C81 /* Info.plist */,
 			);
 			path = TOTPTests;
@@ -644,6 +656,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3158B501E885B660006243A /* SerializationTest.swift in Sources */,
+				F3158B4C1E8858440006243A /* Generator.swift in Sources */,
+				F3158B4E1E885B210006243A /* KeychainTest.swift in Sources */,
+				F3158B4A1E8857B80006243A /* CryptTest.swift in Sources */,
 				1A3BFF331E827911008B0C81 /* TOTPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

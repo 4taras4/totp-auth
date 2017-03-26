@@ -17,20 +17,13 @@ class TOTPTests: XCTestCase {
         let issuer = "GitHub"
         let secretString = "znftv4acphaepkcr"
 
-        TOTPApi.sharedInstance.add(name: name, issuer: issuer, token: secretString)
+        let pass = TOTPApi.sharedInstance.refreshToken(name: name, issuer: issuer, secretData: secretString)
+        print(pass)
     }
-    
-    func testKeychainRead() {
-        KeyhcainApi.sharedInstance.readTokens()
-    }
-    
     
     func testSaveDataToDB() {
-        guard let secretData = MF_Base32Codec.data(fromBase32String: "znftv4acphaepkcr"),!secretData.isEmpty else {
-            print("Invalid secret")
-            return
-        }
-        RealmData.saveToDB(name: "Google", issuer: "google", token:secretData )
+       
+        RealmData.saveToDB(name: "Google", issuer: "google", token:"znftv4acphaepkcr" )
     }
     
 }
