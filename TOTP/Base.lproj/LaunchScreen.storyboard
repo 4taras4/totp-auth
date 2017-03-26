@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,51 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" highlightedImage="Bitmap" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMQ-mW-Q6x">
+                                <rect key="frame" x="125" y="81" width="70" height="90"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="JQn-7q-OfO"/>
+                                    <constraint firstAttribute="height" constant="90" id="WJi-QJ-lnI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXM-Vd-KdC">
+                                <rect key="frame" x="76" y="179" width="168.5" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Y3v-eH-RGv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © Taras Markevych" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgN-gR-094">
+                                <rect key="frame" x="93.5" y="460" width="133" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.32325812599999998" green="0.32325812599999998" blue="0.32325812599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CXM-Vd-KdC" firstAttribute="top" secondItem="nMQ-mW-Q6x" secondAttribute="bottom" constant="8" symbolic="YES" id="1Jj-Zu-g9I"/>
+                            <constraint firstItem="nMQ-mW-Q6x" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Djt-xa-3kO"/>
+                            <constraint firstItem="CXM-Vd-KdC" firstAttribute="centerX" secondItem="nMQ-mW-Q6x" secondAttribute="centerX" id="Gve-KN-qYp"/>
+                            <constraint firstItem="nMQ-mW-Q6x" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="61" id="gK8-Dj-B0c"/>
+                            <constraint firstItem="qgN-gR-094" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hQX-0n-ql7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qgN-gR-094" secondAttribute="bottom" constant="8" id="mCp-Js-aWd"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.625" y="373.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bitmap" width="211" height="260"/>
+    </resources>
 </document>
