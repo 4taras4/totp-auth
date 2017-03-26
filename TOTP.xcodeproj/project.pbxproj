@@ -18,7 +18,6 @@
 		1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */; };
 		1A3BFF201E827910008B0C81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1F1E827910008B0C81 /* ViewController.swift */; };
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
-		1A3BFF251E827910008B0C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF241E827910008B0C81 /* Assets.xcassets */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
 		1A3BFF331E827911008B0C81 /* TOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF321E827911008B0C81 /* TOTPTests.swift */; };
 		1A3BFF3E1E827911008B0C81 /* TOTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF3D1E827911008B0C81 /* TOTPUITests.swift */; };
@@ -35,6 +34,7 @@
 		F3158B4C1E8858440006243A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4B1E8858440006243A /* Generator.swift */; };
 		F3158B4E1E885B210006243A /* KeychainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4D1E885B210006243A /* KeychainTest.swift */; };
 		F3158B501E885B660006243A /* SerializationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4F1E885B660006243A /* SerializationTest.swift */; };
+		F3158B521E8878520006243A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3158B511E8878520006243A /* Assets.xcassets */; };
 		F39E8FB71E85BED8000A8C49 /* ManualUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */; };
 		F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBA1E85CD75000A8C49 /* Circle.swift */; };
 		F39E8FBD1E85DAF3000A8C49 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBC1E85DAF3000A8C49 /* HUD.swift */; };
@@ -70,7 +70,6 @@
 		1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A3BFF1F1E827910008B0C81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A3BFF221E827910008B0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A3BFF241E827910008B0C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A3BFF271E827910008B0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3BFF291E827910008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +104,7 @@
 		F3158B4B1E8858440006243A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		F3158B4D1E885B210006243A /* KeychainTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTest.swift; sourceTree = "<group>"; };
 		F3158B4F1E885B660006243A /* SerializationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationTest.swift; sourceTree = "<group>"; };
+		F3158B511E8878520006243A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualUserViewController.swift; sourceTree = "<group>"; };
 		F39E8FBA1E85CD75000A8C49 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		F39E8FBC1E85DAF3000A8C49 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
@@ -325,8 +325,8 @@
 				1A6CADBA1E85682D0080D665 /* CommonCrypto */,
 				1A1CEADE1E8564100008F075 /* TOTP */,
 				1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */,
+				F3158B511E8878520006243A /* Assets.xcassets */,
 				1A3BFF211E827910008B0C81 /* Main.storyboard */,
-				1A3BFF241E827910008B0C81 /* Assets.xcassets */,
 				1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */,
 				1A3BFF291E827910008B0C81 /* Info.plist */,
 			);
@@ -467,7 +467,7 @@
 			files = (
 				1A6CADCB1E85682D0080D665 /* injectXcodePath.sh in Resources */,
 				1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */,
-				1A3BFF251E827910008B0C81 /* Assets.xcassets in Resources */,
+				F3158B521E8878520006243A /* Assets.xcassets in Resources */,
 				1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

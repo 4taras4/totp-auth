@@ -125,6 +125,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iks-GB-qoQ" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ZZh-AW-d6F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -338,6 +339,7 @@
                             <constraint firstItem="YEk-3O-fQB" firstAttribute="top" secondItem="t5y-MA-ETd" secondAttribute="bottom" constant="21" id="ylQ-Pe-4C7"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="issuerFiled" destination="t5y-MA-ETd" id="5pq-tQ-83w"/>
                         <outlet property="nameField" destination="4xl-ht-53d" id="5po-G5-8V3"/>
@@ -353,6 +355,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gVt-KC-t0C" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="WPJ-GN-fhQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
