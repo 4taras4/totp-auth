@@ -11,7 +11,7 @@ before_install:
 
 script:
   - xcodebuild -version -showsdks
-  - set -o pipefail && xcodebuild -workspace "TOTP.xcworkspace" -scheme "TOTP" -destination "platform=iOS Simulator,OS=10.2,name=iPhone 7 Plus" -sdk "iphonesimulator10.2"  -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty
+  - set -o pipefail && xcodebuild -workspace "TOTP.xcworkspace" -scheme "TOTP" -destination "platform=iOS Simulator,OS=10.2,name=iPad Air" -sdk "iphonesimulator10.2"  -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
