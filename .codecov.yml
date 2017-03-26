@@ -1,0 +1,13 @@
+codecov:
+  branch: master
+
+coverage:
+  round: up
+  range: 10..70
+
+  status:
+      project:
+        default:
+          enabled: yes
+          target: auto
+          
