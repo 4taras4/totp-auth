@@ -36,7 +36,11 @@ class ViewController: UIViewController, UITableViewDelegate  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        readAndUpdateTable()
+    }
+    
     func readAndUpdateTable() {
         userList = realm.objects(User.self)
         self.tableView.setEditing(false, animated: true)

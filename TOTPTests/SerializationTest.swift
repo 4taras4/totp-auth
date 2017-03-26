@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Base32
 @testable import TOTP
 
 
@@ -23,13 +24,12 @@ class SerializationTest: XCTestCase {
         .timer(period: 30),
         .timer(period: 300),
         ]
-    let names = ["", "Login", "user_123@website.com", "Léon", ":/?#[]@!$&'()*+,;=%\""]
+    let names = ["", "Login", "user@google.com", "tarik", ":/?#[]@!$&'()*+,;=%\""]
     let issuers = ["", "Big Cörpøráçìôn", ":/?#[]@!$&'()*+,;=%\""]
     let secretStrings = [
         "12345678901234567890",
         "12345678901234567890123456789012",
-        "1234567890123456789012345678901234567890123456789012345678901234",
-        "",
+        "1234567890123456789012345678901234567890123456789012345678901234"
         ]
     let algorithms: [Generator.Algorithm] = [.sha1, .sha256, .sha512]
     let digits = [6, 7, 8]

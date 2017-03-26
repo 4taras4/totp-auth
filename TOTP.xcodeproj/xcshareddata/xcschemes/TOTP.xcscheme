@@ -20,6 +20,34 @@
                ReferencedContainer = "container:TOTP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1A3BFF2D1E827911008B0C81"
+               BuildableName = "TOTPTests.xctest"
+               BlueprintName = "TOTPTests"
+               ReferencedContainer = "container:TOTP.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1A3BFF381E827911008B0C81"
+               BuildableName = "TOTPUITests.xctest"
+               BlueprintName = "TOTPUITests"
+               ReferencedContainer = "container:TOTP.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

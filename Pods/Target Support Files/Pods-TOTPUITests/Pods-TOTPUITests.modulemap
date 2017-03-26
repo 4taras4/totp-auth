@@ -1,6 +1,0 @@
-framework module Pods_TOTPUITests {
-  umbrella header "Pods-TOTPUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
