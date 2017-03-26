@@ -25,7 +25,7 @@ extension ViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for: indexPath) as! UserTableViewCell
             cell.username.text = person.name
             cell.issuer.text = person.issuer
-            let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token!)
+            let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token! ) 
             cell.passCode.text = token
             if token != "invalid code" {
                 let width = UIScreen.main.bounds.width

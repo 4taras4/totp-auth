@@ -2,18 +2,19 @@ language: objective-c
 osx_image: xcode8.2
 os: osx
 rvm:
-- 2.0
+  - 2.0
 
 before_install:
-- gem install xcpretty
-- pod install
+  - gem install xcpretty
+  - pod update
+  - pod install
 
 script:
-- xcodebuild -version -showsdks
-- set -o pipefail && xcodebuild -workspace "TOTP.xcworkspace" -scheme "TOTP" -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7 Plus" -sdk "iphonesimulator10.2"  -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty
+  - xcodebuild -version -showsdks
+  - set -o pipefail && xcodebuild -workspace "TOTP.xcworkspace" -scheme "TOTP" -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7 Plus" -sdk "iphonesimulator10.2"  -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty
 
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   slack:

@@ -199,7 +199,9 @@ private func token(from url: URL, secret externalSecret: Data? = nil) -> Token? 
             name = name.trimmingCharacters(in: CharacterSet.whitespaces)
         }
     }
-    RealmData.saveToDB(name: name, issuer: issuer, token: queryDictionary[kQuerySecretKey])
+    if (queryDictionary[kQuerySecretKey]) != nil {
+        RealmData.saveToDB(name: name, issuer: issuer, token: queryDictionary[kQuerySecretKey]!)
+    }
     return Token(name: name, issuer: issuer, generator: generator)
 }
 
