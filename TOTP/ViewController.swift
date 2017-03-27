@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDelegate  {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var codeLabel: UILabel!
     @IBOutlet weak var gitLabel: UILabel!
+    let defaults = UserDefaults.standard
+    
     weak var myTimer: Timer?
     let timer : DispatchSourceTimer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
     var userList: Results<User>!
@@ -36,15 +38,26 @@ class ViewController: UIViewController, UITableViewDelegate  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         readAndUpdateTable()
+        loadFirstViewStory()
+    }
+    
+    func loadFirstViewStory()  {
+        if defaults.object(forKey: "firstLoad") == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "FirstLogin")
+            self.present(controller, animated: true, completion: nil)
+        }
     }
     
     func readAndUpdateTable() {
         userList = realm.objects(User.self)
         self.tableView.setEditing(false, animated: true)
         self.tableView.reloadData()
+        
     }
     
     func editButtonPressed(){

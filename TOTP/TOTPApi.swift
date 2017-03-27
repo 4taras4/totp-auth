@@ -16,7 +16,7 @@ class TOTPApi {
        func refreshToken(name:String?, issuer:String?, secretData: String?) -> String {
         guard let secretData = MF_Base32Codec.data(fromBase32String: secretData),!secretData.isEmpty else {
             print("Invalid secret")
-            return "invalid code"
+            return "Invalid data"
         }
         
         guard let generator = Generator(factor: .timer(period: 30),secret: secretData,algorithm: .sha1,digits: 6) else {
