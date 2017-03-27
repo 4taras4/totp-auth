@@ -12,7 +12,7 @@ class ManualUserViewController: UIViewController {
     var name:String?
     var issuer:String?
     var token:String?
-    
+    //MARK: Actions
     @IBAction func backAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -22,6 +22,8 @@ class ManualUserViewController: UIViewController {
         let controller = storyboard.instantiateViewController(withIdentifier: "Main")
         self.present(controller, animated: true, completion: nil)
     }
+    
+    //MARK: Outlets
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var issuerFiled: UITextField!
     @IBOutlet weak var tokenField: UITextField!
@@ -40,10 +42,18 @@ class ManualUserViewController: UIViewController {
         name = nameString
         issuer = issueString
         token = tokenString
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
 }

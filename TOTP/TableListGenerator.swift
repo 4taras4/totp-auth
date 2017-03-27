@@ -14,10 +14,18 @@ extension ViewController: UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let lists = userList {
-            return lists.count
+        let lists = userList
+        if lists?.count == 0 {
+            let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width:self.view.bounds.size.width, height: self.view.bounds.size.height))
+            emptyLabel.text = "Press + for scanning code"
+            emptyLabel.textColor = UIColor.white
+            emptyLabel.textAlignment = NSTextAlignment.center
+            self.tableView.backgroundView = emptyLabel
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+            return 0
+        } else {
+            return lists!.count
         }
-        return 0
     }
     
     func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -27,7 +35,7 @@ extension ViewController: UITableViewDataSource {
             cell.issuer.text = person.issuer
             let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token! ) 
             cell.passCode.text = token
-            if token != "invalid code" {
+            if token != "Invalid data" {
                 let width = UIScreen.main.bounds.width
                 let circleView = Circle(frame: CGRect(x:width - 60, y:40, width: 40, height: 40))
                 cell.addSubview(circleView)
@@ -46,7 +54,6 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
             self.deleteRowAtIndexPath(indexPath: indexPath as NSIndexPath)
-            
         }
         return [delete]
     }

@@ -27,6 +27,7 @@
 		1A6CADCC1E85682D0080D665 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADC61E85682D0080D665 /* README.md */; };
 		1A6CADCE1E856AE50080D665 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */; };
 		1A8236FE1E840CF500D1A4D7 /* TableListGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */; };
+		1ABB973C1E8907F200D6BBC3 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */; };
 		1BB62E213BE2C5F82F254FAB /* Pods_TOTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */; };
 		22F0D86F0D0B0F83C0FC94F8 /* Pods_TOTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
@@ -91,6 +92,7 @@
 		1A6CADCA1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableListGenerator.swift; sourceTree = "<group>"; };
+		1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
 		439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP/Pods-TOTP.release.xcconfig"; sourceTree = "<group>"; };
 		95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +224,7 @@
 				1A3BFF1F1E827910008B0C81 /* ViewController.swift */,
 				1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */,
 				1A5A03F81E851F7600E0D072 /* TOTPApi.swift */,
+				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -305,7 +308,7 @@
 				F39E8FBC1E85DAF3000A8C49 /* HUD.swift */,
 				1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */,
 				F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */,
-				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
+				1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -643,6 +646,7 @@
 				1A1CEAEA1E8564100008F075 /* PersistentToken.swift in Sources */,
 				F39E8FB71E85BED8000A8C49 /* ManualUserViewController.swift in Sources */,
 				1A3BFF4E1E827B3F008B0C81 /* CameraView.swift in Sources */,
+				1ABB973C1E8907F200D6BBC3 /* FirstLoginViewController.swift in Sources */,
 				1A1CEAE71E8564100008F075 /* Crypto.swift in Sources */,
 				1A1CEAE81E8564100008F075 /* Generator.swift in Sources */,
 				1A8236FE1E840CF500D1A4D7 /* TableListGenerator.swift in Sources */,
@@ -803,12 +807,14 @@
 			baseConfigurationReference = CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TOTP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -824,12 +830,14 @@
 			baseConfigurationReference = 439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TOTP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
