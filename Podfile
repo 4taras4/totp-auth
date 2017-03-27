@@ -6,7 +6,8 @@ target 'TOTP' do
   use_frameworks!
   pod 'Base32', '~> 1.1.2'
   pod 'RealmSwift'
-
+  pod 'Fabric'
+  pod 'Crashlytics'
   target 'TOTPTests' do
     inherit! :search_paths
     # Pods for testing
