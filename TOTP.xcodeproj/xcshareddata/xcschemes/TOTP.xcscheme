@@ -76,6 +76,11 @@
                BlueprintName = "TOTPUITests"
                ReferencedContainer = "container:TOTP.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "TOTPUITests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

@@ -8,20 +8,23 @@
 
 import XCTest
 
-class TOTPUITests: XCTestCase {
-        
+class UITest1: XCTestCase {
+
     override func setUp() {
         super.setUp()
-        
-        continueAfterFailure = false
         XCUIApplication().launch()
-        
+        continueAfterFailure = false
     }
     
-    func testUI() {
+    func testOne() {
         let app = XCUIApplication()
         continueAfterFailure = false
         app.buttons["Skip"].tap()
+    }
+   
+    func testTwo() {
+        let app = XCUIApplication()
+
         app.navigationBars["Accounts"].buttons["Add"].tap()
         let addButton = app.navigationBars["QR Scaner"].buttons["Add"]
         addButton.tap()
@@ -30,23 +33,26 @@ class TOTPUITests: XCTestCase {
         usernameGmailComTextField.tap()
         usernameGmailComTextField.typeText("test")
         app.staticTexts["Issuer:"].tap()
-
+        
         let googleTextField = XCUIApplication().textFields["Google"]
         googleTextField.tap()
         googleTextField.typeText("test")
-        app.staticTexts["Token:"].tap()
-
+        app.staticTexts["Issuer:"].tap()
+        
         
         let textField = app.textFields["***********"]
         textField.tap()
         textField.typeText("test")
-        app.navigationBars["Add custom"].buttons["Save"].tap()
+        app.staticTexts["Issuer:"].tap()
         
+        app.navigationBars["Add custom"].buttons["Save"].tap()
+    }
+    
+    func testThree() {
         let tablesQuery = XCUIApplication().tables
         let invalidDataStaticText = tablesQuery.staticTexts["Invalid data"]
         invalidDataStaticText.swipeLeft()
         tablesQuery.buttons["Delete"].tap()
-
     }
-
+    
 }

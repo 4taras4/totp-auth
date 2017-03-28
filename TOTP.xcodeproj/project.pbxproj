@@ -20,7 +20,7 @@
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
 		1A3BFF331E827911008B0C81 /* TOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF321E827911008B0C81 /* TOTPTests.swift */; };
-		1A3BFF3E1E827911008B0C81 /* TOTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF3D1E827911008B0C81 /* TOTPUITests.swift */; };
+		1A3BFF3E1E827911008B0C81 /* UITest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF3D1E827911008B0C81 /* UITest1.swift */; };
 		1A3BFF4E1E827B3F008B0C81 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */; };
 		1A5A03F91E851F7600E0D072 /* TOTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F81E851F7600E0D072 /* TOTPApi.swift */; };
 		1A6CADCB1E85682D0080D665 /* injectXcodePath.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1A6CADBF1E85682D0080D665 /* injectXcodePath.sh */; };
@@ -90,7 +90,7 @@
 		1A3BFF321E827911008B0C81 /* TOTPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPTests.swift; sourceTree = "<group>"; };
 		1A3BFF341E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3BFF3D1E827911008B0C81 /* TOTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPUITests.swift; sourceTree = "<group>"; };
+		1A3BFF3D1E827911008B0C81 /* UITest1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITest1.swift; sourceTree = "<group>"; };
 		1A3BFF3F1E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		1A5A03F81E851F7600E0D072 /* TOTPApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOTPApi.swift; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		1A3BFF3C1E827911008B0C81 /* TOTPUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1A3BFF3D1E827911008B0C81 /* TOTPUITests.swift */,
+				1A3BFF3D1E827911008B0C81 /* UITest1.swift */,
 				1A3BFF3F1E827911008B0C81 /* Info.plist */,
 			);
 			path = TOTPUITests;
@@ -702,7 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3BFF3E1E827911008B0C81 /* TOTPUITests.swift in Sources */,
+				1A3BFF3E1E827911008B0C81 /* UITest1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
