@@ -16,13 +16,13 @@ class UITest1: XCTestCase {
         continueAfterFailure = false
     }
     
-    func testOne() {
+    func testA() {
         let app = XCUIApplication()
         continueAfterFailure = false
         app.buttons["Skip"].tap()
     }
    
-    func testTwo() {
+    func testB() {
         let app = XCUIApplication()
 
         app.navigationBars["Accounts"].buttons["Add"].tap()
@@ -48,11 +48,12 @@ class UITest1: XCTestCase {
         app.navigationBars["Add custom"].buttons["Save"].tap()
     }
     
-    func testThree() {
+    func testC() {
         let tablesQuery = XCUIApplication().tables
         let invalidDataStaticText = tablesQuery.staticTexts["Invalid data"]
         invalidDataStaticText.swipeLeft()
         tablesQuery.buttons["Delete"].tap()
+        
     }
     
 }
