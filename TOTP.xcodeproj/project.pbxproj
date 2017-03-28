@@ -58,6 +58,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1ABB97521E8953E800D6BBC3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A1CEACA1E85516F0008F075 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
@@ -93,6 +106,7 @@
 		1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableListGenerator.swift; sourceTree = "<group>"; };
 		1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
+		1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP/Pods-TOTP.release.xcconfig"; sourceTree = "<group>"; };
 		95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +228,7 @@
 				95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */,
 				C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */,
 				DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */,
+				1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -362,6 +377,8 @@
 				1A3BFF181E827910008B0C81 /* Resources */,
 				BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */,
 				5BBE5260FFA04DA4C8635536 /* [CP] Copy Pods Resources */,
+				1ABB973D1E89435300D6BBC3 /* ShellScript */,
+				1ABB97521E8953E800D6BBC3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -506,6 +523,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		1ABB973D1E89435300D6BBC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" d5695772dc40987e31e5abf10dad8df9060b5540 3cbfcd7abd6cd1197fc5d018d215942017f40e718ef959647ca16b82e1b54a8c";
 		};
 		3B86BC3228954164D5DBF56D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -806,6 +836,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
@@ -829,6 +860,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
