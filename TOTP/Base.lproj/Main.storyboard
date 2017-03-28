@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -35,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvh-5D-vLp" id="wnz-0w-D8W">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 34 56" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOI-Wh-gi7">
@@ -231,7 +230,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe7-yT-ke3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152.80000000000001" y="792.95352323838085"/>
+            <point key="canvasLocation" x="-180" y="790"/>
         </scene>
         <!--QR Scaner-->
         <scene sceneID="G7Z-NJ-xuj">
@@ -314,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gtw-yv-RDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="791"/>
+            <point key="canvasLocation" x="1845" y="780"/>
         </scene>
         <!--Manual User View Controller-->
         <scene sceneID="lX6-L1-P0l">
@@ -441,7 +440,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi0-9t-ir6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="tsT-27-Ihb"/>
             </objects>
-            <point key="canvasLocation" x="1760" y="791"/>
+            <point key="canvasLocation" x="2514" y="780"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TMs-LF-QB5">
@@ -466,7 +465,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igo-vK-2Ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979" y="791"/>
+            <point key="canvasLocation" x="1176" y="780"/>
         </scene>
     </scenes>
     <resources>
