@@ -51,9 +51,7 @@ class UITest1: XCTestCase {
     func testC() {
         let tablesQuery = XCUIApplication().tables
         let invalidDataStaticText = tablesQuery.staticTexts["Invalid data"]
-        invalidDataStaticText.swipeLeft()
-        tablesQuery.buttons["Delete"].tap()
-        
+        invalidDataStaticText.tap()        
     }
     
     
