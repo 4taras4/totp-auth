@@ -15,7 +15,7 @@ class TOTPUITests: XCTestCase {
         
         continueAfterFailure = false
         XCUIApplication().launch()
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        
     }
     
     func testUI() {
@@ -29,10 +29,13 @@ class TOTPUITests: XCTestCase {
         let usernameGmailComTextField = app.textFields["username@gmail.com"]
         usernameGmailComTextField.tap()
         usernameGmailComTextField.typeText("test")
-        
+        app.staticTexts["Issuer:"].tap()
+
         let googleTextField = XCUIApplication().textFields["Google"]
         googleTextField.tap()
         googleTextField.typeText("test")
+        app.staticTexts["Token:"].tap()
+
         
         let textField = app.textFields["***********"]
         textField.tap()
