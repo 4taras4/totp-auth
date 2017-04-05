@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A077F1F1E95366D00BC90EB /* TOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A077F1E1E95366D00BC90EB /* TOTPTests.swift */; };
 		1A1CEAC91E8549D50008F075 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
 		1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
 		1A1CEAE71E8564100008F075 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEADF1E8564100008F075 /* Crypto.swift */; };
@@ -19,7 +20,6 @@
 		1A3BFF201E827910008B0C81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1F1E827910008B0C81 /* ViewController.swift */; };
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
-		1A3BFF331E827911008B0C81 /* TOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF321E827911008B0C81 /* TOTPTests.swift */; };
 		1A3BFF3E1E827911008B0C81 /* UITest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF3D1E827911008B0C81 /* UITest1.swift */; };
 		1A3BFF4E1E827B3F008B0C81 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */; };
 		1A5A03F91E851F7600E0D072 /* TOTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F81E851F7600E0D072 /* TOTPApi.swift */; };
@@ -72,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A077F1E1E95366D00BC90EB /* TOTPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOTPTests.swift; sourceTree = "<group>"; };
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A1CEACA1E85516F0008F075 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		1A1CEADF1E8564100008F075 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		1A3BFF271E827910008B0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3BFF291E827910008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3BFF321E827911008B0C81 /* TOTPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPTests.swift; sourceTree = "<group>"; };
 		1A3BFF341E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF3D1E827911008B0C81 /* UITest1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITest1.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		1A3BFF311E827911008B0C81 /* TOTPTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A3BFF321E827911008B0C81 /* TOTPTests.swift */,
+				1A077F1E1E95366D00BC90EB /* TOTPTests.swift */,
 				F3158B4B1E8858440006243A /* Generator.swift */,
 				F3158B491E8857B80006243A /* CryptTest.swift */,
 				F3158B4D1E885B210006243A /* KeychainTest.swift */,
@@ -448,13 +448,13 @@
 					};
 					1A3BFF2D1E827911008B0C81 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DREVRNA23J;
+						DevelopmentTeam = GA56SWJ3YH;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A3BFF191E827910008B0C81;
 					};
 					1A3BFF381E827911008B0C81 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DREVRNA23J;
+						DevelopmentTeam = GA56SWJ3YH;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A3BFF191E827910008B0C81;
 					};
@@ -693,8 +693,8 @@
 				F3158B501E885B660006243A /* SerializationTest.swift in Sources */,
 				F3158B4C1E8858440006243A /* Generator.swift in Sources */,
 				F3158B4E1E885B210006243A /* KeychainTest.swift in Sources */,
+				1A077F1F1E95366D00BC90EB /* TOTPTests.swift in Sources */,
 				F3158B4A1E8857B80006243A /* CryptTest.swift in Sources */,
-				1A3BFF331E827911008B0C81 /* TOTPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,7 +886,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = DREVRNA23J;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				INFOPLIST_FILE = TOTPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPTests;
@@ -902,7 +902,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = DREVRNA23J;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				INFOPLIST_FILE = TOTPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPTests;
@@ -917,7 +917,7 @@
 			baseConfigurationReference = D2EF5D8DAFC6BE26093121C2 /* Pods-TOTPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = DREVRNA23J;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				INFOPLIST_FILE = TOTPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPUITests;
@@ -932,7 +932,7 @@
 			baseConfigurationReference = C4FCB0A0A9D0A32A9000D374 /* Pods-TOTPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = DREVRNA23J;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				INFOPLIST_FILE = TOTPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPUITests;

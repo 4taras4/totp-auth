@@ -17,12 +17,10 @@ class TOTPApi {
     
        func refreshToken(name:String?, issuer:String?, secretData: String?) -> String {
         guard let secretData = MF_Base32Codec.data(fromBase32String: secretData),!secretData.isEmpty else {
-            print("Invalid secret")
             return "Invalid data"
         }
         
         guard let generator = Generator(factor: .timer(period: timer),secret: secretData,algorithm: .sha1,digits: 6) else {
-            print("Invalid generator parameters")
             return "Invalid generator parameters"
         }
         
@@ -37,10 +35,8 @@ class TOTPApi {
             let calendar = Calendar.current
             let second = calendar.component(.second, from: date)
             let expiredTime = second % 30
-            print(expiredTime)
             let validTime = 30 - expiredTime
-            print(validTime)
-            return validTime
+        return validTime
     }
 
     

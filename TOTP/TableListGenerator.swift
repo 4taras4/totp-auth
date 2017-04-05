@@ -51,7 +51,7 @@ extension ViewController: UITableViewDataSource {
         let person = userList[indexPath.row]
         let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token!)
         UIPasteboard.general.string = token
-        self.noticeSuccess("Copied!", autoClear: true, autoClearTime: 1)
+        self.noticeSuccess("Copied", autoClear: true, autoClearTime: 1)
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
