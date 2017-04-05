@@ -15,7 +15,7 @@ class User: Object {
     dynamic var token: String?
     
     override public static func primaryKey() -> String? {
-        return "issuer"
+        return "token"
     }
 
 }

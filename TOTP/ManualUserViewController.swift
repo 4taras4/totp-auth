@@ -13,15 +13,25 @@ class ManualUserViewController: UIViewController {
     var issuer:String?
     var token:String?
     //MARK: Actions
-    @IBAction func backAction(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func saveAction(_ sender: Any) {
-        RealmData.saveToDB(name: name, issuer: issuer, token: token)
+
+    @IBAction func saveToDBAction(_ sender: Any) {
+        guard let nameString = self.nameField.text else {
+            return
+        }
+        guard let issueString = self.issuerFiled.text else {
+            return
+        }
+        guard let tokenString = self.tokenField.text else {
+            return
+        }
+        print (nameString,issueString,tokenString)
+        
+        RealmData.saveToDB(name: nameString, issuer: issueString, token: tokenString)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "Main")
-        self.present(controller, animated: true, completion: nil)
+        self.present(controller, animated: false, completion: nil)
     }
+ 
     
     //MARK: Outlets
     @IBOutlet weak var nameField: UITextField!
@@ -30,18 +40,6 @@ class ManualUserViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let nameString = nameField.text else {
-            return
-        }
-        guard let issueString = nameField.text else {
-            return
-        }
-        guard let tokenString = nameField.text else {
-            return
-        }
-        name = nameString
-        issuer = issueString
-        token = tokenString
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
