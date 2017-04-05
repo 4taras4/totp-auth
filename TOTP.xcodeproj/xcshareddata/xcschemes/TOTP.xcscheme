@@ -76,21 +76,6 @@
                ReferencedContainer = "container:TOTP.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A3BFF381E827911008B0C81"
-               BuildableName = "TOTPUITests.xctest"
-               BlueprintName = "TOTPUITests"
-               ReferencedContainer = "container:TOTP.xcodeproj">
-            </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "TOTPUITests">
-               </Test>
-            </SkippedTests>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
