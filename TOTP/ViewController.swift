@@ -11,23 +11,31 @@ import Base32
 import CoreData
 import RealmSwift
 class ViewController: UIViewController, UITableViewDelegate  {
-    let realm = try! Realm()
+    let defaults = UserDefaults.standard
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var codeLabel: UILabel!
     @IBOutlet weak var gitLabel: UILabel!
-    let defaults = UserDefaults.standard
-    
+    @IBOutlet weak var refreshView: UIView!
+    var userList: Results<User>!
     weak var myTimer: Timer?
     let timer : DispatchSourceTimer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
-    var userList: Results<User>!
-
+    var tokenTOTP: String?
+    
+    @IBAction func refreshAction(_ sender: Any) {
+        readAndUpdateTable()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.editButtonPressed))
         readAndUpdateTable()
         tableView.delegate = self
         tableView.dataSource = self
-        timer.scheduleRepeating(deadline: .now(), interval: .seconds(30))
+        tableView.setEditing(false, animated: true)
+        if 30  > TOTPApi.sharedInstance.currentTime() {
+            timer.scheduleRepeating(deadline: .now(), interval: .seconds(2))
+        } else {
+            timer.scheduleRepeating(deadline: .now(), interval: .seconds(30))
+        }
         timer.setEventHandler {
             self.readAndUpdateTable()
         }
@@ -43,6 +51,9 @@ class ViewController: UIViewController, UITableViewDelegate  {
         super.viewWillAppear(true)
         readAndUpdateTable()
         loadFirstViewStory()
+        DispatchQueue.main.async {
+            self.readAndUpdateTable()
+        }
     }
     
     func loadFirstViewStory()  {
@@ -54,19 +65,13 @@ class ViewController: UIViewController, UITableViewDelegate  {
     }
     
     func readAndUpdateTable() {
-        userList = realm.objects(User.self)
-        self.tableView.setEditing(false, animated: true)
-        self.tableView.reloadData()
-        
-    }
-    
-    func editButtonPressed(){
-        tableView.setEditing(!tableView.isEditing, animated: true)
-        if tableView.isEditing == true {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.editButtonPressed))
-        } else {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.editButtonPressed))
+        let realm = try! Realm()
+        UIView.performWithoutAnimation {
+            self.userList = realm.objects(User.self)
+            self.tableView.reloadData()
         }
+
     }
+
 }
 

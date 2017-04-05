@@ -18,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Crashlytics.self, Answers.self ])
+        //Realm configuration
+        Realm.Configuration.defaultConfiguration = Realm.Configuration(
+            schemaVersion: 1,
+            migrationBlock: { migration, oldSchemaVersion in
+                    if (oldSchemaVersion < 1) {
+                    }
+        })
         return true
     }
 }

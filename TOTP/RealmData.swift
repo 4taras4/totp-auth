@@ -24,6 +24,4 @@ class RealmData {
             print(Error.self)
         }
     }
-    
-    
 }

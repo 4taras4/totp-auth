@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 // MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
-    
+
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,15 +33,18 @@ extension ViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for: indexPath) as! UserTableViewCell
             cell.username.text = person.name
             cell.issuer.text = person.issuer
-            let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token! ) 
-            cell.passCode.text = token
-            if token != "Invalid data" {
-                let width = UIScreen.main.bounds.width
-                let circleView = Circle(frame: CGRect(x:width - 60, y:40, width: 40, height: 40))
-                cell.addSubview(circleView)
-                circleView.animateCircle(duration: 30.0)
+            DispatchQueue.main.async {
+                let token = TOTPApi.sharedInstance.refreshToken(name: person.name!, issuer: person.issuer!, secretData: person.token! )
+                cell.passCode.text = token
+                if token != "Invalid data" {
+                    let width = UIScreen.main.bounds.width
+                    let circleView = Circle(frame: CGRect(x:width - 60, y:40, width: 40, height: 40))
+                    cell.addSubview(circleView)
+                    circleView.animateCircle(duration: TimeInterval(TOTPApi.sharedInstance.currentTime()))
+                }
+
             }
-        return cell
+            return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
