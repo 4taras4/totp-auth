@@ -27,10 +27,28 @@
 		1A6CADCC1E85682D0080D665 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADC61E85682D0080D665 /* README.md */; };
 		1A6CADCE1E856AE50080D665 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */; };
 		1A8236FE1E840CF500D1A4D7 /* TableListGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */; };
+		1AAE687F1E961FD600D0DB0D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE687D1E961FD600D0DB0D /* Interface.storyboard */; };
+		1AAE68811E961FD600D0DB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE68801E961FD600D0DB0D /* Assets.xcassets */; };
+		1AAE68881E961FD600D0DB0D /* 2Pass Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1AAE68871E961FD600D0DB0D /* 2Pass Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1AAE688F1E961FD600D0DB0D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE688E1E961FD600D0DB0D /* InterfaceController.swift */; };
+		1AAE68911E961FD600D0DB0D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE68901E961FD600D0DB0D /* ExtensionDelegate.swift */; };
+		1AAE68931E961FD600D0DB0D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE68921E961FD600D0DB0D /* NotificationController.swift */; };
+		1AAE68951E961FD600D0DB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE68941E961FD600D0DB0D /* Assets.xcassets */; };
+		1AAE68991E961FD600D0DB0D /* 2Pass.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1AAE687B1E961FD600D0DB0D /* 2Pass.app */; };
+		1AAE68A81E9628DD00D0DB0D /* TableCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE68A71E9628DD00D0DB0D /* TableCellData.swift */; };
+		1AAE68A91E964B7700D0DB0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
+		1AAE68AA1E964B8400D0DB0D /* TOTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F81E851F7600E0D072 /* TOTPApi.swift */; };
+		1AAE68AB1E96530B00D0DB0D /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEADF1E8564100008F075 /* Crypto.swift */; };
+		1AAE68AC1E96530B00D0DB0D /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE01E8564100008F075 /* Generator.swift */; };
+		1AAE68AD1E96530B00D0DB0D /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE11E8564100008F075 /* Keychain.swift */; };
+		1AAE68AE1E96530B00D0DB0D /* PersistentToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE21E8564100008F075 /* PersistentToken.swift */; };
+		1AAE68AF1E96530B00D0DB0D /* Token+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE31E8564100008F075 /* Token+URL.swift */; };
+		1AAE68B01E96530B00D0DB0D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE41E8564100008F075 /* Token.swift */; };
+		1AAE68B11E96587300D0DB0D /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
 		1ABB973C1E8907F200D6BBC3 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */; };
-		1BB62E213BE2C5F82F254FAB /* Pods_TOTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */; };
-		22F0D86F0D0B0F83C0FC94F8 /* Pods_TOTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
+		9CA6EA52883A81D398CB073C /* Pods_2Pass_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74ACF5EC7746E3D91D53A2DA /* Pods_2Pass_Extension.framework */; };
+		B67399F84A5E6C34BD21B00A /* Pods_2Pass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E65ED0F6F3A2A7130FA9BDC /* Pods_2Pass.framework */; };
 		F3158B4A1E8857B80006243A /* CryptTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B491E8857B80006243A /* CryptTest.swift */; };
 		F3158B4C1E8858440006243A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4B1E8858440006243A /* Generator.swift */; };
 		F3158B4E1E885B210006243A /* KeychainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4D1E885B210006243A /* KeychainTest.swift */; };
@@ -56,9 +74,45 @@
 			remoteGlobalIDString = 1A3BFF191E827910008B0C81;
 			remoteInfo = TOTP;
 		};
+		1AAE68891E961FD600D0DB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAE68861E961FD600D0DB0D;
+			remoteInfo = "2Pass Extension";
+		};
+		1AAE68971E961FD600D0DB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAE687A1E961FD600D0DB0D;
+			remoteInfo = 2Pass;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1AAE689F1E961FD600D0DB0D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1AAE68881E961FD600D0DB0D /* 2Pass Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAE68A11E961FD600D0DB0D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1AAE68991E961FD600D0DB0D /* 2Pass.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ABB97521E8953E800D6BBC3 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +126,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E65ED0F6F3A2A7130FA9BDC /* Pods_2Pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2Pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A077F1E1E95366D00BC90EB /* TOTPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOTPTests.swift; sourceTree = "<group>"; };
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A1CEACA1E85516F0008F075 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
@@ -105,17 +160,40 @@
 		1A6CADCA1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableListGenerator.swift; sourceTree = "<group>"; };
+		1AAE687B1E961FD600D0DB0D /* 2Pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2Pass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAE687E1E961FD600D0DB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1AAE68801E961FD600D0DB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AAE68821E961FD600D0DB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAE68871E961FD600D0DB0D /* 2Pass Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "2Pass Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAE688D1E961FD600D0DB0D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1AAE688E1E961FD600D0DB0D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1AAE68901E961FD600D0DB0D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1AAE68921E961FD600D0DB0D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1AAE68941E961FD600D0DB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AAE68961E961FD600D0DB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAE68A21E96235F00D0DB0D /* TOTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TOTP.entitlements; sourceTree = "<group>"; };
+		1AAE68A31E9627A800D0DB0D /* 2Pass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 2Pass.entitlements; sourceTree = "<group>"; };
+		1AAE68A41E9627B500D0DB0D /* 2Pass Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "2Pass Extension.entitlements"; sourceTree = "<group>"; };
+		1AAE68A51E9627CE00D0DB0D /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TOTP_2Pass.framework; path = "Pods/../build/Debug-iphoneos/Pods_TOTP_2Pass.framework"; sourceTree = "<group>"; };
+		1AAE68A71E9628DD00D0DB0D /* TableCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellData.swift; sourceTree = "<group>"; };
 		1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
 		1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1DE0D8873922AA8DD74C12F3 /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP_2Pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4083C7BA3B83740411E2E145 /* Pods_TOTP_2Pass_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP_2Pass_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP/Pods-TOTP.release.xcconfig"; sourceTree = "<group>"; };
+		68C7DF39C5DF4418CB206CCC /* Pods-TOTP-2Pass Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass Extension/Pods-TOTP-2Pass Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6B9BB6CAAAE1C39534033A34 /* Pods-2Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Pass.release.xcconfig"; path = "Pods/Target Support Files/Pods-2Pass/Pods-2Pass.release.xcconfig"; sourceTree = "<group>"; };
+		6F7D5A4726CFD74F6B23EFA9 /* Pods-2Pass Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Pass Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-2Pass Extension/Pods-2Pass Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		74ACF5EC7746E3D91D53A2DA /* Pods_2Pass_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2Pass_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4FCB0A0A9D0A32A9000D374 /* Pods-TOTPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPUITests/Pods-TOTPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA05CB04F05A8E90C69EDF02 /* Pods-2Pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Pass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-2Pass/Pods-2Pass.debug.xcconfig"; sourceTree = "<group>"; };
+		CA274FDF46A68F752DBA6176 /* Pods-TOTP-2Pass Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass Extension/Pods-TOTP-2Pass Extension.release.xcconfig"; sourceTree = "<group>"; };
 		CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP/Pods-TOTP.debug.xcconfig"; sourceTree = "<group>"; };
-		D2EF5D8DAFC6BE26093121C2 /* Pods-TOTPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPUITests/Pods-TOTPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E649B4C26C58D22DFF5E5C37 /* Pods-TOTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.release.xcconfig"; sourceTree = "<group>"; };
-		ECCA8137AEB95A70A4DF1B91 /* Pods-TOTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB7D38CD0B4755B86FBCF338 /* Pods-2Pass Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Pass Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-2Pass Extension/Pods-2Pass Extension.release.xcconfig"; sourceTree = "<group>"; };
+		DF0A1331B26F41A3777C564D /* Pods-TOTP-2Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass/Pods-TOTP-2Pass.release.xcconfig"; sourceTree = "<group>"; };
+		E6647F245504EA6F1E33E001 /* Pods-TOTP-2Pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass/Pods-TOTP-2Pass.debug.xcconfig"; sourceTree = "<group>"; };
 		F3158B491E8857B80006243A /* CryptTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptTest.swift; sourceTree = "<group>"; };
 		F3158B4B1E8858440006243A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		F3158B4D1E885B210006243A /* KeychainTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTest.swift; sourceTree = "<group>"; };
@@ -139,7 +217,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB62E213BE2C5F82F254FAB /* Pods_TOTPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +224,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F0D86F0D0B0F83C0FC94F8 /* Pods_TOTPUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAE68841E961FD600D0DB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA6EA52883A81D398CB073C /* Pods_2Pass_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7A96983B7B308A0D362D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67399F84A5E6C34BD21B00A /* Pods_2Pass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +265,8 @@
 				1A3BFF1C1E827910008B0C81 /* TOTP */,
 				1A3BFF311E827911008B0C81 /* TOTPTests */,
 				1A3BFF3C1E827911008B0C81 /* TOTPUITests */,
+				1AAE687C1E961FD600D0DB0D /* 2Pass */,
+				1AAE688B1E961FD600D0DB0D /* 2Pass Extension */,
 				1A3BFF1B1E827910008B0C81 /* Products */,
 				1A3BFF511E828B24008B0C81 /* Frameworks */,
 				2C6DC00DFF2C9D00B81D05CA /* Pods */,
@@ -185,6 +279,8 @@
 				1A3BFF1A1E827910008B0C81 /* TOTP.app */,
 				1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */,
 				1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */,
+				1AAE687B1E961FD600D0DB0D /* 2Pass.app */,
+				1AAE68871E961FD600D0DB0D /* 2Pass Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +288,7 @@
 		1A3BFF1C1E827910008B0C81 /* TOTP */ = {
 			isa = PBXGroup;
 			children = (
+				1AAE68A21E96235F00D0DB0D /* TOTP.entitlements */,
 				1A8236E71E83F57B00D1A4D7 /* Suppotrs */,
 				1A5A03F51E85156200E0D072 /* Presenter */,
 				1A8236E61E83F52700D1A4D7 /* Model */,
@@ -225,10 +322,15 @@
 		1A3BFF511E828B24008B0C81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AAE68A51E9627CE00D0DB0D /* Pods_TOTP_2Pass.framework */,
 				95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */,
 				C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */,
 				DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */,
 				1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */,
+				1DE0D8873922AA8DD74C12F3 /* Pods_TOTP_2Pass.framework */,
+				4083C7BA3B83740411E2E145 /* Pods_TOTP_2Pass_Extension.framework */,
+				74ACF5EC7746E3D91D53A2DA /* Pods_2Pass_Extension.framework */,
+				0E65ED0F6F3A2A7130FA9BDC /* Pods_2Pass.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -351,15 +453,53 @@
 			name = Suppotrs;
 			sourceTree = "<group>";
 		};
+		1AAE687C1E961FD600D0DB0D /* 2Pass */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE68A31E9627A800D0DB0D /* 2Pass.entitlements */,
+				1AAE687D1E961FD600D0DB0D /* Interface.storyboard */,
+				1AAE68801E961FD600D0DB0D /* Assets.xcassets */,
+				1AAE68821E961FD600D0DB0D /* Info.plist */,
+			);
+			path = 2Pass;
+			sourceTree = "<group>";
+		};
+		1AAE688B1E961FD600D0DB0D /* 2Pass Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE68A41E9627B500D0DB0D /* 2Pass Extension.entitlements */,
+				1AAE688E1E961FD600D0DB0D /* InterfaceController.swift */,
+				1AAE68A71E9628DD00D0DB0D /* TableCellData.swift */,
+				1AAE68901E961FD600D0DB0D /* ExtensionDelegate.swift */,
+				1AAE68921E961FD600D0DB0D /* NotificationController.swift */,
+				1AAE68941E961FD600D0DB0D /* Assets.xcassets */,
+				1AAE68961E961FD600D0DB0D /* Info.plist */,
+				1AAE688C1E961FD600D0DB0D /* Supporting Files */,
+			);
+			path = "2Pass Extension";
+			sourceTree = "<group>";
+		};
+		1AAE688C1E961FD600D0DB0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE688D1E961FD600D0DB0D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2C6DC00DFF2C9D00B81D05CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */,
 				439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */,
-				ECCA8137AEB95A70A4DF1B91 /* Pods-TOTPTests.debug.xcconfig */,
-				E649B4C26C58D22DFF5E5C37 /* Pods-TOTPTests.release.xcconfig */,
-				D2EF5D8DAFC6BE26093121C2 /* Pods-TOTPUITests.debug.xcconfig */,
-				C4FCB0A0A9D0A32A9000D374 /* Pods-TOTPUITests.release.xcconfig */,
+				E6647F245504EA6F1E33E001 /* Pods-TOTP-2Pass.debug.xcconfig */,
+				DF0A1331B26F41A3777C564D /* Pods-TOTP-2Pass.release.xcconfig */,
+				68C7DF39C5DF4418CB206CCC /* Pods-TOTP-2Pass Extension.debug.xcconfig */,
+				CA274FDF46A68F752DBA6176 /* Pods-TOTP-2Pass Extension.release.xcconfig */,
+				6F7D5A4726CFD74F6B23EFA9 /* Pods-2Pass Extension.debug.xcconfig */,
+				DB7D38CD0B4755B86FBCF338 /* Pods-2Pass Extension.release.xcconfig */,
+				CA05CB04F05A8E90C69EDF02 /* Pods-2Pass.debug.xcconfig */,
+				6B9BB6CAAAE1C39534033A34 /* Pods-2Pass.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -379,10 +519,12 @@
 				5BBE5260FFA04DA4C8635536 /* [CP] Copy Pods Resources */,
 				1ABB973D1E89435300D6BBC3 /* ShellScript */,
 				1ABB97521E8953E800D6BBC3 /* Embed App Extensions */,
+				1AAE68A11E961FD600D0DB0D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1AAE68981E961FD600D0DB0D /* PBXTargetDependency */,
 			);
 			name = TOTP;
 			productName = TOTP;
@@ -393,12 +535,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A3BFF451E827911008B0C81 /* Build configuration list for PBXNativeTarget "TOTPTests" */;
 			buildPhases = (
-				0907EEF3B82F862A3DB174D0 /* [CP] Check Pods Manifest.lock */,
 				1A3BFF2A1E827911008B0C81 /* Sources */,
 				1A3BFF2B1E827911008B0C81 /* Frameworks */,
 				1A3BFF2C1E827911008B0C81 /* Resources */,
-				9E6353E1FCD170B33BB523C9 /* [CP] Embed Pods Frameworks */,
-				86F818B84D19423D468F6F35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -414,12 +553,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A3BFF481E827911008B0C81 /* Build configuration list for PBXNativeTarget "TOTPUITests" */;
 			buildPhases = (
-				C555B34469BA58DF6DB1B2B4 /* [CP] Check Pods Manifest.lock */,
 				1A3BFF351E827911008B0C81 /* Sources */,
 				1A3BFF361E827911008B0C81 /* Frameworks */,
 				1A3BFF371E827911008B0C81 /* Resources */,
-				D405153368F17BD5E7DAE87C /* [CP] Embed Pods Frameworks */,
-				BA9CDA1661241D37A9335A41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,6 +566,46 @@
 			productName = TOTPUITests;
 			productReference = 1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1AAE687A1E961FD600D0DB0D /* 2Pass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAE68A01E961FD600D0DB0D /* Build configuration list for PBXNativeTarget "2Pass" */;
+			buildPhases = (
+				DFFA8CD93D8918CD4FE53835 /* [CP] Check Pods Manifest.lock */,
+				1AAE68791E961FD600D0DB0D /* Resources */,
+				1AAE689F1E961FD600D0DB0D /* Embed App Extensions */,
+				8D7A96983B7B308A0D362D58 /* Frameworks */,
+				172FC8054651C4E6F82FF70D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAE688A1E961FD600D0DB0D /* PBXTargetDependency */,
+			);
+			name = 2Pass;
+			productName = 2Pass;
+			productReference = 1AAE687B1E961FD600D0DB0D /* 2Pass.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1AAE68861E961FD600D0DB0D /* 2Pass Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAE689E1E961FD600D0DB0D /* Build configuration list for PBXNativeTarget "2Pass Extension" */;
+			buildPhases = (
+				830EBD9334F21FA9DA62A5F3 /* [CP] Check Pods Manifest.lock */,
+				1AAE68831E961FD600D0DB0D /* Sources */,
+				1AAE68841E961FD600D0DB0D /* Frameworks */,
+				1AAE68851E961FD600D0DB0D /* Resources */,
+				2E1EF27739FA950E3E20C26E /* [CP] Embed Pods Frameworks */,
+				B4F4349CFFE36813DD0C44B2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2Pass Extension";
+			productName = "2Pass Extension";
+			productReference = 1AAE68871E961FD600D0DB0D /* 2Pass Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -445,6 +621,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = GA56SWJ3YH;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1A3BFF2D1E827911008B0C81 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -457,6 +638,32 @@
 						DevelopmentTeam = GA56SWJ3YH;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A3BFF191E827910008B0C81;
+					};
+					1AAE687A1E961FD600D0DB0D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GA56SWJ3YH;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 0;
+							};
+						};
+					};
+					1AAE68861E961FD600D0DB0D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GA56SWJ3YH;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -476,6 +683,8 @@
 				1A3BFF191E827910008B0C81 /* TOTP */,
 				1A3BFF2D1E827911008B0C81 /* TOTPTests */,
 				1A3BFF381E827911008B0C81 /* TOTPUITests */,
+				1AAE687A1E961FD600D0DB0D /* 2Pass */,
+				1AAE68861E961FD600D0DB0D /* 2Pass Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -506,22 +715,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AAE68791E961FD600D0DB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAE68811E961FD600D0DB0D /* Assets.xcassets in Resources */,
+				1AAE687F1E961FD600D0DB0D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAE68851E961FD600D0DB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAE68951E961FD600D0DB0D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0907EEF3B82F862A3DB174D0 /* [CP] Check Pods Manifest.lock */ = {
+		172FC8054651C4E6F82FF70D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2Pass/Pods-2Pass-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1ABB973D1E89435300D6BBC3 /* ShellScript */ = {
@@ -536,6 +762,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" d5695772dc40987e31e5abf10dad8df9060b5540 3cbfcd7abd6cd1197fc5d018d215942017f40e718ef959647ca16b82e1b54a8c";
+		};
+		2E1EF27739FA950E3E20C26E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2Pass Extension/Pods-2Pass Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		3B86BC3228954164D5DBF56D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -567,7 +808,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TOTP/Pods-TOTP-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		86F818B84D19423D468F6F35 /* [CP] Copy Pods Resources */ = {
+		830EBD9334F21FA9DA62A5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F4349CFFE36813DD0C44B2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -579,37 +835,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E6353E1FCD170B33BB523C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TOTPTests/Pods-TOTPTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BA9CDA1661241D37A9335A41 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TOTPUITests/Pods-TOTPUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2Pass Extension/Pods-2Pass Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */ = {
@@ -627,7 +853,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TOTP/Pods-TOTP-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C555B34469BA58DF6DB1B2B4 /* [CP] Check Pods Manifest.lock */ = {
+		DFFA8CD93D8918CD4FE53835 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -640,21 +866,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D405153368F17BD5E7DAE87C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TOTPUITests/Pods-TOTPUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -706,6 +917,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AAE68831E961FD600D0DB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAE68B11E96587300D0DB0D /* RealmData.swift in Sources */,
+				1AAE68AB1E96530B00D0DB0D /* Crypto.swift in Sources */,
+				1AAE68AC1E96530B00D0DB0D /* Generator.swift in Sources */,
+				1AAE68AD1E96530B00D0DB0D /* Keychain.swift in Sources */,
+				1AAE68AE1E96530B00D0DB0D /* PersistentToken.swift in Sources */,
+				1AAE68AF1E96530B00D0DB0D /* Token+URL.swift in Sources */,
+				1AAE68B01E96530B00D0DB0D /* Token.swift in Sources */,
+				1AAE68AA1E964B8400D0DB0D /* TOTPApi.swift in Sources */,
+				1AAE68A91E964B7700D0DB0D /* User.swift in Sources */,
+				1AAE68A81E9628DD00D0DB0D /* TableCellData.swift in Sources */,
+				1AAE68931E961FD600D0DB0D /* NotificationController.swift in Sources */,
+				1AAE68911E961FD600D0DB0D /* ExtensionDelegate.swift in Sources */,
+				1AAE688F1E961FD600D0DB0D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -718,6 +949,16 @@
 			isa = PBXTargetDependency;
 			target = 1A3BFF191E827910008B0C81 /* TOTP */;
 			targetProxy = 1A3BFF3A1E827911008B0C81 /* PBXContainerItemProxy */;
+		};
+		1AAE688A1E961FD600D0DB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAE68861E961FD600D0DB0D /* 2Pass Extension */;
+			targetProxy = 1AAE68891E961FD600D0DB0D /* PBXContainerItemProxy */;
+		};
+		1AAE68981E961FD600D0DB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAE687A1E961FD600D0DB0D /* 2Pass */;
+			targetProxy = 1AAE68971E961FD600D0DB0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -736,6 +977,14 @@
 				1A3BFF271E827910008B0C81 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1AAE687D1E961FD600D0DB0D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAE687E1E961FD600D0DB0D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -786,6 +1035,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos";
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -827,6 +1078,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos";
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -838,6 +1091,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -852,6 +1106,8 @@
 				SWIFT_INCLUDE_PATHS = "";
 				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "$(SRCROOT)/CommonCrypto/iphoneos";
 				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "$(SRCROOT)/CommonCrypto/iphonesimulator";
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos";
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -862,6 +1118,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -876,13 +1133,14 @@
 				SWIFT_INCLUDE_PATHS = "";
 				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "$(SRCROOT)/CommonCrypto/iphoneos";
 				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "$(SRCROOT)/CommonCrypto/iphonesimulator";
+				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos";
+				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		1A3BFF461E827911008B0C81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECCA8137AEB95A70A4DF1B91 /* Pods-TOTPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -898,7 +1156,6 @@
 		};
 		1A3BFF471E827911008B0C81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E649B4C26C58D22DFF5E5C37 /* Pods-TOTPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -914,7 +1171,6 @@
 		};
 		1A3BFF491E827911008B0C81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2EF5D8DAFC6BE26093121C2 /* Pods-TOTPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
@@ -929,7 +1185,6 @@
 		};
 		1A3BFF4A1E827911008B0C81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FCB0A0A9D0A32A9000D374 /* Pods-TOTPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
@@ -939,6 +1194,114 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TOTP;
+			};
+			name = Release;
+		};
+		1AAE689A1E961FD600D0DB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA05CB04F05A8E90C69EDF02 /* Pods-2Pass.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 2Pass/2Pass.entitlements;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				"FRAMEWORK_SEARCH_PATHS[sdk=*]" = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Base32-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift-watchOS\"",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos";
+				"FRAMEWORK_SEARCH_PATHS[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator";
+				IBSC_MODULE = _Pass_Extension;
+				INFOPLIST_FILE = 2Pass/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		1AAE689B1E961FD600D0DB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9BB6CAAAE1C39534033A34 /* Pods-2Pass.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 2Pass/2Pass.entitlements;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				"FRAMEWORK_SEARCH_PATHS[sdk=*]" = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Base32-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift-watchOS\"",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos";
+				"FRAMEWORK_SEARCH_PATHS[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator";
+				IBSC_MODULE = _Pass_Extension;
+				INFOPLIST_FILE = 2Pass/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		1AAE689C1E961FD600D0DB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7D5A4726CFD74F6B23EFA9 /* Pods-2Pass Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "2Pass Extension/2Pass Extension.entitlements";
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Base32-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift-watchOS\"",
+				);
+				INFOPLIST_FILE = "2Pass Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		1AAE689D1E961FD600D0DB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7D38CD0B4755B86FBCF338 /* Pods-2Pass Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "2Pass Extension/2Pass Extension.entitlements";
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Base32-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Realm-watchOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift-watchOS\"",
+				);
+				INFOPLIST_FILE = "2Pass Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -977,6 +1340,24 @@
 			buildConfigurations = (
 				1A3BFF491E827911008B0C81 /* Debug */,
 				1A3BFF4A1E827911008B0C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAE689E1E961FD600D0DB0D /* Build configuration list for PBXNativeTarget "2Pass Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAE689C1E961FD600D0DB0D /* Debug */,
+				1AAE689D1E961FD600D0DB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAE68A01E961FD600D0DB0D /* Build configuration list for PBXNativeTarget "2Pass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAE689A1E961FD600D0DB0D /* Debug */,
+				1AAE689B1E961FD600D0DB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
