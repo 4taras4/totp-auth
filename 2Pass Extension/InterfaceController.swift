@@ -17,20 +17,24 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        tableWatch.setNumberOfRows((dataList?.count)!, withRowType: "Cell")
-        for index in 0..<tableWatch.numberOfRows {
-            if let controller = tableWatch.rowController(at: index) as? TableCellData {
-                controller.data = dataList
-            }
-        }
         activateSession()
         reloadTableData()
+        for index in 0..<tableWatch.numberOfRows {
+            tableWatch.setNumberOfRows((dataList?.count)!, withRowType: "Cell")
+            if let controller = tableWatch.rowController(at: index) as? TableCellData {
+                let list = dataList?[index]
+                print("List of data", list?.token!)
+                controller.usernameLabel.setText(list?.name)
+                let token = TOTPApi.sharedInstance.refreshToken(name: list?.name, issuer:  list?.issuer, secretData: list?.token!)
+                controller.passcodeLabel.setText(token)
+            }
+        }
     }
     
     func reloadTableData() {
         let realm = try! Realm()
         dataList = realm.objects(User.self)
-        print(dataList)
+        print("Some data:",dataList)
     }
     
     override func willActivate() {
@@ -62,7 +66,7 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         var config = Realm.Configuration()
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
-        let realmURL = documentsDirectory.appendingPathComponent("data.realm")
+        let realmURL = documentsDirectory.appendingPathComponent("default.realm")
         if FileManager.default.fileExists(atPath: realmURL.path){
             try! FileManager.default.removeItem(at: realmURL)
         }
@@ -70,13 +74,6 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         config.fileURL = realmURL
         Realm.Configuration.defaultConfiguration = config
         let realm = try! Realm()
-        let newUser = User()
-        newUser.name = "test"
-        newUser.issuer = "tester"
-        newUser.token = "2HPL NXP6 67Q2 NN3R"
-        try! realm.write {
-            realm.add(newUser, update: true)
-        }
         // display the first of realm objects
         if let firstField = realm.objects(User.self).first{
             print(firstField)
