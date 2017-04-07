@@ -18,7 +18,7 @@ This application provides one time passwords to be used with the two factor auth
 - [x] Scan QR codes that include accounts
 - [x] Supports time-based as well as counter-based passwords
 - [x] Works offline
-- [ ] Supports Apple Watch
+- [x] Supports Apple Watch
 - [ ] Keychain app protection
 
 #### Available in AppStore

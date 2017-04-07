@@ -40,6 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate  {
         }
         timer.setEventHandler {
             self.readAndUpdateTable()
+            self.transferRealmFile()
         }
         timer.resume()
         activateSession()

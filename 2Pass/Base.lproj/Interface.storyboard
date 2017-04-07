@@ -17,18 +17,22 @@
                         <table alignment="left" id="C8i-46-Duw">
                             <items>
                                 <tableRow identifier="Cell" selectable="NO" id="ZXZ-Nz-KNp" customClass="TableCellData" customModule="_Pass_Extension">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="qv9-t1-vZg">
+                                    <group key="rootItem" width="1" height="60" alignment="left" animationDuration="1" layout="vertical" radius="5" id="qv9-t1-vZg">
                                         <items>
+                                            <label width="136" height="14" alignment="left" minimumScaleFactor="0.59999999999999998" id="vfg-rb-0jK">
+                                                <fontDescription key="font" type="system" pointSize="8"/>
+                                            </label>
                                             <label width="132" height="11" alignment="left" text="Account" minimumScaleFactor="0.59999999999999998" id="0Cm-cQ-RHM">
-                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                <fontDescription key="font" type="system" pointSize="13"/>
                                             </label>
                                             <label width="136" height="22" alignment="left" text="Label" textAlignment="center" id="xr7-G9-DC0">
-                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                <fontDescription key="font" type="system" pointSize="20"/>
                                             </label>
                                         </items>
                                         <edgeInsets key="margins" left="5" right="5" top="2" bottom="2"/>
                                     </group>
                                     <connections>
+                                        <outlet property="issuerLabel" destination="vfg-rb-0jK" id="YW2-e3-UcV"/>
                                         <outlet property="passcodeLabel" destination="xr7-G9-DC0" id="RKv-GJ-bYP"/>
                                         <outlet property="usernameLabel" destination="0Cm-cQ-RHM" id="CXk-PE-KHg"/>
                                     </connections>
@@ -57,7 +61,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="220" y="691"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">

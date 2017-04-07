@@ -11,34 +11,41 @@ import Foundation
 import RealmSwift
 import WatchConnectivity
 
-class InterfaceController: WKInterfaceController,WCSessionDelegate {
+class InterfaceController: WKInterfaceController {
     var dataList: Results<User>?
     @IBOutlet var tableWatch: WKInterfaceTable!
-    
+    weak var myTimer: Timer?
+    let timer : DispatchSourceTimer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         activateSession()
-        reloadTableData()
-        for index in 0..<tableWatch.numberOfRows {
-            tableWatch.setNumberOfRows((dataList?.count)!, withRowType: "Cell")
-            if let controller = tableWatch.rowController(at: index) as? TableCellData {
-                let list = dataList?[index]
-                print("List of data", list?.token!)
-                controller.usernameLabel.setText(list?.name)
-                let token = TOTPApi.sharedInstance.refreshToken(name: list?.name, issuer:  list?.issuer, secretData: list?.token!)
-                controller.passcodeLabel.setText(token)
-            }
+        timer.scheduleRepeating(deadline: .now(), interval: .seconds(2))
+        timer.setEventHandler {
+            self.reloadTableData()
+            self.activateSession()
         }
+        timer.resume()
     }
     
     func reloadTableData() {
         let realm = try! Realm()
         dataList = realm.objects(User.self)
-        print("Some data:",dataList)
+        let counter = dataList?.count ?? 0
+        tableWatch.setNumberOfRows(counter, withRowType: "Cell")
+        for index in 0..<tableWatch.numberOfRows {
+            if let controller = tableWatch.rowController(at: index) as? TableCellData {
+                let list = dataList?[index]
+                controller.issuerLabel.setText(list?.issuer)
+                controller.usernameLabel.setText(list?.name)
+                let token = TOTPApi.sharedInstance.refreshToken(name: list?.name, issuer:  list?.issuer, secretData: list?.token!)
+                controller.passcodeLabel.setText(token)
+            }
+        }
+
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
     
@@ -46,7 +53,15 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+}
+
+extension InterfaceController: WCSessionDelegate {
     func activateSession(){
+        Realm.Configuration.defaultConfiguration = Realm.Configuration(
+            schemaVersion: 1,
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 1) {}
+        })
         if WCSession.isSupported() {
             let session = WCSession.default()
             session.delegate = self
