@@ -1,7 +1,8 @@
 //
 //  AppDelegate.swift
 //  TOTP
-//
+//  2HPL NXP6 67Q2 NN3R
+
 //  Created by Taras Markevych on 3/22/17.
 //  Copyright © 2017 Taras Markevych. All rights reserved.
 //
@@ -22,9 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = Realm.Configuration(
             schemaVersion: 1,
             migrationBlock: { migration, oldSchemaVersion in
-                    if (oldSchemaVersion < 1) {
-                    }
+                    if (oldSchemaVersion < 1) {}
         })
+//        var config = Realm.Configuration()
+//        config.fileURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.totp.app")!.appendingPathComponent("default.realm")
+//        Realm.Configuration.defaultConfiguration = config
         return true
     }
 }

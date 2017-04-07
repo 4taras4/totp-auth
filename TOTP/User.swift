@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class User: Object {
+public class User: Object {
     dynamic var name: String?
     dynamic var issuer: String?
     dynamic var token: String?

@@ -9,7 +9,7 @@
 import UIKit
 import Base32
 
-class TOTPApi {
+public class TOTPApi {
     
     static let sharedInstance = TOTPApi()
    
@@ -40,4 +40,10 @@ class TOTPApi {
     }
 
     
+}
+
+extension String {
+    func appendingPathComponent(_ string: String) -> String {
+        return URL(fileURLWithPath: self).appendingPathComponent(string).path
+    }
 }

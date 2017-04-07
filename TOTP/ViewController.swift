@@ -10,6 +10,8 @@ import UIKit
 import Base32
 import CoreData
 import RealmSwift
+import WatchConnectivity
+
 class ViewController: UIViewController, UITableViewDelegate  {
     let defaults = UserDefaults.standard
 
@@ -38,8 +40,11 @@ class ViewController: UIViewController, UITableViewDelegate  {
         }
         timer.setEventHandler {
             self.readAndUpdateTable()
+            self.transferRealmFile()
         }
         timer.resume()
+        activateSession()
+        transferRealmFile()
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,6 +77,35 @@ class ViewController: UIViewController, UITableViewDelegate  {
         }
 
     }
+}
 
+extension ViewController:WCSessionDelegate {
+    //MARK: - Watch functrions 
+    func activateSession(){
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            session.delegate = self
+            session.activate()
+        }
+    }
+    
+    func transferRealmFile(){
+        if let path = Realm.Configuration().fileURL {
+            WCSession.default().transferFile(path, metadata: nil)
+        }
+    }
+
+    @available(iOS 9.3, *)
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("activationDidComplete")
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("sessionDidBecomeInactive")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("sessionDidDeactivate")
+    }
 }
 
