@@ -42,7 +42,14 @@ class InterfaceController: WKInterfaceController {
                 controller.passcodeLabel.setText(token)
             }
         }
-
+        
+        if counter == 0 {
+            tableWatch.setNumberOfRows(1, withRowType: "Cell")
+            if let emptyController = tableWatch.rowController(at: 0) as? TableCellData {
+                emptyController.usernameLabel.setText("Open iPhone app")
+                emptyController.passcodeLabel.setText("for sync")
+            }
+        }
     }
     
     override func willActivate() {
@@ -76,7 +83,6 @@ extension InterfaceController: WCSessionDelegate {
     
     // When the file was received
     func session(_ session: WCSession, didReceive file: WCSessionFile) {
-        
         //set the recieved file to default Realm file
         var config = Realm.Configuration()
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -88,10 +94,6 @@ extension InterfaceController: WCSessionDelegate {
         try! FileManager.default.copyItem(at: file.fileURL, to: realmURL)
         config.fileURL = realmURL
         Realm.Configuration.defaultConfiguration = config
-        let realm = try! Realm()
-        // display the first of realm objects
-        if let firstField = realm.objects(User.self).first{
-            print(firstField)
-        }
+        _ = try! Realm()
     }
 }

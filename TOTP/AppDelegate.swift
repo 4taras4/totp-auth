@@ -25,9 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             migrationBlock: { migration, oldSchemaVersion in
                     if (oldSchemaVersion < 1) {}
         })
-//        var config = Realm.Configuration()
-//        config.fileURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.totp.app")!.appendingPathComponent("default.realm")
-//        Realm.Configuration.defaultConfiguration = config
         return true
     }
 }
