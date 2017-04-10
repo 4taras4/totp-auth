@@ -30,21 +30,23 @@ class ViewController: UIViewController, UITableViewDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         readAndUpdateTable()
+        transferRealmFile()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.setEditing(false, animated: true)
+        
         if 30  > TOTPApi.sharedInstance.currentTime() {
             timer.scheduleRepeating(deadline: .now(), interval: .seconds(2))
         } else {
             timer.scheduleRepeating(deadline: .now(), interval: .seconds(30))
         }
+        
         timer.setEventHandler {
             self.readAndUpdateTable()
             self.transferRealmFile()
         }
+        
         timer.resume()
-        activateSession()
-        transferRealmFile()
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,7 +77,6 @@ class ViewController: UIViewController, UITableViewDelegate  {
             self.userList = realm.objects(User.self)
             self.tableView.reloadData()
         }
-
     }
 }
 
@@ -86,6 +87,7 @@ extension ViewController:WCSessionDelegate {
             let session = WCSession.default()
             session.delegate = self
             session.activate()
+            transferRealmFile()
         }
     }
     
@@ -108,4 +110,3 @@ extension ViewController:WCSessionDelegate {
         print("sessionDidDeactivate")
     }
 }
-
