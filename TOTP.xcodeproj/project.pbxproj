@@ -23,6 +23,7 @@
 		1A3BFF3E1E827911008B0C81 /* UITest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF3D1E827911008B0C81 /* UITest1.swift */; };
 		1A3BFF4E1E827B3F008B0C81 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */; };
 		1A5A03F91E851F7600E0D072 /* TOTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F81E851F7600E0D072 /* TOTPApi.swift */; };
+		1A6576741E9CC1320036A441 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6576731E9CC1320036A441 /* SettingsViewController.swift */; };
 		1A6CADCB1E85682D0080D665 /* injectXcodePath.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1A6CADBF1E85682D0080D665 /* injectXcodePath.sh */; };
 		1A6CADCC1E85682D0080D665 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADC61E85682D0080D665 /* README.md */; };
 		1A6CADCE1E856AE50080D665 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */; };
@@ -149,6 +150,7 @@
 		1A3BFF3F1E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		1A5A03F81E851F7600E0D072 /* TOTPApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOTPApi.swift; sourceTree = "<group>"; };
+		1A6576731E9CC1320036A441 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1A6CADBC1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADBE1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADBF1E85682D0080D665 /* injectXcodePath.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = injectXcodePath.sh; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				1A3BFF1F1E827910008B0C81 /* ViewController.swift */,
 				1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */,
 				1A5A03F81E851F7600E0D072 /* TOTPApi.swift */,
+				1A6576731E9CC1320036A441 /* SettingsViewController.swift */,
 				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
 			);
 			name = Presenter;
@@ -878,6 +881,7 @@
 				F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */,
 				1A1CEAEB1E8564100008F075 /* Token+URL.swift in Sources */,
 				1A3BFF201E827910008B0C81 /* ViewController.swift in Sources */,
+				1A6576741E9CC1320036A441 /* SettingsViewController.swift in Sources */,
 				1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */,
 				1A1CEAE91E8564100008F075 /* Keychain.swift in Sources */,
 				1A6CADCC1E85682D0080D665 /* README.md in Sources */,
