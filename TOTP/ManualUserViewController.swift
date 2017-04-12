@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Crashlytics
 class ManualUserViewController: UIViewController {
     var name:String?
     var issuer:String?
@@ -30,6 +30,7 @@ class ManualUserViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "Main")
         self.present(controller, animated: false, completion: nil)
+        Answers.logContentView(withName: "Save custom token", contentType: "Button", contentId: "customToken", customAttributes: ["Favorites Count":30, "Screen Orientation":"Portrait"])
     }
  
     
