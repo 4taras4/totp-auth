@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 import CoreData
+import Crashlytics
 
 class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
@@ -98,8 +99,9 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                     messageLabel.backgroundColor = UIColor.gray
                     messageLabel.textColor = UIColor.green
                     messageLabel.text = "Autorized"
-                    print("Password: \(token.currentPassword)")
+                    print("ScanedInfo:\(token), source: \(metadataObj.stringValue)")
                     dismiss(animated: true, completion: nil)
+                    Answers.logContentView(withName: "UseQR", contentType: "CAmera", contentId: "QRScaner", customAttributes: ["Favorites Count":30, "Screen Orientation":"Portrait"])
                 } else {
                     messageLabel.text = "Invalid token"
                     print("Invalid token URL")
@@ -107,5 +109,4 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             }
         }
     }
-    
 }

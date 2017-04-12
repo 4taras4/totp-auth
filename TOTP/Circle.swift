@@ -14,13 +14,15 @@ class Circle: UIView {
       override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
-        let circlePath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0), radius: (frame.size.width - 10)/2, startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0), clockwise: true)
-        
+        let circlePath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0),
+                                      radius: (frame.size.width - 10)/2,
+                                      startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0),
+                                      clockwise: true)
         circleLayer = CAShapeLayer()
         circleLayer.path = circlePath.cgPath
         circleLayer.fillColor = UIColor.clear.cgColor
-        circleLayer.strokeColor = UIColor.red.cgColor
-        circleLayer.lineWidth = 3.0;
+        circleLayer.strokeColor = UIColor.orange.cgColor
+        circleLayer.lineWidth = 3.0
         circleLayer.strokeEnd = 0.0
         layer.addSublayer(circleLayer)
     }

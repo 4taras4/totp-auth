@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A077F1F1E95366D00BC90EB /* TOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A077F1E1E95366D00BC90EB /* TOTPTests.swift */; };
+		1A089C9D1E9E0F6A009AB64B /* SecurityAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A089C9C1E9E0F6A009AB64B /* SecurityAuth.swift */; };
+		1A089C9F1E9E0FBA009AB64B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */; };
+		1A089CA11E9E13BB009AB64B /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A089CA01E9E13BB009AB64B /* TouchIDViewController.swift */; };
+		1A089CA51E9E286D009AB64B /* RouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A089CA41E9E286D009AB64B /* RouterViewController.swift */; };
 		1A1CEAC91E8549D50008F075 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
 		1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
 		1A1CEAE71E8564100008F075 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEADF1E8564100008F075 /* Crypto.swift */; };
@@ -17,7 +21,7 @@
 		1A1CEAEB1E8564100008F075 /* Token+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE31E8564100008F075 /* Token+URL.swift */; };
 		1A1CEAEC1E8564100008F075 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE41E8564100008F075 /* Token.swift */; };
 		1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */; };
-		1A3BFF201E827910008B0C81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1F1E827910008B0C81 /* ViewController.swift */; };
+		1A3BFF201E827910008B0C81 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1F1E827910008B0C81 /* MainViewController.swift */; };
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
 		1A3BFF3E1E827911008B0C81 /* UITest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF3D1E827911008B0C81 /* UITest1.swift */; };
@@ -129,6 +133,10 @@
 /* Begin PBXFileReference section */
 		0E65ED0F6F3A2A7130FA9BDC /* Pods_2Pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2Pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A077F1E1E95366D00BC90EB /* TOTPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOTPTests.swift; sourceTree = "<group>"; };
+		1A089C9C1E9E0F6A009AB64B /* SecurityAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityAuth.swift; sourceTree = "<group>"; };
+		1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		1A089CA01E9E13BB009AB64B /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
+		1A089CA41E9E286D009AB64B /* RouterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterViewController.swift; sourceTree = "<group>"; };
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A1CEACA1E85516F0008F075 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		1A1CEADF1E8564100008F075 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
@@ -139,7 +147,7 @@
 		1A1CEAE41E8564100008F075 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		1A3BFF1A1E827910008B0C81 /* TOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A3BFF1F1E827910008B0C81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A3BFF1F1E827910008B0C81 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1A3BFF221E827910008B0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A3BFF271E827910008B0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3BFF291E827910008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -211,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A089C9F1E9E0FBA009AB64B /* LocalAuthentication.framework in Frameworks */,
 				5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +333,7 @@
 		1A3BFF511E828B24008B0C81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */,
 				1AAE68A51E9627CE00D0DB0D /* Pods_TOTP_2Pass.framework */,
 				95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */,
 				C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */,
@@ -340,10 +350,9 @@
 		1A5A03F51E85156200E0D072 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1A3BFF1F1E827910008B0C81 /* ViewController.swift */,
 				1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */,
 				1A5A03F81E851F7600E0D072 /* TOTPApi.swift */,
-				1A6576731E9CC1320036A441 /* SettingsViewController.swift */,
+				1A089C9C1E9E0F6A009AB64B /* SecurityAuth.swift */,
 				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
 			);
 			name = Presenter;
@@ -424,6 +433,10 @@
 		1A8236E51E83F51900D1A4D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A3BFF1F1E827910008B0C81 /* MainViewController.swift */,
+				1A089CA01E9E13BB009AB64B /* TouchIDViewController.swift */,
+				1A6576731E9CC1320036A441 /* SettingsViewController.swift */,
+				1A089CA41E9E286D009AB64B /* RouterViewController.swift */,
 				F39E8FBA1E85CD75000A8C49 /* Circle.swift */,
 				F39E8FBC1E85DAF3000A8C49 /* HUD.swift */,
 				1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */,
@@ -879,10 +892,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */,
+				1A089C9D1E9E0F6A009AB64B /* SecurityAuth.swift in Sources */,
 				1A1CEAEB1E8564100008F075 /* Token+URL.swift in Sources */,
-				1A3BFF201E827910008B0C81 /* ViewController.swift in Sources */,
+				1A3BFF201E827910008B0C81 /* MainViewController.swift in Sources */,
 				1A6576741E9CC1320036A441 /* SettingsViewController.swift in Sources */,
 				1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */,
+				1A089CA51E9E286D009AB64B /* RouterViewController.swift in Sources */,
 				1A1CEAE91E8564100008F075 /* Keychain.swift in Sources */,
 				1A6CADCC1E85682D0080D665 /* README.md in Sources */,
 				1A1CEAEC1E8564100008F075 /* Token.swift in Sources */,
@@ -894,6 +909,7 @@
 				1ABB973C1E8907F200D6BBC3 /* FirstLoginViewController.swift in Sources */,
 				1A1CEAE71E8564100008F075 /* Crypto.swift in Sources */,
 				1A1CEAE81E8564100008F075 /* Generator.swift in Sources */,
+				1A089CA11E9E13BB009AB64B /* TouchIDViewController.swift in Sources */,
 				1A8236FE1E840CF500D1A4D7 /* TableListGenerator.swift in Sources */,
 				F39E8FBD1E85DAF3000A8C49 /* HUD.swift in Sources */,
 				1A6CADCE1E856AE50080D665 /* UserTableViewCell.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iks-GB-qoQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gbm-Co-UTn">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvh-5D-vLp" id="wnz-0w-D8W">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-aX-uhg">
@@ -112,7 +112,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Accounts" id="z4z-y5-D98">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="OZf-XA-O3Y">
+                        <barButtonItem key="leftBarButtonItem" image="settings" id="OZf-XA-O3Y">
                             <connections>
                                 <segue destination="Dcd-ZU-ffD" kind="show" id="oEN-y0-3P8"/>
                             </connections>
@@ -133,6 +133,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="553" y="790"/>
+        </scene>
+        <!--TouchID View Controller-->
+        <scene sceneID="25Z-Sb-hPi">
+            <objects>
+                <viewController storyboardIdentifier="Security" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mvz-Pl-gvk" customClass="TouchIDViewController" customModule="TOTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hNl-bF-fHu"/>
+                        <viewControllerLayoutGuide type="bottom" id="coz-48-UN4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fat-tH-tA1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TouchID_on" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-34-Tqv">
+                                <rect key="frame" x="114" y="51" width="93" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="IXG-6p-YrH"/>
+                                    <constraint firstAttribute="height" constant="99" id="qgy-Jx-qlX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please use your fingerprint for login into application" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4W-gP-sCs">
+                                <rect key="frame" x="48" y="463" width="225" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="bob-MX-0LC"/>
+                                    <constraint firstAttribute="width" constant="225" id="qjb-LM-pjU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qeW-34-Tqv" firstAttribute="centerX" secondItem="y4W-gP-sCs" secondAttribute="centerX" id="Hte-Vr-qTw"/>
+                            <constraint firstItem="qeW-34-Tqv" firstAttribute="top" secondItem="hNl-bF-fHu" secondAttribute="bottom" constant="31" id="R7G-sA-59C"/>
+                            <constraint firstItem="qeW-34-Tqv" firstAttribute="centerX" secondItem="Fat-tH-tA1" secondAttribute="centerX" id="UCC-w6-ECF"/>
+                            <constraint firstAttribute="bottom" secondItem="y4W-gP-sCs" secondAttribute="bottom" constant="20" symbolic="YES" id="pG2-Dp-jye"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="image" destination="qeW-34-Tqv" id="B4U-at-nBf"/>
+                        <outlet property="message" destination="y4W-gP-sCs" id="E57-i9-dPB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNh-IJ-IK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="104.5774647887324"/>
         </scene>
         <!--First Login View Controller-->
         <scene sceneID="DqE-sW-ymB">
@@ -219,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zO-wz-dge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-180" y="109"/>
+            <point key="canvasLocation" x="551" y="105"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Yut-lL-fXg">
@@ -244,9 +292,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enable application password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaA-BS-GLJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Touch ID application password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaA-BS-GLJ">
                                                     <rect key="frame" x="16" y="11" width="232" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -266,31 +314,6 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Password" id="9jO-qf-eiY">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PasswordCell" id="bwI-ja-cxr">
-                                        <rect key="frame" x="0.0" y="100" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bwI-ja-cxr" id="Dj1-JR-bpO">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Setup password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H7-Wt-Gh0">
-                                                    <rect key="frame" x="18" y="11" width="215" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="9H7-Wt-Gh0" secondAttribute="bottom" constant="3" id="099-BR-7jU"/>
-                                                <constraint firstItem="9H7-Wt-Gh0" firstAttribute="leading" secondItem="Dj1-JR-bpO" secondAttribute="leadingMargin" constant="10" id="ydH-mB-LZ9"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="Dcd-ZU-ffD" id="Aex-db-GIE"/>
@@ -304,7 +327,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6n-D5-6E1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="113"/>
+            <point key="canvasLocation" x="1333" y="789"/>
+        </scene>
+        <!--Router View Controller-->
+        <scene sceneID="76h-Hl-Ddo">
+            <objects>
+                <viewController id="gbm-Co-UTn" customClass="RouterViewController" customModule="TOTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IcY-gT-sW6"/>
+                        <viewControllerLayoutGuide type="bottom" id="O32-Ce-mZT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XH8-Er-soB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VH-yt-X0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-861" y="789"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BM3-Ak-Ej3">
@@ -414,7 +456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gtw-yv-RDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1986" y="788"/>
+            <point key="canvasLocation" x="1268" y="1533"/>
         </scene>
         <!--Add token-->
         <scene sceneID="lX6-L1-P0l">
@@ -533,7 +575,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi0-9t-ir6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="tsT-27-Ihb"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="788"/>
+            <point key="canvasLocation" x="2004" y="1533"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TMs-LF-QB5">
@@ -558,11 +600,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igo-vK-2Ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="789"/>
+            <point key="canvasLocation" x="551" y="1533"/>
         </scene>
     </scenes>
     <resources>
         <image name="Group" width="1193" height="1444"/>
         <image name="Pencil-48" width="24" height="24"/>
+        <image name="TouchID_on" width="155" height="155"/>
+        <image name="settings" width="24" height="24"/>
     </resources>
 </document>
