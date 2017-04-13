@@ -33,7 +33,7 @@ class SettingsViewController: UITableViewController {
     }
     
     func getButtonState() {
-        let state = defaults.object(forKey: "touchID") as! String
+        let state = defaults.object(forKey: "touchID") as! String? ?? "0"
         if state == "1" {
             passwordSwitcher.setOn(true, animated: true)
         } else {

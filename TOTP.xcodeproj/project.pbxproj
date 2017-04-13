@@ -28,8 +28,6 @@
 		1A3BFF4E1E827B3F008B0C81 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */; };
 		1A5A03F91E851F7600E0D072 /* TOTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F81E851F7600E0D072 /* TOTPApi.swift */; };
 		1A6576741E9CC1320036A441 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6576731E9CC1320036A441 /* SettingsViewController.swift */; };
-		1A6CADCB1E85682D0080D665 /* injectXcodePath.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1A6CADBF1E85682D0080D665 /* injectXcodePath.sh */; };
-		1A6CADCC1E85682D0080D665 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADC61E85682D0080D665 /* README.md */; };
 		1A6CADCE1E856AE50080D665 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */; };
 		1A8236FE1E840CF500D1A4D7 /* TableListGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */; };
 		1AAE687F1E961FD600D0DB0D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE687D1E961FD600D0DB0D /* Interface.storyboard */; };
@@ -161,11 +159,9 @@
 		1A6576731E9CC1320036A441 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1A6CADBC1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADBE1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		1A6CADBF1E85682D0080D665 /* injectXcodePath.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = injectXcodePath.sh; sourceTree = "<group>"; };
 		1A6CADC11E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADC31E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADC51E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		1A6CADC61E85682D0080D665 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A6CADC81E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADCA1E85682D0080D665 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -363,11 +359,9 @@
 			children = (
 				1A6CADBB1E85682D0080D665 /* appletvos */,
 				1A6CADBD1E85682D0080D665 /* appletvsimulator */,
-				1A6CADBF1E85682D0080D665 /* injectXcodePath.sh */,
 				1A6CADC01E85682D0080D665 /* iphoneos */,
 				1A6CADC21E85682D0080D665 /* iphonesimulator */,
 				1A6CADC41E85682D0080D665 /* macosx */,
-				1A6CADC61E85682D0080D665 /* README.md */,
 				1A6CADC71E85682D0080D665 /* watchos */,
 				1A6CADC91E85682D0080D665 /* watchsimulator */,
 			);
@@ -710,7 +704,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6CADCB1E85682D0080D665 /* injectXcodePath.sh in Resources */,
 				1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */,
 				F3158B521E8878520006243A /* Assets.xcassets in Resources */,
 				1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */,
@@ -899,7 +892,6 @@
 				1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */,
 				1A089CA51E9E286D009AB64B /* RouterViewController.swift in Sources */,
 				1A1CEAE91E8564100008F075 /* Keychain.swift in Sources */,
-				1A6CADCC1E85682D0080D665 /* README.md in Sources */,
 				1A1CEAEC1E8564100008F075 /* Token.swift in Sources */,
 				1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */,
 				1A1CEAC91E8549D50008F075 /* User.swift in Sources */,
@@ -1114,10 +1106,7 @@
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1141,10 +1130,7 @@
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
