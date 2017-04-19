@@ -84,7 +84,7 @@ class SwiftNotice: NSObject {
             // change center
             window.center = getRealCenter()
             // change direction
-            window.transform = CGAffineTransform(rotationAngle: CGFloat(degree * M_PI / 180))
+            window.transform = CGAffineTransform(rotationAngle: CGFloat(degree * Double.pi / 180))
         }
         
         window.windowLevel = UIWindowLevelAlert
@@ -150,7 +150,7 @@ class SwiftNoticeSDK {
         
         // draw circle
         checkmarkShapePath.move(to: CGPoint(x: 36, y: 18))
-        checkmarkShapePath.addArc(withCenter: CGPoint(x: 18, y: 18), radius: 17.5, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: true)
+        checkmarkShapePath.addArc(withCenter: CGPoint(x: 18, y: 18), radius: 17.5, startAngle: 0, endAngle: CGFloat(Double.pi*2), clockwise: true)
         checkmarkShapePath.close()
         
         switch type {
@@ -166,7 +166,7 @@ class SwiftNoticeSDK {
             
             let checkmarkShapePath = UIBezierPath()
             checkmarkShapePath.move(to: CGPoint(x: 18, y: 27))
-            checkmarkShapePath.addArc(withCenter: CGPoint(x: 18, y: 27), radius: 1, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: true)
+            checkmarkShapePath.addArc(withCenter: CGPoint(x: 18, y: 27), radius: 1, startAngle: 0, endAngle: CGFloat(Double.pi*2), clockwise: true)
             checkmarkShapePath.close()
             
             UIColor.white.setFill()

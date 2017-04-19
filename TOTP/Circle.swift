@@ -16,7 +16,7 @@ class Circle: UIView {
         self.backgroundColor = UIColor.clear
         let circlePath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0),
                                       radius: (frame.size.width - 10)/2,
-                                      startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0),
+                                      startAngle: 0.0, endAngle: CGFloat(Double.pi * 2.0),
                                       clockwise: true)
         circleLayer = CAShapeLayer()
         circleLayer.path = circlePath.cgPath

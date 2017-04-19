@@ -12,6 +12,7 @@ target 'TOTP' do
   shared_pods
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Zip'
 end
 
 target '2Pass'  do

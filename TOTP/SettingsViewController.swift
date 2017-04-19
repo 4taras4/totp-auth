@@ -11,6 +11,13 @@ import Crashlytics
 class SettingsViewController: UITableViewController {
    
   
+    @IBAction func zipAction(_ sender: Any) {
+        Backup.createBackup()
+    }
+    @IBAction func unzipAction(_ sender: Any) {
+        Backup.unzipBackup()
+    }
+    
     @IBOutlet weak var passwordSwitcher: UISwitch!
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
