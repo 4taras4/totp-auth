@@ -20,8 +20,8 @@ class Backup: NSObject {
             let zipFilePath = documentsDirectory.appendingPathComponent("data.zip")
             try Zip.zipFiles(paths: [myurl], zipFilePath: zipFilePath, password: "password", progress: { (progress) -> () in
                 print(progress)
+                CloudDataManager.sharedInstance.copyFileToCloud()
             })
-            CloudDataManager.sharedInstance.copyFileToCloud()
         } catch {
             print("Something went wrong")
         }
@@ -34,9 +34,8 @@ class Backup: NSObject {
             let myurl = docsurl.appendingPathComponent("data.zip")
             let documentsDirectory = FileManager.default.urls(for:.documentDirectory, in: .userDomainMask)[0]
             try Zip.unzipFile(myurl, destination: documentsDirectory, overwrite: true, password: "password", progress: { (progress) -> () in
-                print(progress)
+                CloudDataManager.sharedInstance.copyFileToLocal()
             }) // Unzip
-            CloudDataManager.sharedInstance.copyFileToLocal()
         } catch {
             print("Something went wrong")
         }

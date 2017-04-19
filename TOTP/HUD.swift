@@ -169,13 +169,9 @@ class SwiftNoticeSDK {
             checkmarkShapePath.addArc(withCenter: CGPoint(x: 18, y: 27), radius: 1, startAngle: 0, endAngle: CGFloat(Double.pi*2), clockwise: true)
             checkmarkShapePath.close()
             
-            UIColor.white.setFill()
-            checkmarkShapePath.fill()
         }
-        
-        UIColor.white.setStroke()
-        checkmarkShapePath.stroke()
     }
+    
     class var imageOfCheckmark: UIImage {
         if (Cache.imageOfCheckmark != nil) {
             return Cache.imageOfCheckmark!

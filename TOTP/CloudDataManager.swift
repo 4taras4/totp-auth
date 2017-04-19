@@ -70,10 +70,9 @@ class CloudDataManager {
                 
                 do {
                     try fileManager.copyItem(at: DocumentsDirectory.localDocumentsURL.appendingPathComponent(file), to: DocumentsDirectory.iCloudDocumentsURL!.appendingPathComponent(file))
-                    
-                    print("Copied to iCloud")
                 } catch let error as NSError {
                     print("Failed to move file to Cloud : \(error)")
+                    Alert.showAlert(title: "Error", message: "Please autorize to iCloud for using data backup")
                 }
             }
         }
@@ -92,10 +91,10 @@ class CloudDataManager {
                 
                 do {
                     try fileManager.copyItem(at: DocumentsDirectory.iCloudDocumentsURL!.appendingPathComponent(file), to: DocumentsDirectory.localDocumentsURL.appendingPathComponent(file))
-                    
                     print("Moved to local dir")
                 } catch let error as NSError {
                     print("Failed to move file to local dir : \(error)")
+                    Alert.showAlert(title: "Error", message: "Please autorize to iCloud for using data backup")
                 }
             }
         }
