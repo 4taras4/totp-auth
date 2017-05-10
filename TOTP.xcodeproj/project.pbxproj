@@ -49,6 +49,9 @@
 		1AAE68B01E96530B00D0DB0D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE41E8564100008F075 /* Token.swift */; };
 		1AAE68B11E96587300D0DB0D /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
 		1ABB973C1E8907F200D6BBC3 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */; };
+		1AD35C901EA7818000A8CE55 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD35C8F1EA7818000A8CE55 /* Backup.swift */; };
+		1AD35C921EA78A3100A8CE55 /* CloudDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD35C911EA78A3100A8CE55 /* CloudDataManager.swift */; };
+		1AD35C941EA78E1800A8CE55 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD35C931EA78E1800A8CE55 /* Alert.swift */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
 		9CA6EA52883A81D398CB073C /* Pods_2Pass_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74ACF5EC7746E3D91D53A2DA /* Pods_2Pass_Extension.framework */; };
 		B67399F84A5E6C34BD21B00A /* Pods_2Pass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E65ED0F6F3A2A7130FA9BDC /* Pods_2Pass.framework */; };
@@ -137,12 +140,12 @@
 		1A089CA41E9E286D009AB64B /* RouterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterViewController.swift; sourceTree = "<group>"; };
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A1CEACA1E85516F0008F075 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
-		1A1CEADF1E8564100008F075 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		1A1CEAE01E8564100008F075 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
-		1A1CEAE11E8564100008F075 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
-		1A1CEAE21E8564100008F075 /* PersistentToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentToken.swift; sourceTree = "<group>"; };
-		1A1CEAE31E8564100008F075 /* Token+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Token+URL.swift"; sourceTree = "<group>"; };
-		1A1CEAE41E8564100008F075 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		1A1CEADF1E8564100008F075 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crypto.swift; path = TOTP/Crypto.swift; sourceTree = "<group>"; };
+		1A1CEAE01E8564100008F075 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Generator.swift; path = TOTP/Generator.swift; sourceTree = "<group>"; };
+		1A1CEAE11E8564100008F075 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = TOTP/Keychain.swift; sourceTree = "<group>"; };
+		1A1CEAE21E8564100008F075 /* PersistentToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistentToken.swift; path = TOTP/PersistentToken.swift; sourceTree = "<group>"; };
+		1A1CEAE31E8564100008F075 /* Token+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Token+URL.swift"; path = "TOTP/Token+URL.swift"; sourceTree = "<group>"; };
+		1A1CEAE41E8564100008F075 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Token.swift; path = TOTP/Token.swift; sourceTree = "<group>"; };
 		1A3BFF1A1E827910008B0C81 /* TOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A3BFF1F1E827910008B0C81 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +187,9 @@
 		1AAE68A71E9628DD00D0DB0D /* TableCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellData.swift; sourceTree = "<group>"; };
 		1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
 		1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1AD35C8F1EA7818000A8CE55 /* Backup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		1AD35C911EA78A3100A8CE55 /* CloudDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDataManager.swift; sourceTree = "<group>"; };
+		1AD35C931EA78E1800A8CE55 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		1DE0D8873922AA8DD74C12F3 /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP_2Pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4083C7BA3B83740411E2E145 /* Pods_TOTP_2Pass_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP_2Pass_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP/Pods-TOTP.release.xcconfig"; sourceTree = "<group>"; };
@@ -253,19 +259,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A1CEADE1E8564100008F075 /* TOTP */ = {
-			isa = PBXGroup;
-			children = (
-				1A1CEADF1E8564100008F075 /* Crypto.swift */,
-				1A1CEAE01E8564100008F075 /* Generator.swift */,
-				1A1CEAE11E8564100008F075 /* Keychain.swift */,
-				1A1CEAE21E8564100008F075 /* PersistentToken.swift */,
-				1A1CEAE31E8564100008F075 /* Token+URL.swift */,
-				1A1CEAE41E8564100008F075 /* Token.swift */,
-			);
-			path = TOTP;
-			sourceTree = "<group>";
-		};
 		1A3BFF111E827910008B0C81 = {
 			isa = PBXGroup;
 			children = (
@@ -297,9 +290,10 @@
 			children = (
 				1AAE68A21E96235F00D0DB0D /* TOTP.entitlements */,
 				1A8236E71E83F57B00D1A4D7 /* Suppotrs */,
-				1A5A03F51E85156200E0D072 /* Presenter */,
-				1A8236E61E83F52700D1A4D7 /* Model */,
 				1A8236E51E83F51900D1A4D7 /* View */,
+				1A5A03F51E85156200E0D072 /* Presenter */,
+				1A8236E61E83F52700D1A4D7 /* Entity */,
+				1AD35C8E1EA77FC200A8CE55 /* Router */,
 			);
 			path = TOTP;
 			sourceTree = "<group>";
@@ -346,10 +340,17 @@
 		1A5A03F51E85156200E0D072 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1A1CEADF1E8564100008F075 /* Crypto.swift */,
+				1A1CEAE01E8564100008F075 /* Generator.swift */,
+				1A1CEAE11E8564100008F075 /* Keychain.swift */,
+				1A1CEAE21E8564100008F075 /* PersistentToken.swift */,
+				1A1CEAE31E8564100008F075 /* Token+URL.swift */,
+				1A1CEAE41E8564100008F075 /* Token.swift */,
 				1A8236FD1E840CF500D1A4D7 /* TableListGenerator.swift */,
 				1A5A03F81E851F7600E0D072 /* TOTPApi.swift */,
 				1A089C9C1E9E0F6A009AB64B /* SecurityAuth.swift */,
-				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
+				1AD35C911EA78A3100A8CE55 /* CloudDataManager.swift */,
+				1AD35C8F1EA7818000A8CE55 /* Backup.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -427,33 +428,28 @@
 		1A8236E51E83F51900D1A4D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A3BFF1F1E827910008B0C81 /* MainViewController.swift */,
-				1A089CA01E9E13BB009AB64B /* TouchIDViewController.swift */,
-				1A6576731E9CC1320036A441 /* SettingsViewController.swift */,
-				1A089CA41E9E286D009AB64B /* RouterViewController.swift */,
 				F39E8FBA1E85CD75000A8C49 /* Circle.swift */,
 				F39E8FBC1E85DAF3000A8C49 /* HUD.swift */,
 				1A3BFF4D1E827B3F008B0C81 /* CameraView.swift */,
-				F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */,
-				1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */,
+				1AD35C931EA78E1800A8CE55 /* Alert.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		1A8236E61E83F52700D1A4D7 /* Model */ = {
+		1A8236E61E83F52700D1A4D7 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				1A1CEAC81E8549D50008F075 /* User.swift */,
+				1A6CADCD1E856AE50080D665 /* UserTableViewCell.swift */,
 				1A1CEACA1E85516F0008F075 /* RealmData.swift */,
 			);
-			name = Model;
+			name = Entity;
 			sourceTree = "<group>";
 		};
 		1A8236E71E83F57B00D1A4D7 /* Suppotrs */ = {
 			isa = PBXGroup;
 			children = (
 				1A6CADBA1E85682D0080D665 /* CommonCrypto */,
-				1A1CEADE1E8564100008F075 /* TOTP */,
 				1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */,
 				F3158B511E8878520006243A /* Assets.xcassets */,
 				1A3BFF211E827910008B0C81 /* Main.storyboard */,
@@ -495,6 +491,19 @@
 				1AAE688D1E961FD600D0DB0D /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AD35C8E1EA77FC200A8CE55 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1A089CA01E9E13BB009AB64B /* TouchIDViewController.swift */,
+				1A6576731E9CC1320036A441 /* SettingsViewController.swift */,
+				F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */,
+				1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */,
+				1A089CA41E9E286D009AB64B /* RouterViewController.swift */,
+				1A3BFF1F1E827910008B0C81 /* MainViewController.swift */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 		2C6DC00DFF2C9D00B81D05CA /* Pods */ = {
@@ -633,6 +642,12 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};
@@ -799,7 +814,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5BBE5260FFA04DA4C8635536 /* [CP] Copy Pods Resources */ = {
@@ -829,7 +844,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B4F4349CFFE36813DD0C44B2 /* [CP] Copy Pods Resources */ = {
@@ -874,7 +889,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -886,8 +901,11 @@
 			files = (
 				F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */,
 				1A089C9D1E9E0F6A009AB64B /* SecurityAuth.swift in Sources */,
+				1AD35C921EA78A3100A8CE55 /* CloudDataManager.swift in Sources */,
+				1AD35C941EA78E1800A8CE55 /* Alert.swift in Sources */,
 				1A1CEAEB1E8564100008F075 /* Token+URL.swift in Sources */,
 				1A3BFF201E827910008B0C81 /* MainViewController.swift in Sources */,
+				1AD35C901EA7818000A8CE55 /* Backup.swift in Sources */,
 				1A6576741E9CC1320036A441 /* SettingsViewController.swift in Sources */,
 				1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */,
 				1A089CA51E9E286D009AB64B /* RouterViewController.swift in Sources */,

@@ -95,7 +95,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             
             if metadataObj.stringValue != nil {
                 let url = NSURL(string:metadataObj.stringValue)
-                if let token = Token(url: url as! URL) {
+                if let token = Token(url: url! as URL) {
                     messageLabel.backgroundColor = UIColor.gray
                     messageLabel.textColor = UIColor.green
                     messageLabel.text = "Autorized"

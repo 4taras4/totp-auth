@@ -11,13 +11,30 @@ import Crashlytics
 class SettingsViewController: UITableViewController {
    
   
+    @IBAction func zipAction(_ sender: Any) {
+//        Backup.createBackup()
+        CloudDataManager.sharedInstance.copyFileToCloud()
+        noticeSuccess("Created", autoClear: true, autoClearTime: 1)
+    }
+    @IBAction func unzipAction(_ sender: Any) {
+//        Backup.unzipBackup()
+        CloudDataManager.sharedInstance.copyFileToLocal()
+
+        self.viewDidLoad()
+    }
+    
+    @IBOutlet weak var restoreBackupButton: UIButton!
+    @IBOutlet weak var crateBackupButton: UIButton!
     @IBOutlet weak var passwordSwitcher: UISwitch!
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         getButtonState()
         passwordSwitcher.addTarget(self, action: #selector(switchAction(_:)), for: UIControlEvents.valueChanged)
-
+        restoreBackupButton.layer.cornerRadius = 5
+        restoreBackupButton.clipsToBounds = true
+        crateBackupButton.layer.cornerRadius = 5
+        crateBackupButton.clipsToBounds = true
     }
     
     func switchAction(_ passwordSwitcher: UISwitch) {

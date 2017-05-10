@@ -17,5 +17,12 @@ public class User: Object {
     override public static func primaryKey() -> String? {
         return "token"
     }
+}
 
+
+public class Test11 {
+
+    class func 🚓() {
+        print("print")
+    }
 }

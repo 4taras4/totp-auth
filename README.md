@@ -19,7 +19,9 @@ This application provides one time passwords to be used with the two factor auth
 - [x] Supports time-based as well as counter-based passwords
 - [x] Works offline
 - [x] Supports Apple Watch
-- [ ] Keychain app protection
+- [x] Keychain app protection
+- [x] iCloudBackup accounts
+
 
 #### Available in AppStore
 [![1](http://i.imgur.com/xC289rv.png?1)][itunes-link]
