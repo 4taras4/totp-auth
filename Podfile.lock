@@ -8,14 +8,12 @@ PODS:
   - Realm/Headers (2.6.1)
   - RealmSwift (2.6.1):
     - Realm (= 2.6.1)
-  - Zip (0.7.0)
 
 DEPENDENCIES:
   - Base32 (~> 1.1.2)
   - Crashlytics
   - Fabric
   - RealmSwift
-  - Zip
 
 SPEC CHECKSUMS:
   Base32: 163c298644d184e89ca4e00a996bad6bf5166390
@@ -23,8 +21,7 @@ SPEC CHECKSUMS:
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Realm: 9abfd4f87519376daa5ae3a4603155de408bf8b3
   RealmSwift: a54d3e8931cf7d3afa5a1fac9c8f88109d7f02b3
-  Zip: e34513299ac38c0686d5b24504da7ce343799ab9
 
-PODFILE CHECKSUM: deee6c8ddc14e5753c782b6ce67fbc150261d3b2
+PODFILE CHECKSUM: 32ff8d0c6ffcae350d57f39577fc99725b361b74
 
 COCOAPODS: 1.2.1

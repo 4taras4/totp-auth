@@ -21,7 +21,7 @@ class Circle: UIView {
         circleLayer = CAShapeLayer()
         circleLayer.path = circlePath.cgPath
         circleLayer.fillColor = UIColor.clear.cgColor
-        circleLayer.strokeColor = UIColor.orange.cgColor
+        circleLayer.strokeColor = UIColor(hex: "#557FFF").cgColor
         circleLayer.lineWidth = 3.0
         circleLayer.strokeEnd = 0.0
         layer.addSublayer(circleLayer)

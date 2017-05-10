@@ -11,10 +11,11 @@ import CloudKit
 
 class CloudDataManager {
     
-    static let sharedInstance = CloudDataManager() // Singleton
+    static let sharedInstance = CloudDataManager() 
     
     struct DocumentsDirectory {
         static let localDocumentsURL = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: .userDomainMask).last!
+        
         static let iCloudDocumentsURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)?.appendingPathComponent("Documents")
     }
     
@@ -47,14 +48,13 @@ class CloudDataManager {
         let fileManager = FileManager.default
         let enumerator = fileManager.enumerator(atPath: url!.path)
         while let file = enumerator?.nextObject() as? String {
-            
             do {
                 try fileManager.removeItem(at: url!.appendingPathComponent(file))
-                print("Files deleted")
+                print("Files deleted", file)
             } catch let error as NSError {
                 print("Failed deleting files : \(error)")
             }
-        }
+        }        
     }
     
     // Copy local files to iCloud
@@ -72,7 +72,6 @@ class CloudDataManager {
                     try fileManager.copyItem(at: DocumentsDirectory.localDocumentsURL.appendingPathComponent(file), to: DocumentsDirectory.iCloudDocumentsURL!.appendingPathComponent(file))
                 } catch let error as NSError {
                     print("Failed to move file to Cloud : \(error)")
-                    Alert.showAlert(title: "Error", message: "Please autorize to iCloud for using data backup")
                 }
             }
         }
@@ -86,17 +85,18 @@ class CloudDataManager {
         if isCloudEnabled() {
             deleteFilesInDirectory(url: DocumentsDirectory.localDocumentsURL)
             let fileManager = FileManager.default
+        
             let enumerator = fileManager.enumerator(atPath: DocumentsDirectory.iCloudDocumentsURL!.path)
             while let file = enumerator?.nextObject() as? String {
                 
                 do {
                     try fileManager.copyItem(at: DocumentsDirectory.iCloudDocumentsURL!.appendingPathComponent(file), to: DocumentsDirectory.localDocumentsURL.appendingPathComponent(file))
-                    print("Moved to local dir")
+                    print("Moved to local dir", file)
                 } catch let error as NSError {
                     print("Failed to move file to local dir : \(error)")
-                    Alert.showAlert(title: "Error", message: "Please autorize to iCloud for using data backup")
                 }
             }
+            Alert.showAlert(title: "Synchronized", message: "Data restored from backup. Please re-open application")
         }
     }
     

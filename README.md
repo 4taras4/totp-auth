@@ -20,7 +20,7 @@ This application provides one time passwords to be used with the two factor auth
 - [x] Works offline
 - [x] Supports Apple Watch
 - [x] Keychain app protection
-- [ ] iCloudBackup accounts
+- [x] iCloudBackup accounts
 
 
 #### Available in AppStore

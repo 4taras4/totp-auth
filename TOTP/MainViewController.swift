@@ -43,6 +43,8 @@ class ViewController: UIViewController, UITableViewDelegate  {
         }
         
         timer.resume()
+        Test11.🚓()
+
     }
     
     override func didReceiveMemoryWarning() {
