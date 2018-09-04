@@ -49,8 +49,19 @@ class TouchIDViewController: UIViewController {
         message.text = kMsgShowFinger
         loginProcess(policy: policy!)
     }
+
     
     private func loginProcess(policy: LAPolicy) {
+        if #available(iOS 11.0, *) {
+            var localizedReason = "Face ID authentication"
+            switch context.biometryType {
+            case .faceID: localizedReason = "Unlock using Face ID"
+            case .touchID: localizedReason = "Unlock using Touch ID"
+            case .none: print("No Biometric support")
+            }
+        } else {
+            // Fallback on earlier versions
+        }
         context.evaluatePolicy(policy, localizedReason: kMsgShowReason, reply: { (success, error) in
             DispatchQueue.main.async {
                 guard success else {

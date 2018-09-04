@@ -14,12 +14,10 @@ class SettingsViewController: UITableViewController {
     @IBAction func zipAction(_ sender: Any) {
 //        Backup.createBackup()
         CloudDataManager.sharedInstance.copyFileToCloud()
-        noticeSuccess("Created", autoClear: true, autoClearTime: 1)
     }
     @IBAction func unzipAction(_ sender: Any) {
 //        Backup.unzipBackup()
         CloudDataManager.sharedInstance.copyFileToLocal()
-
         self.viewDidLoad()
     }
     

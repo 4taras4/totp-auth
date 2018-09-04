@@ -8,8 +8,7 @@
 
 import UIKit
 import RealmSwift
-import CloudKit
-import IceCream
+
 
 public class User: Object {
     dynamic var name: String?
@@ -19,13 +18,4 @@ public class User: Object {
     override public static func primaryKey() -> String? {
         return "token"
     }
-}
-
-
-extension User: CKRecordConvertible {
-    public var isDeleted: Bool { return false }    
-}
-
-extension User: CKRecordRecoverable {
-    
 }

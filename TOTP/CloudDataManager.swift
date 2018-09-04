@@ -42,19 +42,16 @@ class CloudDataManager {
         }
     }
     
-    // Delete All files at URL
+    // Delete All files at UR
     
-    func deleteFilesInDirectory(url: URL?) {
+    func clearFolder() {
         let fileManager = FileManager.default
-        let enumerator = fileManager.enumerator(atPath: url!.path)
-        while let file = enumerator?.nextObject() as? String {
-            do {
-                try fileManager.removeItem(at: url!.appendingPathComponent(file))
-                print("Files deleted", file)
-            } catch let error as NSError {
-                print("Failed deleting files : \(error)")
-            }
-        }        
+        let myDocuments = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let diskCacheStorageBaseUrl = myDocuments
+        guard let filePaths = try? fileManager.contentsOfDirectory(at: diskCacheStorageBaseUrl, includingPropertiesForKeys: nil, options: []) else { return }
+        for filePath in filePaths {
+            try? fileManager.removeItem(at: filePath)
+        }
     }
     
     // Copy local files to iCloud
@@ -63,11 +60,9 @@ class CloudDataManager {
     
     func copyFileToCloud() {
         if isCloudEnabled() {
-            deleteFilesInDirectory(url: DocumentsDirectory.iCloudDocumentsURL!) // Clear all files in iCloud Doc Dir
             let fileManager = FileManager.default
             let enumerator = fileManager.enumerator(atPath: DocumentsDirectory.localDocumentsURL.path)
             while let file = enumerator?.nextObject() as? String {
-                
                 do {
                     try fileManager.copyItem(at: DocumentsDirectory.localDocumentsURL.appendingPathComponent(file), to: DocumentsDirectory.iCloudDocumentsURL!.appendingPathComponent(file))
                 } catch let error as NSError {
@@ -83,7 +78,7 @@ class CloudDataManager {
     
     func copyFileToLocal() {
         if isCloudEnabled() {
-            deleteFilesInDirectory(url: DocumentsDirectory.localDocumentsURL)
+            clearFolder()
             let fileManager = FileManager.default
         
             let enumerator = fileManager.enumerator(atPath: DocumentsDirectory.iCloudDocumentsURL!.path)

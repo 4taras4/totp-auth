@@ -1,10 +1,11 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '10.0'
 use_frameworks!
 
 def shared_pods
     pod 'RealmSwift'
     pod 'Base32', '~> 1.1.2'
+
 end
 
 target 'TOTP' do
@@ -12,7 +13,8 @@ target 'TOTP' do
   shared_pods
   pod 'Fabric'
   pod 'Crashlytics'
-#  pod 'Zip'
+  pod 'IceCream'
+
 end
 
 target '2Pass'  do

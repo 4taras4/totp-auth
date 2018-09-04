@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate  {
         tableView.dataSource = self
         tableView.setEditing(false, animated: true)
         
-        if 30  > TOTPApi.sharedInstance.currentTime() {
+        if 30 > TOTPApi.sharedInstance.currentTime() {
             timer.scheduleRepeating(deadline: .now(), interval: .seconds(2))
         } else {
             timer.scheduleRepeating(deadline: .now(), interval: .seconds(30))
@@ -43,8 +43,6 @@ class ViewController: UIViewController, UITableViewDelegate  {
         }
         
         timer.resume()
-        Test11.🚓()
-
     }
     
     override func didReceiveMemoryWarning() {

@@ -39,7 +39,6 @@
 		1AAE68951E961FD600D0DB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE68941E961FD600D0DB0D /* Assets.xcassets */; };
 		1AAE68991E961FD600D0DB0D /* 2Pass.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1AAE687B1E961FD600D0DB0D /* 2Pass.app */; };
 		1AAE68A81E9628DD00D0DB0D /* TableCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE68A71E9628DD00D0DB0D /* TableCellData.swift */; };
-		1AAE68A91E964B7700D0DB0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
 		1AAE68AA1E964B8400D0DB0D /* TOTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A03F81E851F7600E0D072 /* TOTPApi.swift */; };
 		1AAE68AB1E96530B00D0DB0D /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEADF1E8564100008F075 /* Crypto.swift */; };
 		1AAE68AC1E96530B00D0DB0D /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE01E8564100008F075 /* Generator.swift */; };
@@ -49,7 +48,6 @@
 		1AAE68B01E96530B00D0DB0D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAE41E8564100008F075 /* Token.swift */; };
 		1AAE68B11E96587300D0DB0D /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
 		1ABB973C1E8907F200D6BBC3 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */; };
-		1AD35C901EA7818000A8CE55 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD35C8F1EA7818000A8CE55 /* Backup.swift */; };
 		1AD35C921EA78A3100A8CE55 /* CloudDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD35C911EA78A3100A8CE55 /* CloudDataManager.swift */; };
 		1AD35C941EA78E1800A8CE55 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD35C931EA78E1800A8CE55 /* Alert.swift */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
@@ -60,9 +58,11 @@
 		F3158B4E1E885B210006243A /* KeychainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4D1E885B210006243A /* KeychainTest.swift */; };
 		F3158B501E885B660006243A /* SerializationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3158B4F1E885B660006243A /* SerializationTest.swift */; };
 		F3158B521E8878520006243A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3158B511E8878520006243A /* Assets.xcassets */; };
+		F398B6A9213F04E80072C5DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398B6A8213F04E70072C5DD /* User.swift */; };
 		F39E8FB71E85BED8000A8C49 /* ManualUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */; };
 		F39E8FBB1E85CD75000A8C49 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBA1E85CD75000A8C49 /* Circle.swift */; };
 		F39E8FBD1E85DAF3000A8C49 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E8FBC1E85DAF3000A8C49 /* HUD.swift */; };
+		F3B8503B213EF68300C7FE67 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B8503A213EF68300C7FE67 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,7 +187,6 @@
 		1AAE68A71E9628DD00D0DB0D /* TableCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellData.swift; sourceTree = "<group>"; };
 		1ABB973B1E8907F200D6BBC3 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
 		1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		1AD35C8F1EA7818000A8CE55 /* Backup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
 		1AD35C911EA78A3100A8CE55 /* CloudDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDataManager.swift; sourceTree = "<group>"; };
 		1AD35C931EA78E1800A8CE55 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		1DE0D8873922AA8DD74C12F3 /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP_2Pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,9 +210,11 @@
 		F3158B4D1E885B210006243A /* KeychainTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTest.swift; sourceTree = "<group>"; };
 		F3158B4F1E885B660006243A /* SerializationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationTest.swift; sourceTree = "<group>"; };
 		F3158B511E8878520006243A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F398B6A8213F04E70072C5DD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F39E8FB61E85BED8000A8C49 /* ManualUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualUserViewController.swift; sourceTree = "<group>"; };
 		F39E8FBA1E85CD75000A8C49 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		F39E8FBC1E85DAF3000A8C49 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		F3B8503A213EF68300C7FE67 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B8503B213EF68300C7FE67 /* CloudKit.framework in Frameworks */,
 				1A089C9F1E9E0FBA009AB64B /* LocalAuthentication.framework in Frameworks */,
 				5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */,
 			);
@@ -323,6 +325,7 @@
 		1A3BFF511E828B24008B0C81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3B8503A213EF68300C7FE67 /* CloudKit.framework */,
 				1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */,
 				1AAE68A51E9627CE00D0DB0D /* Pods_TOTP_2Pass.framework */,
 				95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */,
@@ -350,7 +353,6 @@
 				1A5A03F81E851F7600E0D072 /* TOTPApi.swift */,
 				1A089C9C1E9E0F6A009AB64B /* SecurityAuth.swift */,
 				1AD35C911EA78A3100A8CE55 /* CloudDataManager.swift */,
-				1AD35C8F1EA7818000A8CE55 /* Backup.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -474,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				1AAE68A41E9627B500D0DB0D /* 2Pass Extension.entitlements */,
+				F398B6A8213F04E70072C5DD /* User.swift */,
 				1AAE688E1E961FD600D0DB0D /* InterfaceController.swift */,
 				1AAE68A71E9628DD00D0DB0D /* TableCellData.swift */,
 				1AAE68901E961FD600D0DB0D /* ExtensionDelegate.swift */,
@@ -535,7 +538,6 @@
 				1A3BFF171E827910008B0C81 /* Frameworks */,
 				1A3BFF181E827910008B0C81 /* Resources */,
 				BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */,
-				5BBE5260FFA04DA4C8635536 /* [CP] Copy Pods Resources */,
 				1ABB973D1E89435300D6BBC3 /* ShellScript */,
 				1ABB97521E8953E800D6BBC3 /* Embed App Extensions */,
 				1AAE68A11E961FD600D0DB0D /* Embed Watch Content */,
@@ -594,7 +596,6 @@
 				1AAE68791E961FD600D0DB0D /* Resources */,
 				1AAE689F1E961FD600D0DB0D /* Embed App Extensions */,
 				8D7A96983B7B308A0D362D58 /* Frameworks */,
-				172FC8054651C4E6F82FF70D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -615,7 +616,6 @@
 				1AAE68841E961FD600D0DB0D /* Frameworks */,
 				1AAE68851E961FD600D0DB0D /* Resources */,
 				2E1EF27739FA950E3E20C26E /* [CP] Embed Pods Frameworks */,
-				B4F4349CFFE36813DD0C44B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -642,6 +642,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 							com.apple.Push = {
@@ -759,21 +762,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		172FC8054651C4E6F82FF70D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2Pass/Pods-2Pass-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1ABB973D1E89435300D6BBC3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -793,9 +781,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-2Pass Extension/Pods-2Pass Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Base32-watchOS/Base32.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-watchOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-watchOS/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base32.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -808,28 +803,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TOTP-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5BBE5260FFA04DA4C8635536 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TOTP/Pods-TOTP-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		830EBD9334F21FA9DA62A5F3 /* [CP] Check Pods Manifest.lock */ = {
@@ -838,28 +821,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-2Pass Extension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B4F4349CFFE36813DD0C44B2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2Pass Extension/Pods-2Pass Extension-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */ = {
@@ -868,9 +839,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TOTP/Pods-TOTP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Base32-iOS/Base32.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-iOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base32.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -883,13 +861,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-2Pass-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -905,7 +886,6 @@
 				1AD35C941EA78E1800A8CE55 /* Alert.swift in Sources */,
 				1A1CEAEB1E8564100008F075 /* Token+URL.swift in Sources */,
 				1A3BFF201E827910008B0C81 /* MainViewController.swift in Sources */,
-				1AD35C901EA7818000A8CE55 /* Backup.swift in Sources */,
 				1A6576741E9CC1320036A441 /* SettingsViewController.swift in Sources */,
 				1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */,
 				1A089CA51E9E286D009AB64B /* RouterViewController.swift in Sources */,
@@ -957,9 +937,9 @@
 				1AAE68AD1E96530B00D0DB0D /* Keychain.swift in Sources */,
 				1AAE68AE1E96530B00D0DB0D /* PersistentToken.swift in Sources */,
 				1AAE68AF1E96530B00D0DB0D /* Token+URL.swift in Sources */,
+				F398B6A9213F04E80072C5DD /* User.swift in Sources */,
 				1AAE68B01E96530B00D0DB0D /* Token.swift in Sources */,
 				1AAE68AA1E964B8400D0DB0D /* TOTPApi.swift in Sources */,
-				1AAE68A91E964B7700D0DB0D /* User.swift in Sources */,
 				1AAE68A81E9628DD00D0DB0D /* TableCellData.swift in Sources */,
 				1AAE68931E961FD600D0DB0D /* NotificationController.swift in Sources */,
 				1AAE68911E961FD600D0DB0D /* ExtensionDelegate.swift in Sources */,
@@ -1060,7 +1040,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1105,7 +1085,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos";
@@ -1126,7 +1106,7 @@
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1150,7 +1130,7 @@
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1245,7 +1225,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -1273,7 +1253,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -1299,7 +1279,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -1325,7 +1305,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};

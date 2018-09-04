@@ -24,13 +24,15 @@ class ManualUserViewController: UIViewController {
         guard let tokenString = self.tokenField.text else {
             return
         }
-        print (nameString,issueString,tokenString)
-        
-        RealmData.saveToDB(name: nameString, issuer: issueString, token: tokenString)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Main")
-        self.present(controller, animated: false, completion: nil)
-        Answers.logContentView(withName: "Save custom token", contentType: "Button", contentId: "customToken", customAttributes: ["Favorites Count":30, "Screen Orientation":"Portrait"])
+        if nameString.count > 1 && issueString.count > 1 && tokenString.count > 1 {
+            RealmData.saveToDB(name: nameString, issuer: issueString, token: tokenString)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "Main")
+            self.present(controller, animated: false, completion: nil)
+            Answers.logContentView(withName: "Save custom token", contentType: "Button", contentId: "customToken", customAttributes: ["Favorites Count":30, "Screen Orientation":"Portrait"])
+        } else {
+            Alert.showAlert(title: "Error", message: "Some fields is empty. Please fill all fields")
+        }
     }
  
     
