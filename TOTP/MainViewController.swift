@@ -81,8 +81,11 @@ extension ViewController:WCSessionDelegate {
     }
     
     func transferRealmFile(){
-        if let path = Realm.Configuration().fileURL {
-            WCSession.default().transferFile(path, metadata: nil)
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            if session.activationState == .activated, let path = Realm.Configuration().fileURL {
+                session.transferFile(path, metadata: nil)
+            }
         }
     }
 
