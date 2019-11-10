@@ -37,7 +37,7 @@ class CloudDataManager {
         if DocumentsDirectory.iCloudDocumentsURL != nil {
             return true
         } else {
-            Alert.showAlert(title: "Error", message: "Please autorize to iCloud for using data backup")
+            Alert.showAlert(title: "Error", message: "Please authorize to iCloud for using data backup")
             return false
         }
     }

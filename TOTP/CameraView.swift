@@ -98,7 +98,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                 if let token = Token(url: url! as URL) {
                     messageLabel.backgroundColor = UIColor.gray
                     messageLabel.textColor = UIColor.green
-                    messageLabel.text = "Autorized"
+                    messageLabel.text = "Authorized"
                     print("ScanedInfo:\(token), source: \(metadataObj.stringValue)")
                     dismiss(animated: true, completion: nil)
                     Answers.logContentView(withName: "UseQR", contentType: "CAmera", contentId: "QRScaner", customAttributes: ["Favorites Count":30, "Screen Orientation":"Portrait"])
