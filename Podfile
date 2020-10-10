@@ -1,29 +1,23 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '13.0'
 use_frameworks!
 
 def shared_pods
     pod 'RealmSwift'
-    pod 'Base32', '~> 1.1.2'
+    pod 'Base32'
 
 end
 
 target 'TOTP' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   shared_pods
-  pod 'Fabric'
-  pod 'Crashlytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Analytics'
   pod 'IceCream'
+  pod 'Swinject', '~> 2.6.2'
+  pod 'SwinjectStoryboard', '~> 2.2.0'
+  pod 'OneTimePassword'
 
-end
-
-target '2Pass'  do
-    platform :watchos, '3.0'
-    shared_pods
-    
-end
-
-target '2Pass Extension' do
-    platform :watchos, '3.0'
-    shared_pods
 end
