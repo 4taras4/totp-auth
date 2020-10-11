@@ -5,6 +5,7 @@
 //  Created by Tarik on 10/10/2020.
 //  Copyright © 2020 Taras Markevych. All rights reserved.
 //
+import StoreKit
 
 final class AddItemPresenter: AddItemViewOutput {
     
@@ -39,6 +40,7 @@ extension AddItemPresenter: AddItemInteractorOutput {
     
     func tokenAdded() {
         router.popToRoot()
+        SKStoreReviewController.requestReview()
     }
     
 
