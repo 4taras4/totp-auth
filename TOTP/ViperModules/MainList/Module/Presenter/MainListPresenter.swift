@@ -16,12 +16,21 @@ final class MainListPresenter: NSObject, MainListViewOutput {
     var router: MainListRouterInput!
     var codeList = [Code]()
     var refreshTimer: Timer?
-
+    var interval = 30.0
+    var updated: Int = 0
     // MARK: -
     // MARK: MainListViewOutput
     func viewIsReady() {
-        refreshTimer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(refreshData), userInfo: nil, repeats: true)
-        interactor.converUserData(users: RealmManager.shared.fetchCodesList() ?? [])
+        updated = 0
+        let calendar = Calendar.current
+        let time = calendar.dateComponents([.second], from: Date()).second!
+        if time > 30 {
+            interval = Double(60 - time)
+        } else {
+            interval = Double(30 - time)
+        }
+        print("init:", interval)
+        refreshTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(refreshData), userInfo: nil, repeats: true)
     }
 
     func settingsButtonPressed() {
@@ -36,6 +45,16 @@ final class MainListPresenter: NSObject, MainListViewOutput {
         interactor.converUserData(users: RealmManager.shared.fetchCodesList() ?? [])
     }
     
+    func updateTimerIfNeeded() {
+        updated += 1
+        if interval != 30.0, updated == 2 {
+            print("set new time")
+            self.interval = 30
+            refreshTimer?.invalidate()
+            refreshTimer = nil
+            refreshTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(refreshData), userInfo: nil, repeats: true)
+        }
+    }
 }
 
 // MARK: -
@@ -44,6 +63,7 @@ extension MainListPresenter: MainListInteractorOutput {
     func listOfCodes(codes: [Code]) {
         codeList = codes
         view.reloadTable()
+        updateTimerIfNeeded()
     }
 }
 
@@ -60,7 +80,7 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainListTableViewCell", for: indexPath) as! MainListTableViewCell
-        cell.setup(cell: codeList[indexPath.row])
+        cell.setup(cell: codeList[indexPath.row], timeInterval: interval)
         return cell
     }
     

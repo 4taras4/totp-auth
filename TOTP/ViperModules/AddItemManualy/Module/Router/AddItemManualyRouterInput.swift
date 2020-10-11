@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AddItemManualyRouterInput: class {
-
+    func popToRoot()
 }

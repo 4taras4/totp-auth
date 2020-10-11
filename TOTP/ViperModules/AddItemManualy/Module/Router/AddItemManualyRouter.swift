@@ -11,4 +11,7 @@ final class AddItemManualyRouter: AddItemManualyRouterInput {
 
 	weak var transitionHandler: UIViewController!
 
+    func popToRoot() {
+        transitionHandler.navigationController?.popToRootViewController(animated: true)
+    }
 }

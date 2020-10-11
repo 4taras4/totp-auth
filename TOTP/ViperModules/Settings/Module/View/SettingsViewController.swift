@@ -10,7 +10,11 @@ import UIKit
 
 class SettingsViewController: UITableViewController {
 
-	// MARK: -
+    @IBAction func blurSwitchAction(_ sender: Any) {
+        output.blurSetting(isEnabled: blurSwitch.isOn)
+    }
+    @IBOutlet weak var blurSwitch: UISwitch!
+    // MARK: -
 	// MARK: Properties
 	var output: SettingsViewOutput!
 
@@ -19,6 +23,7 @@ class SettingsViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		output.viewIsReady()
+        tableView.delegate = output
 	}
 
 }
@@ -26,7 +31,14 @@ class SettingsViewController: UITableViewController {
 // MARK: -
 // MARK: SettingsViewInput
 extension SettingsViewController: SettingsViewInput {
-
+    func setSwitch(isEnabled: Bool) {
+        blurSwitch.setOn(isEnabled, animated: false)
+    }
+    
+    func mailUnavailable() {
+        UIManager.shared.showAlert(title: "Error", message: "Mail client unavailable. Please login to native Mail client to send message")
+    }
+    
 	func setupInitialState() {
 
 	}

@@ -9,4 +9,12 @@
 protocol AddItemManualyViewOutput: class {
 	/// - author: Tarik
 	func viewIsReady()
+    
+    func save()
+    
+    func viewWantsToUpdate(secret: String)
+   
+    func viewWantsToUpdate(name: String)
+
+    func viewWantsToUpdate(issuer: String)
 }

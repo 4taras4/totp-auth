@@ -14,6 +14,9 @@ class AddItemViewController: UIViewController {
 	// MARK: Properties
 	var output: AddItemViewOutput!
 
+    @IBAction func addManualyAction(_ sender: Any) {
+        output.setManualyPressed()
+    }
     @IBOutlet weak var cameraView: CameraView!
     
     // MARK: -

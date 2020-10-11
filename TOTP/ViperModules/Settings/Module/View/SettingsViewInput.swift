@@ -9,4 +9,8 @@
 protocol SettingsViewInput: class {
 	/// - author: Tarik
 	func setupInitialState()
+    
+    func mailUnavailable()
+    
+    func setSwitch(isEnabled: Bool)
 }

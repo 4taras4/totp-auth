@@ -9,4 +9,6 @@
 protocol AddItemManualyViewInput: class {
 	/// - author: Tarik
 	func setupInitialState()
+    
+    func errorValidation()
 }

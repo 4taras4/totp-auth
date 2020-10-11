@@ -33,7 +33,7 @@ class MainListViewController: UIViewController {
 	}
     
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
+        output.refreshData()
     }
 }
 

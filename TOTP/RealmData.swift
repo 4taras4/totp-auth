@@ -44,8 +44,10 @@ class RealmManager {
     func removeObject(user: User, completionHandler: @escaping((Bool)->())) {
         do {
             let realm = try Realm()
-            realm.delete(user)
-            completionHandler(true)
+            try realm.write {
+                realm.delete(user)
+                completionHandler(true)
+            }
         } catch let error {
             print(error)
             completionHandler(false)

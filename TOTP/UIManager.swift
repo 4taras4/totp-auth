@@ -11,7 +11,7 @@ import SwinjectStoryboard
 
 class UIManager {
 
-    private(set) var window: UIWindow?
+    var window: UIWindow?
     private(set) var tabBarController: UITabBarController?
 
     static let shared = UIManager()

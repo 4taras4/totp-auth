@@ -7,7 +7,6 @@
 //
 
 final class AddItemManualyPresenter: AddItemManualyViewOutput {
-
     // MARK: -
     // MARK: Properties
 
@@ -21,19 +20,33 @@ final class AddItemManualyPresenter: AddItemManualyViewOutput {
 
     }
 
+    func save() {
+        interactor.save()
+    }
+    
+    func viewWantsToUpdate(secret: String) {
+        interactor.viewWantsToUpdate(secret: secret)
+    }
+    
+    func viewWantsToUpdate(name: String) {
+        interactor.viewWantsToUpdate(name: name)
+    }
+    
+    func viewWantsToUpdate(issuer: String) {
+        interactor.viewWantsToUpdate(issuer: issuer)
+    }
 }
 
 // MARK: -
 // MARK: AddItemManualyInteractorOutput
 extension AddItemManualyPresenter: AddItemManualyInteractorOutput {
     func addTokenFails() {
-        
+        view.errorValidation()
     }
     
     func tokenAdded() {
+        router.popToRoot()
     }
-    
-
 }
 
 // MARK: -

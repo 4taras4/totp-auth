@@ -8,6 +8,12 @@
 
 import Foundation
 
-protocol AddItemManualyInteractorInput: class {
-    func setToken(string: String)
+protocol AddItemManualyInteractorInput: class {    
+    func viewWantsToUpdate(secret: String)
+   
+    func viewWantsToUpdate(name: String)
+
+    func viewWantsToUpdate(issuer: String)
+    
+    func save()
 }

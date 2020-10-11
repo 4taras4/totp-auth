@@ -38,6 +38,7 @@ final class MainListInteractor: MainListInteractorInput {
                 print("Invalid generator parameters")
                 return nil
         }
+        
         let token = Token(name: user.name ?? "", issuer: user.issuer ?? "", generator: generator)
         guard let currentCode = token.currentPassword else {
             print("Invalid generator parameters")
