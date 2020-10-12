@@ -2,9 +2,7 @@
 
 # 2Pass for iOS
 [![Platform](https://img.shields.io/badge/Platforms-iOS-lightgray.svg)]()
-[![Swift version](https://img.shields.io/badge/Swift-3.0.x-orange.svg)]()
-[![Build Status][travis-build-status-svg]][travis-build-status-link]
-[![codecov](https://codecov.io/gh/4taras4/totp-auth/branch/master/graph/badge.svg)][codecov-link]
+[![Swift version](https://img.shields.io/badge/Swift-5.0.x-orange.svg)]()
 
 # Introduction
 TOTP based autorisation application for IOS<br>
@@ -18,9 +16,8 @@ This application provides one time passwords to be used with the two factor auth
 - [x] Scan QR codes that include accounts
 - [x] Supports time-based as well as counter-based passwords
 - [x] Works offline
-- [x] Supports Apple Watch
-- [x] Keychain app protection
-- [x] iCloudBackup accounts
+- [x] VIPER Architecture
+- [ ] Test coverage
 
 
 #### Available in AppStore
