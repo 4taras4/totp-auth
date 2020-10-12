@@ -15,8 +15,8 @@ protocol CameraCaptureDelegate: class {
 }
 
 final class CameraView: UIView {
-    var captureSession: AVCaptureSession!
-    var previewLayer: AVCaptureVideoPreviewLayer!
+    var captureSession: AVCaptureSession?
+    var previewLayer: AVCaptureVideoPreviewLayer?
 
     private lazy var session: AVCaptureSession = {
         let s = AVCaptureSession()
@@ -54,42 +54,46 @@ final class CameraView: UIView {
                 return
             }
 
-            if (captureSession.canAddInput(videoInput)) {
-                captureSession.addInput(videoInput)
+            if ((captureSession?.canAddInput(videoInput)) != nil) {
+                captureSession?.addInput(videoInput)
             } else {
                 return
             }
 
             let metadataOutput = AVCaptureMetadataOutput()
 
-            if (captureSession.canAddOutput(metadataOutput)) {
-                captureSession.addOutput(metadataOutput)
+            if ((captureSession?.canAddOutput(metadataOutput)) != nil) {
+                captureSession?.addOutput(metadataOutput)
 
                 metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
                 metadataOutput.metadataObjectTypes = [.ean8, .ean13, .pdf417, .qr]
             } else {
                 return
             }
-
-            previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-            previewLayer.frame = self.layer.bounds
-            previewLayer.videoGravity = .resizeAspectFill
-
+            guard let session = captureSession else {
+                return
+            }
+            previewLayer = AVCaptureVideoPreviewLayer(session: session)
+        
+            previewLayer?.frame = self.layer.bounds
+            previewLayer?.videoGravity = .resizeAspectFill
+            guard let previewLayer = previewLayer else {
+                return
+            }
             self.layer.addSublayer(previewLayer)
-
-            captureSession.startRunning()
+            session.startRunning()
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        previewLayer.frame = bounds
+        previewLayer?.frame = bounds
     }
 }
 
 extension CameraView: AVCaptureMetadataOutputObjectsDelegate {
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        captureSession.stopRunning()
+        captureSession?.stopRunning()
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }

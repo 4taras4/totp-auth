@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import GoogleMobileAds
 
 class MainListViewController: UIViewController {
 
@@ -25,15 +27,25 @@ class MainListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     // MARK: -
 	// MARK: Life cycle
+    
+    var bannerView: GADBannerView!
+    
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		output.viewIsReady()
         tableView.delegate = output
         tableView.dataSource = output
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = Constants.adds.bannerId
+        bannerView.rootViewController = self
+        bannerView.delegate = self
 	}
     
     override func viewWillAppear(_ animated: Bool) {
         output.refreshData()
+        bannerView.load(GADRequest())
     }
 }
 

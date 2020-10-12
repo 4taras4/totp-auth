@@ -114,4 +114,13 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
             topController.present(alertController, animated: true, completion: nil)
         }
     }
+    //added for ADDS baner spacing when you have a lot of items in the list
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 90
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView(frame: .zero)
+    }
+    
 }

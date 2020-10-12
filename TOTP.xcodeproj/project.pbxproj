@@ -15,13 +15,13 @@
 		17D3D1D350BC3CBA69116C80 /* SettingsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C801D7CC4AC0420AF1603 /* SettingsInteractorTests.swift */; };
 		1A089C9F1E9E0FBA009AB64B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */; };
 		1A13E9BA2533529F00EC95E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13E9B92533529F00EC95E4 /* Constants.swift */; };
+		1A14D3902534DD2C00CC56CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A14D38F2534DD2C00CC56CF /* GoogleService-Info.plist */; };
 		1A1CEAC91E8549D50008F075 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
 		1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
 		1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */; };
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
 		1A9709A0252D25E400EFE062 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A97099F252D25E400EFE062 /* Pods_TOTP.framework */; };
-		1A9709A1252D25E400EFE062 /* Pods_TOTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A97099F252D25E400EFE062 /* Pods_TOTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AC1EB0BB57FB629CD560AC6 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF7430E5CC662F6070E5A5 /* AddItemInteractor.swift */; };
 		1AC351442531C0AA008F43A8 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351432531C0AA008F43A8 /* UIManager.swift */; };
 		1AC351482531C40B008F43A8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351472531C40B008F43A8 /* UIViewController+Extensions.swift */; };
@@ -110,25 +110,12 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1A9709A2252D25E400EFE062 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1A9709A1252D25E400EFE062 /* Pods_TOTP.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		05489DB5EF3CD3F45EA31F4D /* MainListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListPresenter.swift; sourceTree = "<group>"; };
 		115B46487161375051334463 /* MainListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		1A13E9B92533529F00EC95E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1A14D38F2534DD2C00CC56CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A1CEACA1E85516F0008F075 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		1A3BFF1A1E827910008B0C81 /* TOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -417,6 +404,7 @@
 		1A8236E71E83F57B00D1A4D7 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				1A14D38F2534DD2C00CC56CF /* GoogleService-Info.plist */,
 				1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */,
 				F3158B511E8878520006243A /* Assets.xcassets */,
 				1A3BFF211E827910008B0C81 /* Main.storyboard */,
@@ -882,7 +870,7 @@
 				1A3BFF171E827910008B0C81 /* Frameworks */,
 				1A3BFF181E827910008B0C81 /* Resources */,
 				BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */,
-				1A9709A2252D25E400EFE062 /* Embed Frameworks */,
+				1A14D39C2534E05400CC56CF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -999,6 +987,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */,
+				1A14D3902534DD2C00CC56CF /* GoogleService-Info.plist in Resources */,
 				F3158B521E8878520006243A /* Assets.xcassets in Resources */,
 				1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */,
 			);
@@ -1021,6 +1010,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1A14D39C2534E05400CC56CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		3B86BC3228954164D5DBF56D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1327,7 +1334,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1342,7 +1348,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1350,7 +1356,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1365,7 +1370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

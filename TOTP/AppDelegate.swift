@@ -10,6 +10,8 @@
 import UIKit
 import RealmSwift
 import Swinject
+import GoogleMobileAds
+import Firebase
 
 let assembler = Assembler()
 let container = assembler.resolver
@@ -33,6 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             migrationBlock: { migration, oldSchemaVersion in
                     if (oldSchemaVersion < 1) {}
         })
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+
+        FirebaseApp.configure()
         return true
     }
 }

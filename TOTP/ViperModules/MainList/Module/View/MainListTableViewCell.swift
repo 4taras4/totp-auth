@@ -15,7 +15,7 @@ class MainListTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var digitsLabel: UILabel!
     var refreshTimer: Timer?
-
+   
     override func awakeFromNib() {
         super.awakeFromNib()
     }

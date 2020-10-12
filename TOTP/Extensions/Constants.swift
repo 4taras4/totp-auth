@@ -12,4 +12,8 @@ struct Constants {
     enum settings {
         static let blur = "blur"
     }
+    
+    enum adds {
+        static let bannerId = "ca-app-pub-3529414992545097/2720851359"
+    }
 }

@@ -29,7 +29,7 @@ final class SettingsPresenter: NSObject, SettingsViewOutput {
     
 
     func askReview() {
-        if let url = URL(string: "https://apps.apple.com/us/app/2pass-totp/id1219919851") {
+        if let url = URL(string: "https://apps.apple.com/us/app/2pass-totp/id1219919851?action=write-review") {
             UIApplication.shared.open(url)
         }
     }

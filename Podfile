@@ -5,7 +5,7 @@ use_frameworks!
 def shared_pods
     pod 'RealmSwift'
     pod 'Base32'
-
+    pod 'OneTimePassword'
 end
 
 target 'TOTP' do
@@ -15,9 +15,8 @@ target 'TOTP' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Analytics'
-  pod 'IceCream'
   pod 'Swinject', '~> 2.6.2'
   pod 'SwinjectStoryboard', '~> 2.2.0'
-  pod 'OneTimePassword'
+  pod 'Google-Mobile-Ads-SDK'
 
 end
