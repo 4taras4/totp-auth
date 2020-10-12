@@ -1,0 +1,33 @@
+### Headers settings
+company: Taras Markevych
+
+### Xcode project settings
+project_name: TOTP
+xcodeproj_path: TOTP.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: TOTP
+
+# The file path for new modules
+project_file_path: /TOTP/ViperModules/
+
+# The Xcode group path to new modules
+project_group_path: /TOTP/ViperModules/
+
+### Tests generation settings section
+# The tests target name
+test_target: TOTPTests
+
+# The file path for new tests
+test_file_path: TOTPTests/ViperModules
+
+# The Xcode group path to new tests
+test_group_path: TOTPTests/ViperModules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+- {name: viperSwift, git: 'https://github.com/landsv/viperSwift'}

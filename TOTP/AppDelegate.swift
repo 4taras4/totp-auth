@@ -9,68 +9,36 @@
 
 import UIKit
 import RealmSwift
-import Fabric
-import Crashlytics
-import IceCream
-import CloudKit
+import Swinject
+import GoogleMobileAds
+import Firebase
+
+let assembler = Assembler()
+let container = assembler.resolver
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var syncEngine: SyncEngine?
+    static var autoBlur = AutoBlurScreen()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Fabric.with([Crashlytics.self, Answers.self ])
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        assembler.apply(assemblies: [MainListAssemblyContainer(), SettingsAssemblyContainer(), AddItemAssemblyContainer(), AddItemManualyAssemblyContainer()])
+        window = UIWindow(frame: UIScreen.main.bounds)
+       
+        UIManager.shared.configure(with: window!)
+        AppDelegate.autoBlur.isAutoBlur = UserDefaults.standard.bool(forKey: Constants.settings.blur)
+        AppDelegate.autoBlur.blurStyle = .dark
         //Realm configuration
         Realm.Configuration.defaultConfiguration = Realm.Configuration(
             schemaVersion: 1,
             migrationBlock: { migration, oldSchemaVersion in
                     if (oldSchemaVersion < 1) {}
         })
-        syncEngine = SyncEngine(objects: [
-            SyncObject<User>()])
-        application.registerForRemoteNotifications()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
 
+        FirebaseApp.configure()
         return true
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        
-        let dict = userInfo as! [String: NSObject]
-        let notification = CKNotification(fromRemoteNotificationDictionary: dict)
-        
-        if (notification.subscriptionID == IceCreamConstant.cloudKitSubscriptionID) {
-            NotificationCenter.default.post(name: Notifications.cloudKitDataDidChangeRemotely.name, object: nil, userInfo: userInfo)
-        }
-        completionHandler(.newData)
-        
-    }
-    
-    func applicationWillResignActive(_ application: UIApplication) {
-        if UserDefaults.standard.object(forKey: "touchID") as? String == "1" {
-            if let imageView : UIView = UIApplication.shared.keyWindow?.subviews.last?.viewWithTag(101) {
-                imageView.removeFromSuperview()
-            }
-            let imageView = UIView(frame: UIScreen.main.bounds)
-            imageView.tag = 101
-            let blurEffect = UIBlurEffect(style: .extraLight)
-            let blurEffectView = UIVisualEffectView(effect: blurEffect)
-            blurEffectView.frame = imageView.frame
-            imageView.addSubview(blurEffectView)
-            UIView.animate(withDuration: 0.5, animations: {
-                UIApplication.shared.keyWindow?.subviews.last?.addSubview(imageView)
-            })
-        }
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        if let imageView : UIView = UIApplication.shared.keyWindow?.subviews.last?.viewWithTag(101) {
-            imageView.removeFromSuperview()
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "Security")
-            UIApplication.shared.keyWindow?.rootViewController?.present(controller, animated: true, completion: nil)
-        }
     }
 }
 

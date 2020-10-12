@@ -1,0 +1,54 @@
+//
+//  AddItemManualyAddItemManualyContainerTests.swift
+//  TOTP
+//
+//  Created by Tarik on 10/10/2020.
+//  Copyright © 2020 Taras Markevych. All rights reserved.
+//
+
+import XCTest
+@testable import TOTP
+
+class AddItemManualyModuleConfiguratorTests: XCTestCase {
+
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+    }
+
+    func testConfigureModuleForViewController() {
+
+        //given
+        let viewController = AddItemManualyViewControllerMock()
+        let presenter = container.resolve(AddItemManualyPresenter.self, argument: viewController as AddItemManualyViewController)!
+
+        //when
+        viewController.output = presenter
+
+        //then
+        XCTAssertNotNil(viewController.output, "AddItemManualyViewController is nil after configuration")
+        XCTAssertTrue(viewController.output is AddItemManualyPresenter, "output is not AddItemManualyPresenter")
+
+        let presenter: AddItemManualyPresenter = viewController.output as! AddItemManualyPresenter
+        XCTAssertNotNil(presenter.view, "view in AddItemManualyPresenter is nil after configuration")
+        XCTAssertNotNil(presenter.router, "router in AddItemManualyPresenter is nil after configuration")
+        XCTAssertTrue(presenter.router is AddItemManualyRouter, "router is not AddItemManualyRouter")
+
+        let interactor: AddItemManualyInteractor = presenter.interactor as! AddItemManualyInteractor
+        XCTAssertNotNil(interactor.output, "output in AddItemManualyInteractor is nil after configuration")
+    }
+
+    class AddItemManualyViewControllerMock: AddItemManualyViewController {
+
+        var setupInitialStateDidCall = false
+
+        override func setupInitialState() {
+            setupInitialStateDidCall = true
+        }
+    }
+}
