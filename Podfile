@@ -20,3 +20,7 @@ target 'TOTP' do
   pod 'Google-Mobile-Ads-SDK'
 
 end
+
+target '2PassExtension' do
+  shared_pods
+end

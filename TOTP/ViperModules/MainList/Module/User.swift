@@ -9,7 +9,8 @@
 import UIKit
 import RealmSwift
 
-public class User: Object {
+
+public class User: Object, Codable {
     @objc dynamic var name: String?
     @objc dynamic var issuer: String?
     @objc dynamic var token: String?

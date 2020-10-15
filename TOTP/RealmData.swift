@@ -21,6 +21,7 @@ class RealmManager {
             newUser.token = token
             try realm.write {
                 realm.add(newUser, update: .all)
+                widgetDataMigration()
                 completionHandler(true)
             }
         } catch {
@@ -46,11 +47,26 @@ class RealmManager {
             let realm = try Realm()
             try realm.write {
                 realm.delete(user)
+                widgetDataMigration()
                 completionHandler(true)
             }
         } catch let error {
             print(error)
             completionHandler(false)
+        }
+    }
+    
+    func widgetDataMigration() {
+        let archiveURL = FileManager.sharedContainerURL().appendingPathComponent("contents.json")
+        let encoder = JSONEncoder()
+        let users = fetchCodesList() ?? []
+        if let dataToSave = try? encoder.encode(users) {
+            do {
+                try dataToSave.write(to: archiveURL)
+            } catch {
+                print("Error: Can't write contents")
+                return
+            }
         }
     }
 }

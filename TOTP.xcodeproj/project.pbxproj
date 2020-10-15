@@ -21,6 +21,16 @@
 		1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */; };
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
+		1ABD605C2537BA3B00E51B38 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABD603C2537BA0B00E51B38 /* WidgetKit.framework */; };
+		1ABD605D2537BA3B00E51B38 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABD603E2537BA0B00E51B38 /* SwiftUI.framework */; };
+		1ABD60602537BA3B00E51B38 /* _Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD605F2537BA3B00E51B38 /* _Pass.swift */; };
+		1ABD60632537BA3B00E51B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD60622537BA3B00E51B38 /* Assets.xcassets */; };
+		1ABD60652537BA3B00E51B38 /* _Pass.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD60612537BA3B00E51B38 /* _Pass.intentdefinition */; };
+		1ABD60662537BA3B00E51B38 /* _Pass.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD60612537BA3B00E51B38 /* _Pass.intentdefinition */; };
+		1ABD60692537BA3B00E51B38 /* 2PassExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1ABD605B2537BA3B00E51B38 /* 2PassExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1ABD60752537BA9000E51B38 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
+		1ABD607A2537BA9300E51B38 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
+		1ABD607B2537BAA300E51B38 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3515D2531EFAD008F43A8 /* Array+Extensions.swift */; };
 		1AC1EB0BB57FB629CD560AC6 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF7430E5CC662F6070E5A5 /* AddItemInteractor.swift */; };
 		1AC351442531C0AA008F43A8 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351432531C0AA008F43A8 /* UIManager.swift */; };
 		1AC351482531C40B008F43A8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351472531C40B008F43A8 /* UIViewController+Extensions.swift */; };
@@ -38,6 +48,7 @@
 		2DC7F2CD9E7836126B31FCA7 /* AddItemInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC79D4050C5B42D4B3707FD /* AddItemInteractorTests.swift */; };
 		326615FE7795F5B9560C0AF0 /* MainListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7501E5DA37A8E874A31D04 /* MainListModuleInput.swift */; };
 		36ED695EA17E4BCCF4846181 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9229131756E17B9A3F9CDF /* AddItemViewController.swift */; };
+		37311894741521D6ABED7088 /* Pods_2PassExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F385EAB79A077BF611EFC8 /* Pods_2PassExtension.framework */; };
 		37B2C686F3C0995DA2A833E7 /* AddItemModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A1566A66C1CB54CEFC263 /* AddItemModuleInput.swift */; };
 		3C694E21BB32085E94535930 /* MainListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D545448CD4693F08C1939FEB /* MainListInteractorTests.swift */; };
 		3E0C974B97E3D4D2AA20EA1E /* AddItemManualyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DF2EB8D185D7280FF42C7 /* AddItemManualyInteractor.swift */; };
@@ -86,6 +97,7 @@
 		F3158B521E8878520006243A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3158B511E8878520006243A /* Assets.xcassets */; };
 		F3B8503B213EF68300C7FE67 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B8503A213EF68300C7FE67 /* CloudKit.framework */; };
 		F6494DE5F11D3C1E4D036CC3 /* AddItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D24A2F41BDC57AA57B6978 /* AddItemViewTests.swift */; };
+		F713230F2E4C67A2FB9D1D31 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A97099F252D25E400EFE062 /* Pods_TOTP.framework */; };
 		F7BD3A4DB6537091F5FE6351 /* AddItemManualyModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083FFACA9EA9C05D5418CDE /* AddItemManualyModuleInput.swift */; };
 		F7F5C0F11DDFDA5753CD081D /* MainListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35338837CE733AAF52375EA /* MainListPresenterTests.swift */; };
 		F87F72E008F4FE0A189E1768 /* MainListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158862FBA8FBCB4BAF74008 /* MainListRouterTests.swift */; };
@@ -107,7 +119,28 @@
 			remoteGlobalIDString = 1A3BFF191E827910008B0C81;
 			remoteInfo = TOTP;
 		};
+		1ABD60672537BA3B00E51B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ABD605A2537BA3B00E51B38;
+			remoteInfo = 2PassExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1ABD604C2537BA0C00E51B38 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1ABD60692537BA3B00E51B38 /* 2PassExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05489DB5EF3CD3F45EA31F4D /* MainListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListPresenter.swift; sourceTree = "<group>"; };
@@ -126,10 +159,18 @@
 		1A3BFF341E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF3F1E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8FBA642538F5370068B02F /* 2PassExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 2PassExtension.entitlements; sourceTree = "<group>"; };
 		1A97099F252D25E400EFE062 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAE68A21E96235F00D0DB0D /* TOTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TOTP.entitlements; sourceTree = "<group>"; };
 		1AAE68A51E9627CE00D0DB0D /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TOTP_2Pass.framework; path = "Pods/../build/Debug-iphoneos/Pods_TOTP_2Pass.framework"; sourceTree = "<group>"; };
 		1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1ABD603C2537BA0B00E51B38 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1ABD603E2537BA0B00E51B38 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1ABD605B2537BA3B00E51B38 /* 2PassExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = 2PassExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABD605F2537BA3B00E51B38 /* _Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Pass.swift; sourceTree = "<group>"; };
+		1ABD60612537BA3B00E51B38 /* _Pass.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = _Pass.intentdefinition; sourceTree = "<group>"; };
+		1ABD60622537BA3B00E51B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ABD60642537BA3B00E51B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC351432531C0AA008F43A8 /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 		1AC351472531C40B008F43A8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1AC351542531CE08008F43A8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -163,6 +204,7 @@
 		4C2C801D7CC4AC0420AF1603 /* SettingsInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorTests.swift; sourceTree = "<group>"; };
 		5158862FBA8FBCB4BAF74008 /* MainListRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListRouterTests.swift; sourceTree = "<group>"; };
 		55181F2984022CBB9789D63D /* SettingsContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsContainerTests.swift; sourceTree = "<group>"; };
+		57D10A0986D0D67F93172165 /* Pods-2PassExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2PassExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-2PassExtension/Pods-2PassExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		581C26EFD6A560520F3761D9 /* SettingsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorOutput.swift; sourceTree = "<group>"; };
 		5A52E92E5894C3245D71E571 /* AddItemRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemRouterInput.swift; sourceTree = "<group>"; };
 		5D1CDEBFB088303A4C4BD706 /* AddItemInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemInteractorInput.swift; sourceTree = "<group>"; };
@@ -170,6 +212,7 @@
 		68C7DF39C5DF4418CB206CCC /* Pods-TOTP-2Pass Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass Extension/Pods-TOTP-2Pass Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		72E8AD4864E1B2289790B806 /* MainListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListInteractorInput.swift; sourceTree = "<group>"; };
 		7E68489C1C4D715C9129EDAA /* AddItemManualyViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyViewTests.swift; sourceTree = "<group>"; };
+		84091A826092422A157247B6 /* Pods-2PassExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2PassExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-2PassExtension/Pods-2PassExtension.release.xcconfig"; sourceTree = "<group>"; };
 		84CDD93A13984A551A6AECB0 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
 		85685F78B1894B3F5E8A78E5 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		875F70B82BA91326012A2962 /* AddItemPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemPresenterTests.swift; sourceTree = "<group>"; };
@@ -203,6 +246,7 @@
 		DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0A1331B26F41A3777C564D /* Pods-TOTP-2Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass/Pods-TOTP-2Pass.release.xcconfig"; sourceTree = "<group>"; };
 		E5B1BE37C09AAD2CF38D6983 /* AddItemViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemViewOutput.swift; sourceTree = "<group>"; };
+		E5F385EAB79A077BF611EFC8 /* Pods_2PassExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2PassExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6647F245504EA6F1E33E001 /* Pods-TOTP-2Pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass/Pods-TOTP-2Pass.debug.xcconfig"; sourceTree = "<group>"; };
 		E68CDE88258EFAD1873605B4 /* SettingsAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsAssemblyContainer.swift; sourceTree = "<group>"; };
 		E69DACA719F06C76D52DAF8C /* MainListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListRouter.swift; sourceTree = "<group>"; };
@@ -223,6 +267,7 @@
 				F3B8503B213EF68300C7FE67 /* CloudKit.framework in Frameworks */,
 				1A089C9F1E9E0FBA009AB64B /* LocalAuthentication.framework in Frameworks */,
 				5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */,
+				F713230F2E4C67A2FB9D1D31 /* Pods_TOTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +282,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABD60582537BA3B00E51B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABD605D2537BA3B00E51B38 /* SwiftUI.framework in Frameworks */,
+				1ABD605C2537BA3B00E51B38 /* WidgetKit.framework in Frameworks */,
+				37311894741521D6ABED7088 /* Pods_2PassExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +380,11 @@
 		1A3BFF111E827910008B0C81 = {
 			isa = PBXGroup;
 			children = (
+				1A8FBA642538F5370068B02F /* 2PassExtension.entitlements */,
 				1A3BFF1C1E827910008B0C81 /* TOTP */,
 				1A3BFF311E827911008B0C81 /* TOTPTests */,
 				1A3BFF3C1E827911008B0C81 /* TOTPUITests */,
+				1ABD605E2537BA3B00E51B38 /* 2Pass */,
 				1A3BFF1B1E827910008B0C81 /* Products */,
 				1A3BFF511E828B24008B0C81 /* Frameworks */,
 				2C6DC00DFF2C9D00B81D05CA /* Pods */,
@@ -340,6 +397,7 @@
 				1A3BFF1A1E827910008B0C81 /* TOTP.app */,
 				1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */,
 				1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */,
+				1ABD605B2537BA3B00E51B38 /* 2PassExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -386,6 +444,9 @@
 				1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */,
 				1DE0D8873922AA8DD74C12F3 /* Pods_TOTP_2Pass.framework */,
 				4083C7BA3B83740411E2E145 /* Pods_TOTP_2Pass_Extension.framework */,
+				1ABD603C2537BA0B00E51B38 /* WidgetKit.framework */,
+				1ABD603E2537BA0B00E51B38 /* SwiftUI.framework */,
+				E5F385EAB79A077BF611EFC8 /* Pods_2PassExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -410,6 +471,17 @@
 				1A3BFF291E827910008B0C81 /* Info.plist */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		1ABD605E2537BA3B00E51B38 /* 2Pass */ = {
+			isa = PBXGroup;
+			children = (
+				1ABD605F2537BA3B00E51B38 /* _Pass.swift */,
+				1ABD60612537BA3B00E51B38 /* _Pass.intentdefinition */,
+				1ABD60622537BA3B00E51B38 /* Assets.xcassets */,
+				1ABD60642537BA3B00E51B38 /* Info.plist */,
+			);
+			path = 2Pass;
 			sourceTree = "<group>";
 		};
 		1AC3514B2531C418008F43A8 /* Extensions */ = {
@@ -482,6 +554,8 @@
 				DF0A1331B26F41A3777C564D /* Pods-TOTP-2Pass.release.xcconfig */,
 				68C7DF39C5DF4418CB206CCC /* Pods-TOTP-2Pass Extension.debug.xcconfig */,
 				CA274FDF46A68F752DBA6176 /* Pods-TOTP-2Pass Extension.release.xcconfig */,
+				57D10A0986D0D67F93172165 /* Pods-2PassExtension.debug.xcconfig */,
+				84091A826092422A157247B6 /* Pods-2PassExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -869,10 +943,12 @@
 				1A3BFF181E827910008B0C81 /* Resources */,
 				BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */,
 				1A14D39C2534E05400CC56CF /* ShellScript */,
+				1ABD604C2537BA0C00E51B38 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1ABD60682537BA3B00E51B38 /* PBXTargetDependency */,
 			);
 			name = TOTP;
 			productName = TOTP;
@@ -915,13 +991,31 @@
 			productReference = 1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1ABD605A2537BA3B00E51B38 /* 2PassExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABD606A2537BA3B00E51B38 /* Build configuration list for PBXNativeTarget "2PassExtension" */;
+			buildPhases = (
+				D945B01C3A47645A40CFC6DA /* [CP] Check Pods Manifest.lock */,
+				1ABD60572537BA3B00E51B38 /* Sources */,
+				1ABD60582537BA3B00E51B38 /* Frameworks */,
+				1ABD60592537BA3B00E51B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2PassExtension;
+			productName = 2PassExtension;
+			productReference = 1ABD605B2537BA3B00E51B38 /* 2PassExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1A3BFF121E827910008B0C81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Taras Markevych";
 				TargetAttributes = {
@@ -956,6 +1050,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A3BFF191E827910008B0C81;
 					};
+					1ABD605A2537BA3B00E51B38 = {
+						CreatedOnToolsVersion = 12.0.1;
+						DevelopmentTeam = GA56SWJ3YH;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1A3BFF151E827910008B0C81 /* Build configuration list for PBXProject "TOTP" */;
@@ -974,6 +1073,7 @@
 				1A3BFF191E827910008B0C81 /* TOTP */,
 				1A3BFF2D1E827911008B0C81 /* TOTPTests */,
 				1A3BFF381E827911008B0C81 /* TOTPUITests */,
+				1ABD605A2537BA3B00E51B38 /* 2PassExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1001,6 +1101,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABD60592537BA3B00E51B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABD60632537BA3B00E51B38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1077,6 +1185,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TOTP/Pods-TOTP-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D945B01C3A47645A40CFC6DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-2PassExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1093,6 +1223,7 @@
 				1AC351442531C0AA008F43A8 /* UIManager.swift in Sources */,
 				FDC6CAB5E56AC00ECD4657FB /* MainListViewOutput.swift in Sources */,
 				7C50AE4C0BE16E57C143DF6F /* MainListViewController.swift in Sources */,
+				1ABD60662537BA3B00E51B38 /* _Pass.intentdefinition in Sources */,
 				326615FE7795F5B9560C0AF0 /* MainListModuleInput.swift in Sources */,
 				6BB933969D70B1F1F76267FC /* MainListPresenter.swift in Sources */,
 				DDC272772EE59F1F8EB03FD4 /* MainListInteractorInput.swift in Sources */,
@@ -1177,6 +1308,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1ABD60572537BA3B00E51B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABD60602537BA3B00E51B38 /* _Pass.swift in Sources */,
+				1ABD607B2537BAA300E51B38 /* Array+Extensions.swift in Sources */,
+				1ABD607A2537BA9300E51B38 /* RealmData.swift in Sources */,
+				1ABD60652537BA3B00E51B38 /* _Pass.intentdefinition in Sources */,
+				1ABD60752537BA9000E51B38 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1189,6 +1332,11 @@
 			isa = PBXTargetDependency;
 			target = 1A3BFF191E827910008B0C81 /* TOTP */;
 			targetProxy = 1A3BFF3A1E827911008B0C81 /* PBXContainerItemProxy */;
+		};
+		1ABD60682537BA3B00E51B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ABD605A2537BA3B00E51B38 /* 2PassExtension */;
+			targetProxy = 1ABD60672537BA3B00E51B38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1331,7 +1479,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2;
@@ -1339,6 +1489,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
@@ -1353,7 +1504,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 439B999D1330FCAEB53EED6B /* Pods-TOTP.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2;
@@ -1361,6 +1514,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
@@ -1429,6 +1583,63 @@
 			};
 			name = Release;
 		};
+		1ABD606B2537BA3B00E51B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D10A0986D0D67F93172165 /* Pods-2PassExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = 2PassExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = 2Pass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tarik.Auth.-Pass";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ABD606C2537BA3B00E51B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84091A826092422A157247B6 /* Pods-2PassExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = 2PassExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = 2Pass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tarik.Auth.-Pass";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1464,6 +1675,15 @@
 			buildConfigurations = (
 				1A3BFF491E827911008B0C81 /* Debug */,
 				1A3BFF4A1E827911008B0C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ABD606A2537BA3B00E51B38 /* Build configuration list for PBXNativeTarget "2PassExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABD606B2537BA3B00E51B38 /* Debug */,
+				1ABD606C2537BA3B00E51B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

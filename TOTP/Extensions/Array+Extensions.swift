@@ -11,8 +11,14 @@ import RealmSwift
 
 extension Results {
     func toArray() -> [Element] {
-      return compactMap {
-        $0
-      }
+        return compactMap {
+            $0
+        }
     }
- }
+}
+
+extension FileManager {
+    static func sharedContainerURL() -> URL {
+        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.totp.app")!
+    }
+}
