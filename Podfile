@@ -14,7 +14,6 @@ target 'TOTP' do
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
-  pod 'Firebase/Analytics'
   pod 'Swinject', '~> 2.6.2'
   pod 'SwinjectStoryboard', '~> 2.2.0'
   pod 'Google-Mobile-Ads-SDK'

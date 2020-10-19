@@ -9,5 +9,9 @@
 import Foundation
 
 protocol SettingsInteractorOutput: class {
-
+    func backupCreated()
+    
+    func restoredFromBackup()
+    
+    func errorProcessing(error: String)
 }

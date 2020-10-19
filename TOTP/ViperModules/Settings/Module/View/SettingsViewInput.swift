@@ -13,4 +13,10 @@ protocol SettingsViewInput: class {
     func mailUnavailable()
     
     func setSwitch(isEnabled: Bool)
+    
+    func showAlert(error: String)
+    
+    func backupCreated()
+    
+    func restoredFromBackup()
 }

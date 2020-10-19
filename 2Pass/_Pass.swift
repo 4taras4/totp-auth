@@ -33,10 +33,7 @@ struct Provider: IntentTimelineProvider {
         let interval = 3
         for index in 0 ..< entries.count {
             entries[index].date = Calendar.current.date(byAdding: .second, value: interval + index, to: currentDate)!
-//            entries[index].otp = convertUser(user: users[index]).otp
         }
-
-        print(entries)
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -44,7 +41,6 @@ struct Provider: IntentTimelineProvider {
     func readContents() -> [User] {
         var contents: [User] = []
         let archiveURL = FileManager.sharedContainerURL().appendingPathComponent("contents.json")
-        print(">>> \(archiveURL)")
         let decoder = JSONDecoder()
         if let codeData = try? Data(contentsOf: archiveURL) {
             do {
@@ -111,7 +107,7 @@ struct _Pass: Widget {
             _PassEntryView(entry: entry)
         }
         .configurationDisplayName("2 Pass")
-        .description("TOTP widget.")
+        .description("TOTP widget for quick access to your TOTP codes. Widget may have some delay it's OS resctriction, but you always can open your app quickly from widget")
         .supportedFamilies([.systemSmall])
     }
 

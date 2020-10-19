@@ -34,6 +34,10 @@ class MainListViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		output.viewIsReady()
+        setupViewElements()
+	}
+    
+    func setupViewElements() {
         tableView.delegate = output
         tableView.dataSource = output
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
@@ -41,7 +45,7 @@ class MainListViewController: UIViewController {
         bannerView.adUnitID = Constants.adds.bannerId
         bannerView.rootViewController = self
         bannerView.delegate = self
-	}
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         output.refreshData()

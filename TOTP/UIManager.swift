@@ -105,6 +105,31 @@ class UIManager {
            }
        }
     }
+    
+    func showAlertTwoButtons(title: String? = nil, message: String? = nil, confirmTitle: String = "Confirm", noTitle: String = "Cancel", pressConfirm:(()->())? = nil, pressNo: (()->())? = nil) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: confirmTitle, style: .default, handler:{ (UIAlertAction) in
+            if let tap = pressConfirm {
+                tap()
+            }
+        })
+        alertController.addAction(OKAction)
+        let cancelAction = UIAlertAction(title: noTitle, style: .cancel, handler: { (UIAlertAction) in
+            if let tap = pressNo {
+                tap()
+            }
+        })
+        alertController.addAction(cancelAction)
+        
+        if let topController = UIApplication.topViewController() {
+            if let popoverPresentationController = alertController.popoverPresentationController {
+                popoverPresentationController.sourceView = topController.view
+                popoverPresentationController.sourceRect = topController.view.bounds
+            }
+            topController.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
 
     func presentLocalNotification(with identifier: String, content: UNNotificationContent) {
         DispatchQueue.main.async {

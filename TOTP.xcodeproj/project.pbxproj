@@ -21,6 +21,10 @@
 		1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */; };
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
+		1A3DA42E253E18F000CE5F6D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DA42D253E18F000CE5F6D /* CloudError.swift */; };
+		1A3DA452253E1B7B00CE5F6D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DA42D253E18F000CE5F6D /* CloudError.swift */; };
+		1A8FBA6A2539831A0068B02F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBA692539831A0068B02F /* FileManager+Extension.swift */; };
+		1A8FBA6F253983250068B02F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBA692539831A0068B02F /* FileManager+Extension.swift */; };
 		1ABD605C2537BA3B00E51B38 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABD603C2537BA0B00E51B38 /* WidgetKit.framework */; };
 		1ABD605D2537BA3B00E51B38 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABD603E2537BA0B00E51B38 /* SwiftUI.framework */; };
 		1ABD60602537BA3B00E51B38 /* _Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD605F2537BA3B00E51B38 /* _Pass.swift */; };
@@ -40,6 +44,7 @@
 		1AC351662531F3F6008F43A8 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351652531F3F6008F43A8 /* Code.swift */; };
 		1AC3516A2532036B008F43A8 /* AutoBlurManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351692532036B008F43A8 /* AutoBlurManager.swift */; };
 		1AC3516E253205E1008F43A8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3516D253205E1008F43A8 /* String+Extension.swift */; };
+		1AF5ADB4253E293800C390FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13E9B92533529F00EC95E4 /* Constants.swift */; };
 		22AC4FB4DDC6FED5267A8FC5 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB67CE339D2223208970274 /* SettingsRouter.swift */; };
 		23083E874FE87FDF474F2BCD /* SettingsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334838E8B2A8A18402C0431E /* SettingsModuleInput.swift */; };
 		26D75269F9F49B4E8F5CA86F /* AddItemManualyRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3959BBB3E94B67E43A2F8FD3 /* AddItemManualyRouterInput.swift */; };
@@ -159,7 +164,9 @@
 		1A3BFF341E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF3F1E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A3DA42D253E18F000CE5F6D /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
 		1A8FBA642538F5370068B02F /* 2PassExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 2PassExtension.entitlements; sourceTree = "<group>"; };
+		1A8FBA692539831A0068B02F /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		1A97099F252D25E400EFE062 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAE68A21E96235F00D0DB0D /* TOTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TOTP.entitlements; sourceTree = "<group>"; };
 		1AAE68A51E9627CE00D0DB0D /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TOTP_2Pass.framework; path = "Pods/../build/Debug-iphoneos/Pods_TOTP_2Pass.framework"; sourceTree = "<group>"; };
@@ -455,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1CEACA1E85516F0008F075 /* RealmData.swift */,
+				1A3DA42D253E18F000CE5F6D /* CloudError.swift */,
 				1AC351432531C0AA008F43A8 /* UIManager.swift */,
 			);
 			name = Manager;
@@ -490,6 +498,7 @@
 				1AC351472531C40B008F43A8 /* UIViewController+Extensions.swift */,
 				1AC351692532036B008F43A8 /* AutoBlurManager.swift */,
 				1AC3515D2531EFAD008F43A8 /* Array+Extensions.swift */,
+				1A8FBA692539831A0068B02F /* FileManager+Extension.swift */,
 				1AC3516D253205E1008F43A8 /* String+Extension.swift */,
 				1A13E9B92533529F00EC95E4 /* Constants.swift */,
 			);
@@ -1249,6 +1258,7 @@
 				117FF8C712A904570BC4334A /* AddItemRouter.swift in Sources */,
 				EC53BFE41229EFA72B60BFBF /* SettingsAssemblyContainer.swift in Sources */,
 				918B329B5D61A0501F8CC7D5 /* SettingsViewInput.swift in Sources */,
+				1A3DA42E253E18F000CE5F6D /* CloudError.swift in Sources */,
 				4B8D1384E2FC861870686C53 /* SettingsViewOutput.swift in Sources */,
 				F2AE3FEE845FEE0971118A8F /* SettingsViewController.swift in Sources */,
 				23083E874FE87FDF474F2BCD /* SettingsModuleInput.swift in Sources */,
@@ -1259,6 +1269,7 @@
 				B70B0922EDD4182B010B0606 /* SettingsInteractor.swift in Sources */,
 				A7816199CA5EA5A1BEE664AF /* SettingsRouterInput.swift in Sources */,
 				22AC4FB4DDC6FED5267A8FC5 /* SettingsRouter.swift in Sources */,
+				1A8FBA6A2539831A0068B02F /* FileManager+Extension.swift in Sources */,
 				BCF05FA93A9F6FFB33FFC3C1 /* AddItemManualyAssemblyContainer.swift in Sources */,
 				15FE519000C07D355C06D9FE /* AddItemManualyViewInput.swift in Sources */,
 				1AC351622531F339008F43A8 /* MainListTableViewCell.swift in Sources */,
@@ -1312,11 +1323,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3DA452253E1B7B00CE5F6D /* CloudError.swift in Sources */,
 				1ABD60602537BA3B00E51B38 /* _Pass.swift in Sources */,
 				1ABD607B2537BAA300E51B38 /* Array+Extensions.swift in Sources */,
 				1ABD607A2537BA9300E51B38 /* RealmData.swift in Sources */,
 				1ABD60652537BA3B00E51B38 /* _Pass.intentdefinition in Sources */,
 				1ABD60752537BA9000E51B38 /* User.swift in Sources */,
+				1A8FBA6F253983250068B02F /* FileManager+Extension.swift in Sources */,
+				1AF5ADB4253E293800C390FE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1385,7 +1399,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1446,7 +1460,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1596,12 +1610,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = 2PassExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = 2Pass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tarik.Auth.-Pass";
@@ -1625,12 +1641,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = 2PassExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = 2Pass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 2.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tarik.Auth.-Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -15,4 +15,23 @@ final class SettingsInteractor: SettingsInteractorInput {
         UserDefaults.standard.set(isEnabled, forKey: Constants.settings.blur)
         AppDelegate.autoBlur.isAutoBlur = isEnabled
     }
+    
+    func createBackup() {
+        do {
+            try RealmManager.shared.uploadDatabaseToCloudDrive()
+            output.backupCreated()
+        } catch let error {
+            output.errorProcessing(error: error.localizedDescription)
+        }
+    }
+    
+    func restoreFromBackup() {
+        do {
+            try RealmManager.shared.downloadDatabaseFromCloudDrive()
+            output!.restoredFromBackup()
+        } catch let error {
+            output.errorProcessing(error: error.localizedDescription)
+        }
+    }
+    
 }

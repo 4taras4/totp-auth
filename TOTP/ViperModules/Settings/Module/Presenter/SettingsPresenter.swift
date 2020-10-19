@@ -61,6 +61,7 @@ extension SettingsPresenter: MFMailComposeViewControllerDelegate {
 
 extension SettingsPresenter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         switch indexPath {
         case .init(row: 0, section: 1):
             print("Rate app")
@@ -68,6 +69,16 @@ extension SettingsPresenter: UITableViewDelegate {
         case .init(row: 1, section: 1):
             print("Write feedback")
             writeFeedback()
+        case .init(row: 0, section: 2):
+            print("Write db")
+            UIManager.shared.showAlertTwoButtons(title: "Create backup?", message: "You are sure about crating backup to your iCloud?", pressConfirm: {
+                self.interactor.createBackup()
+            })
+        case .init(row: 1, section: 2):
+            print("read db")
+            UIManager.shared.showAlertTwoButtons(title: "Restore data from iCloud?", message: "ALL unsaved  to backup data will be ERASED and replaced by data from backup. You are sure about restoring data from iCloud?", pressConfirm: {
+                self.interactor.restoreFromBackup()
+            })
         default:
             break
         }
@@ -77,7 +88,17 @@ extension SettingsPresenter: UITableViewDelegate {
 // MARK: -
 // MARK: SettingsInteractorOutput
 extension SettingsPresenter: SettingsInteractorOutput {
-
+    func backupCreated() {
+        view.backupCreated()
+    }
+    
+    func restoredFromBackup() {
+        view.restoredFromBackup()
+    }
+    
+    func errorProcessing(error: String) {
+        view.showAlert(error: error)
+    }
 }
 
 // MARK: -
