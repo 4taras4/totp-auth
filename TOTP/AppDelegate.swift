@@ -38,7 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         FirebaseApp.configure()
-        RealmManager.shared.widgetDataMigration()
         return true
     }
 }

@@ -40,7 +40,7 @@ struct Provider: IntentTimelineProvider {
     
     func readContents() -> [User] {
         var contents: [User] = []
-        let archiveURL = FileManager.sharedContainerURL().appendingPathComponent("contents.json")
+        let archiveURL = FileManager.sharedContainerURL().appendingPathComponent(Constants.settings.contentsJson)
         let decoder = JSONDecoder()
         if let codeData = try? Data(contentsOf: archiveURL) {
             do {
@@ -107,24 +107,15 @@ struct _Pass: Widget {
             _PassEntryView(entry: entry)
         }
         .configurationDisplayName("2 Pass")
-        .description("TOTP widget for quick access to your TOTP codes. Widget may have some delay it's OS resctriction, but you always can open your app quickly from widget")
+        .description("TOTP widget for quick access to your TOTP codes. Widget may have some delay it's iOS resctriction, but you always can open your app quickly from widget")
         .supportedFamilies([.systemSmall])
     }
 
 }
 
-struct UserRow: View {
-    var restaurant: CodeEntry
-
-    var body: some View {
-        Text("\(restaurant.name)")
-        Text("\(restaurant.issuer ?? "")")
-    }
-}
-
 struct _Pass_Previews: PreviewProvider {
     static var previews: some View {
-        _PassEntryView(entry: CodeEntry(date: Date(), otp: "OTP Code", name: "@username", issuer: nil, configuration: ConfigurationIntent()))
+        _PassEntryView(entry: CodeEntry(date: Date(), otp: "OTP Code", name: "username", issuer: nil, configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

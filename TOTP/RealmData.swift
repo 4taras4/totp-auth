@@ -16,8 +16,16 @@ struct DocumentsDirectory {
 class RealmManager {
     
     static let shared = RealmManager()
+    
     fileprivate let fileManager = FileManager.default
-
+    fileprivate let iCloudDocumentsURL = FileManager.default.url(forUbiquityContainerIdentifier: Constants.iCloud.appId)?.appendingPathComponent(Constants.iCloud.documents, isDirectory: true)
+    fileprivate let iCloudDocumentToCheckURL = FileManager.default.url(forUbiquityContainerIdentifier: Constants.iCloud.appId)?.appendingPathComponent(Constants.iCloud.documents, isDirectory: true).appendingPathComponent(Constants.iCloud.realm, isDirectory: false)
+    
+    init() {
+        print("init with shared container")
+        widgetDataMigration()
+    }
+    
     func saveNewUser(name:String?, issuer:String?, token:String, completionHandler: @escaping((Bool)->())) {
         do {
             let realm = try Realm()
@@ -62,13 +70,14 @@ class RealmManager {
         }
     }
     
-    func widgetDataMigration() {
+    private func widgetDataMigration() {
         let archiveURL = FileManager.sharedContainerURL().appendingPathComponent(Constants.settings.contentsJson)
         let encoder = JSONEncoder()
         let users = fetchCodesList() ?? []
         if let dataToSave = try? encoder.encode(users) {
             do {
                 try dataToSave.write(to: archiveURL)
+                print("Shared container updated")
             } catch {
                 print("Error: Can't write contents")
                 return
@@ -114,13 +123,10 @@ class RealmManager {
             print("iCloud disabled")
             throw CloudError.uploadError("iCloud unavailable. Please login to your iCLoud and try again")
         }
-        let iCloudDocumentsURL = fileManager.url(forUbiquityContainerIdentifier: Constants.iCloud.appId)?.appendingPathComponent(Constants.iCloud.documents, isDirectory: true)
-        let iCloudDocumentToCheckURL = iCloudDocumentsURL?.appendingPathComponent(Constants.iCloud.realm, isDirectory: false)
         var isDownloaded = false
         while !isDownloaded {
             if fileManager.fileExists(atPath: iCloudDocumentToCheckURL?.path ?? "") {
                 isDownloaded = true
-                print("Realm file downloaded")
                 do {
                     if fileManager.fileExists(atPath: Realm.Configuration.defaultConfiguration.fileURL!.path) {
                         print("Remove old copy \(String(describing: Realm.Configuration.defaultConfiguration.fileURL?.path))")
@@ -132,6 +138,7 @@ class RealmManager {
                         let arrays = self.fetchCodesList()
                         print("Fetched items \(String(describing: arrays?.count))")
                     }
+                    widgetDataMigration()
                     print("Successfully downloaded")
                 } catch let error {
                     throw CloudError.downloadError(error.localizedDescription)
@@ -140,6 +147,7 @@ class RealmManager {
                 do {
                     guard let downloadUrl = iCloudDocumentToCheckURL else {
                         throw CloudError.downloadError("No saved backups")
+                        return
                     }
                     try fileManager.startDownloadingUbiquitousItem(at: downloadUrl)
                 } catch let error {
