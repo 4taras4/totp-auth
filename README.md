@@ -17,6 +17,10 @@ This application provides one time passwords to be used with the two factor auth
 - [x] Supports time-based as well as counter-based passwords
 - [x] Works offline
 - [x] VIPER Architecture
+- [x] Widget on swiftUI
+- [x] Backup data to iCloud
+- [ ] Apple watch support
+- [ ] Mac compability
 - [ ] Test coverage
 
 
