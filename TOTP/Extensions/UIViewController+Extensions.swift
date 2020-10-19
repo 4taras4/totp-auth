@@ -67,7 +67,7 @@ extension UIViewController: GADBannerViewDelegate {
       view.addConstraint(NSLayoutConstraint(item: bannerView,
                                             attribute: .bottom,
                                             relatedBy: .equal,
-                                            toItem: bottomLayoutGuide,
+                                            toItem: view.safeAreaLayoutGuide.bottomAnchor,
                                             attribute: .top,
                                             multiplier: 1,
                                             constant: 0))
@@ -103,19 +103,5 @@ extension UIViewController: GADBannerViewDelegate {
     /// the App Store), backgrounding the current app.
     public func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
       print("adViewWillLeaveApplication")
-    }
-}
-
-
-extension UIImage {
-    func mergeImages(top: UIImage) -> UIImage {
-        let size = CGSize(width: 300, height: 300)
-        UIGraphicsBeginImageContext(size)
-        let areaSize = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-        self.draw(in: areaSize)
-        top.draw(in: areaSize, blendMode: .normal, alpha: 0.8)
-        let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        return newImage
     }
 }

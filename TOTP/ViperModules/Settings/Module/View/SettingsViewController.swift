@@ -31,12 +31,24 @@ class SettingsViewController: UITableViewController {
 // MARK: -
 // MARK: SettingsViewInput
 extension SettingsViewController: SettingsViewInput {
+    func showAlert(error: String) {
+        UIManager.shared.showAlert(title: "Error ❌", message: error)
+    }
+    
+    func backupCreated() {
+        UIManager.shared.showAlert(title: "Success 🎉", message: "Backup created ✅")
+    }
+    
+    func restoredFromBackup() {
+        UIManager.shared.showAlert(title: "Success 🎉", message: "Data restored from backup  ✅")
+    }
+    
     func setSwitch(isEnabled: Bool) {
         blurSwitch.setOn(isEnabled, animated: false)
     }
     
     func mailUnavailable() {
-        UIManager.shared.showAlert(title: "Error", message: "Mail client unavailable. Please login to native Mail client to send message")
+        UIManager.shared.showAlert(title: "Error  ❌", message: "Mail client unavailable. Please login to native Mail client to send message")
     }
     
 	func setupInitialState() {

@@ -89,11 +89,11 @@ PODS:
   - OneTimePassword (3.2.0):
     - Base32 (~> 1.1.2)
   - PromisesObjC (1.2.11)
-  - Realm (5.4.8):
-    - Realm/Headers (= 5.4.8)
-  - Realm/Headers (5.4.8)
-  - RealmSwift (5.4.8):
-    - Realm (= 5.4.8)
+  - Realm (5.5.0):
+    - Realm/Headers (= 5.5.0)
+  - Realm/Headers (5.5.0)
+  - RealmSwift (5.5.0):
+    - Realm (= 5.5.0)
   - Swinject (2.6.2)
   - SwinjectStoryboard (2.2.0):
     - Swinject (~> 2.6)
@@ -152,11 +152,11 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   OneTimePassword: c00ecc908e67e6c5bfda9d50b0b2e4696d0b066e
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
-  Realm: 042bbb59227a0159eda397b8a5a49fbd67495ce7
-  RealmSwift: 15ddd6b3398ebfc99810811c44f095df1313adb3
+  Realm: fb399d76f44042e5cdfc630f33828fdb4d077345
+  RealmSwift: 3b7e62356207ef16d34de4e55d475163bd2062bb
   Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
   SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: ffe7ce3d743358aec5e5e8cea183857a35224686
+PODFILE CHECKSUM: 25f5f0afc707b1321ee5be8f457354524e0e67dd
 
 COCOAPODS: 1.9.3
