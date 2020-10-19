@@ -25,6 +25,19 @@
 		1A3DA452253E1B7B00CE5F6D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DA42D253E18F000CE5F6D /* CloudError.swift */; };
 		1A8FBA6A2539831A0068B02F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBA692539831A0068B02F /* FileManager+Extension.swift */; };
 		1A8FBA6F253983250068B02F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBA692539831A0068B02F /* FileManager+Extension.swift */; };
+		1ABB8684253E3A59007CB6FE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABB8682253E3A59007CB6FE /* Interface.storyboard */; };
+		1ABB8686253E3A59007CB6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABB8685253E3A59007CB6FE /* Assets.xcassets */; };
+		1ABB868D253E3A5A007CB6FE /* TwoPass Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1ABB868C253E3A5A007CB6FE /* TwoPass Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1ABB8692253E3A5A007CB6FE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8691253E3A5A007CB6FE /* InterfaceController.swift */; };
+		1ABB8694253E3A5A007CB6FE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8693253E3A5A007CB6FE /* ExtensionDelegate.swift */; };
+		1ABB869A253E3A5A007CB6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABB8699253E3A5A007CB6FE /* Assets.xcassets */; };
+		1ABB869F253E3A5A007CB6FE /* TwoPass.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1ABB8680253E3A59007CB6FE /* TwoPass.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1ABB86B4253E3AA3007CB6FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
+		1ABB86D9253E3B06007CB6FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13E9B92533529F00EC95E4 /* Constants.swift */; };
+		1ABB86F4253E3B11007CB6FE /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBA692539831A0068B02F /* FileManager+Extension.swift */; };
+		1ABB870A253E3C74007CB6FE /* CodeTableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8709253E3C74007CB6FE /* CodeTableViewRow.swift */; };
+		1ABB8711253E3CB5007CB6FE /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351652531F3F6008F43A8 /* Code.swift */; };
+		1ABB8719253E3D8C007CB6FE /* WatchDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8718253E3D8C007CB6FE /* WatchDataManager.swift */; };
 		1ABD605C2537BA3B00E51B38 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABD603C2537BA0B00E51B38 /* WidgetKit.framework */; };
 		1ABD605D2537BA3B00E51B38 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABD603E2537BA0B00E51B38 /* SwiftUI.framework */; };
 		1ABD60602537BA3B00E51B38 /* _Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD605F2537BA3B00E51B38 /* _Pass.swift */; };
@@ -49,6 +62,7 @@
 		23083E874FE87FDF474F2BCD /* SettingsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334838E8B2A8A18402C0431E /* SettingsModuleInput.swift */; };
 		26D75269F9F49B4E8F5CA86F /* AddItemManualyRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3959BBB3E94B67E43A2F8FD3 /* AddItemManualyRouterInput.swift */; };
 		28921BD4FF7BCF02E0E7B5E7 /* AddItemManualyInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1EE5FCF6FE03CB5F9C81D /* AddItemManualyInteractorOutput.swift */; };
+		2946E8DD525D756B60B48A47 /* Pods_TwoPass_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B183ED8DD11A613F594F8243 /* Pods_TwoPass_Extension.framework */; };
 		29BC875444BBCB7AD8130409 /* MainListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DACA719F06C76D52DAF8C /* MainListRouter.swift */; };
 		2DC7F2CD9E7836126B31FCA7 /* AddItemInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC79D4050C5B42D4B3707FD /* AddItemInteractorTests.swift */; };
 		326615FE7795F5B9560C0AF0 /* MainListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7501E5DA37A8E874A31D04 /* MainListModuleInput.swift */; };
@@ -124,6 +138,20 @@
 			remoteGlobalIDString = 1A3BFF191E827910008B0C81;
 			remoteInfo = TOTP;
 		};
+		1ABB868E253E3A5A007CB6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ABB868B253E3A5A007CB6FE;
+			remoteInfo = "TwoPass Extension";
+		};
+		1ABB869D253E3A5A007CB6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ABB867F253E3A59007CB6FE;
+			remoteInfo = TwoPass;
+		};
 		1ABD60672537BA3B00E51B38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
@@ -134,6 +162,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1ABB86A0253E3A5A007CB6FE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1ABB869F253E3A5A007CB6FE /* TwoPass.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABB86A3253E3A5A007CB6FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1ABB868D253E3A5A007CB6FE /* TwoPass Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ABD604C2537BA0C00E51B38 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +220,20 @@
 		1A97099F252D25E400EFE062 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAE68A21E96235F00D0DB0D /* TOTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TOTP.entitlements; sourceTree = "<group>"; };
 		1AAE68A51E9627CE00D0DB0D /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TOTP_2Pass.framework; path = "Pods/../build/Debug-iphoneos/Pods_TOTP_2Pass.framework"; sourceTree = "<group>"; };
+		1ABB8680253E3A59007CB6FE /* TwoPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABB8683253E3A59007CB6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1ABB8685253E3A59007CB6FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ABB8687253E3A59007CB6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ABB868C253E3A5A007CB6FE /* TwoPass Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TwoPass Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABB8691253E3A5A007CB6FE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1ABB8693253E3A5A007CB6FE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1ABB8699253E3A5A007CB6FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ABB869B253E3A5A007CB6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ABB869C253E3A5A007CB6FE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1ABB8709253E3C74007CB6FE /* CodeTableViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTableViewRow.swift; sourceTree = "<group>"; };
+		1ABB8718253E3D8C007CB6FE /* WatchDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDataManager.swift; sourceTree = "<group>"; };
+		1ABB89DE253E48C5007CB6FE /* TwoPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwoPass.entitlements; sourceTree = "<group>"; };
+		1ABB89DF253E48EC007CB6FE /* TwoPass Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TwoPass Extension.entitlements"; sourceTree = "<group>"; };
 		1ABB97431E8953E800D6BBC3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		1ABD603C2537BA0B00E51B38 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		1ABD603E2537BA0B00E51B38 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -227,6 +291,7 @@
 		878160D4930127ABEA768133 /* AddItemManualyViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyViewOutput.swift; sourceTree = "<group>"; };
 		8B2DF2EB8D185D7280FF42C7 /* AddItemManualyInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyInteractor.swift; sourceTree = "<group>"; };
 		8EB48426ECB293BA6298FE7F /* MainListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListViewInput.swift; sourceTree = "<group>"; };
+		91D937F96CAE13CC83A69D20 /* Pods-TwoPass Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPass Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPass Extension/Pods-TwoPass Extension.release.xcconfig"; sourceTree = "<group>"; };
 		95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C1947826FF8354A70FEF82 /* MainListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListInteractorOutput.swift; sourceTree = "<group>"; };
 		9D5DE0CE246A91A81454EEEA /* SettingsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
@@ -234,6 +299,7 @@
 		9F4489D7522ED31BD5A57C2F /* SettingsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouterTests.swift; sourceTree = "<group>"; };
 		AC7833D5938152E3A9FF95DD /* SettingsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorInput.swift; sourceTree = "<group>"; };
 		B0AA5DB6B3B4BCE993522726 /* AddItemManualyInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyInteractorInput.swift; sourceTree = "<group>"; };
+		B183ED8DD11A613F594F8243 /* Pods_TwoPass_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoPass_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E97BF4B20F0A057BC69CF0 /* AddItemManualyContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyContainerTests.swift; sourceTree = "<group>"; };
 		B35338837CE733AAF52375EA /* MainListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListPresenterTests.swift; sourceTree = "<group>"; };
 		B94730995D2303C26B477235 /* MainListAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListAssemblyContainer.swift; sourceTree = "<group>"; };
@@ -244,6 +310,7 @@
 		CA20D8B513C694B26F93D822 /* AddItemManualyInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyInteractorTests.swift; sourceTree = "<group>"; };
 		CA274FDF46A68F752DBA6176 /* Pods-TOTP-2Pass Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass Extension/Pods-TOTP-2Pass Extension.release.xcconfig"; sourceTree = "<group>"; };
 		CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP/Pods-TOTP.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE16AB53BC359EBC4D0F3EF /* Pods-TwoPass Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoPass Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoPass Extension/Pods-TwoPass Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		CF27DFE32B83A550FC5E60CA /* AddItemAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemAssemblyContainer.swift; sourceTree = "<group>"; };
 		D0845CB861304649E73F0354 /* MainListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListViewTests.swift; sourceTree = "<group>"; };
 		D0EF7430E5CC662F6070E5A5 /* AddItemInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemInteractor.swift; sourceTree = "<group>"; };
@@ -292,6 +359,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1ABB8689253E3A5A007CB6FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2946E8DD525D756B60B48A47 /* Pods_TwoPass_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ABD60582537BA3B00E51B38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +374,13 @@
 				1ABD605D2537BA3B00E51B38 /* SwiftUI.framework in Frameworks */,
 				1ABD605C2537BA3B00E51B38 /* WidgetKit.framework in Frameworks */,
 				37311894741521D6ABED7088 /* Pods_2PassExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD01CFB0DC304801CB0384D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +474,8 @@
 				1A3BFF311E827911008B0C81 /* TOTPTests */,
 				1A3BFF3C1E827911008B0C81 /* TOTPUITests */,
 				1ABD605E2537BA3B00E51B38 /* 2Pass */,
+				1ABB8681253E3A59007CB6FE /* TwoPass */,
+				1ABB8690253E3A5A007CB6FE /* TwoPass Extension */,
 				1A3BFF1B1E827910008B0C81 /* Products */,
 				1A3BFF511E828B24008B0C81 /* Frameworks */,
 				2C6DC00DFF2C9D00B81D05CA /* Pods */,
@@ -405,6 +489,8 @@
 				1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */,
 				1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */,
 				1ABD605B2537BA3B00E51B38 /* 2PassExtension.appex */,
+				1ABB8680253E3A59007CB6FE /* TwoPass.app */,
+				1ABB868C253E3A5A007CB6FE /* TwoPass Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -454,6 +540,7 @@
 				1ABD603C2537BA0B00E51B38 /* WidgetKit.framework */,
 				1ABD603E2537BA0B00E51B38 /* SwiftUI.framework */,
 				E5F385EAB79A077BF611EFC8 /* Pods_2PassExtension.framework */,
+				B183ED8DD11A613F594F8243 /* Pods_TwoPass_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -479,6 +566,32 @@
 				1A3BFF291E827910008B0C81 /* Info.plist */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		1ABB8681253E3A59007CB6FE /* TwoPass */ = {
+			isa = PBXGroup;
+			children = (
+				1ABB89DE253E48C5007CB6FE /* TwoPass.entitlements */,
+				1ABB8682253E3A59007CB6FE /* Interface.storyboard */,
+				1ABB8685253E3A59007CB6FE /* Assets.xcassets */,
+				1ABB8687253E3A59007CB6FE /* Info.plist */,
+			);
+			path = TwoPass;
+			sourceTree = "<group>";
+		};
+		1ABB8690253E3A5A007CB6FE /* TwoPass Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1ABB89DF253E48EC007CB6FE /* TwoPass Extension.entitlements */,
+				1ABB8691253E3A5A007CB6FE /* InterfaceController.swift */,
+				1ABB8709253E3C74007CB6FE /* CodeTableViewRow.swift */,
+				1ABB8718253E3D8C007CB6FE /* WatchDataManager.swift */,
+				1ABB8693253E3A5A007CB6FE /* ExtensionDelegate.swift */,
+				1ABB8699253E3A5A007CB6FE /* Assets.xcassets */,
+				1ABB869B253E3A5A007CB6FE /* Info.plist */,
+				1ABB869C253E3A5A007CB6FE /* PushNotificationPayload.apns */,
+			);
+			path = "TwoPass Extension";
 			sourceTree = "<group>";
 		};
 		1ABD605E2537BA3B00E51B38 /* 2Pass */ = {
@@ -565,6 +678,8 @@
 				CA274FDF46A68F752DBA6176 /* Pods-TOTP-2Pass Extension.release.xcconfig */,
 				57D10A0986D0D67F93172165 /* Pods-2PassExtension.debug.xcconfig */,
 				84091A826092422A157247B6 /* Pods-2PassExtension.release.xcconfig */,
+				CCE16AB53BC359EBC4D0F3EF /* Pods-TwoPass Extension.debug.xcconfig */,
+				91D937F96CAE13CC83A69D20 /* Pods-TwoPass Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -953,11 +1068,13 @@
 				BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */,
 				1A14D39C2534E05400CC56CF /* ShellScript */,
 				1ABD604C2537BA0C00E51B38 /* Embed App Extensions */,
+				1ABB86A0253E3A5A007CB6FE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1ABD60682537BA3B00E51B38 /* PBXTargetDependency */,
+				1ABB869E253E3A5A007CB6FE /* PBXTargetDependency */,
 			);
 			name = TOTP;
 			productName = TOTP;
@@ -999,6 +1116,43 @@
 			productName = TOTPUITests;
 			productReference = 1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1ABB867F253E3A59007CB6FE /* TwoPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABB86A7253E3A5A007CB6FE /* Build configuration list for PBXNativeTarget "TwoPass" */;
+			buildPhases = (
+				1ABB867E253E3A59007CB6FE /* Resources */,
+				1ABB86A3253E3A5A007CB6FE /* Embed App Extensions */,
+				CD01CFB0DC304801CB0384D0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ABB868F253E3A5A007CB6FE /* PBXTargetDependency */,
+			);
+			name = TwoPass;
+			productName = TwoPass;
+			productReference = 1ABB8680253E3A59007CB6FE /* TwoPass.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1ABB868B253E3A5A007CB6FE /* TwoPass Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABB86A6253E3A5A007CB6FE /* Build configuration list for PBXNativeTarget "TwoPass Extension" */;
+			buildPhases = (
+				9F2D117FEBE2C00BE6A9FBBF /* [CP] Check Pods Manifest.lock */,
+				1ABB8688253E3A5A007CB6FE /* Sources */,
+				1ABB8689253E3A5A007CB6FE /* Frameworks */,
+				1ABB868A253E3A5A007CB6FE /* Resources */,
+				6184CC4BAED6EF4204E31AEC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwoPass Extension";
+			productName = "TwoPass Extension";
+			productReference = 1ABB868C253E3A5A007CB6FE /* TwoPass Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		1ABD605A2537BA3B00E51B38 /* 2PassExtension */ = {
 			isa = PBXNativeTarget;
@@ -1059,6 +1213,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A3BFF191E827910008B0C81;
 					};
+					1ABB867F253E3A59007CB6FE = {
+						CreatedOnToolsVersion = 12.0.1;
+						DevelopmentTeam = GA56SWJ3YH;
+						ProvisioningStyle = Automatic;
+					};
+					1ABB868B253E3A5A007CB6FE = {
+						CreatedOnToolsVersion = 12.0.1;
+						DevelopmentTeam = GA56SWJ3YH;
+						ProvisioningStyle = Automatic;
+					};
 					1ABD605A2537BA3B00E51B38 = {
 						CreatedOnToolsVersion = 12.0.1;
 						DevelopmentTeam = GA56SWJ3YH;
@@ -1083,6 +1247,8 @@
 				1A3BFF2D1E827911008B0C81 /* TOTPTests */,
 				1A3BFF381E827911008B0C81 /* TOTPUITests */,
 				1ABD605A2537BA3B00E51B38 /* 2PassExtension */,
+				1ABB867F253E3A59007CB6FE /* TwoPass */,
+				1ABB868B253E3A5A007CB6FE /* TwoPass Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1110,6 +1276,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABB867E253E3A59007CB6FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABB8686253E3A59007CB6FE /* Assets.xcassets in Resources */,
+				1ABB8684253E3A59007CB6FE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABB868A253E3A5A007CB6FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABB869A253E3A5A007CB6FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1160,6 +1343,52 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6184CC4BAED6EF4204E31AEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwoPass Extension/Pods-TwoPass Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Base32-watchOS4.0/Base32.framework",
+				"${BUILT_PRODUCTS_DIR}/OneTimePassword-watchOS4.0/OneTimePassword.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-watchOS4.0/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-watchOS4.0/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base32.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneTimePassword.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwoPass Extension/Pods-TwoPass Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2D117FEBE2C00BE6A9FBBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwoPass Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BACCC52933DCDFA915936990 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1167,12 +1396,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TOTP/Pods-TOTP-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Base32/Base32.framework",
+				"${BUILT_PRODUCTS_DIR}/Base32-iOS13.0/Base32.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/OneTimePassword/OneTimePassword.framework",
+				"${BUILT_PRODUCTS_DIR}/OneTimePassword-iOS13.0/OneTimePassword.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-iOS13.0/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS13.0/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -1319,6 +1548,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1ABB8688253E3A5A007CB6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABB8719253E3D8C007CB6FE /* WatchDataManager.swift in Sources */,
+				1ABB870A253E3C74007CB6FE /* CodeTableViewRow.swift in Sources */,
+				1ABB8694253E3A5A007CB6FE /* ExtensionDelegate.swift in Sources */,
+				1ABB86B4253E3AA3007CB6FE /* User.swift in Sources */,
+				1ABB8711253E3CB5007CB6FE /* Code.swift in Sources */,
+				1ABB8692253E3A5A007CB6FE /* InterfaceController.swift in Sources */,
+				1ABB86F4253E3B11007CB6FE /* FileManager+Extension.swift in Sources */,
+				1ABB86D9253E3B06007CB6FE /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ABD60572537BA3B00E51B38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1347,6 +1591,16 @@
 			target = 1A3BFF191E827910008B0C81 /* TOTP */;
 			targetProxy = 1A3BFF3A1E827911008B0C81 /* PBXContainerItemProxy */;
 		};
+		1ABB868F253E3A5A007CB6FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ABB868B253E3A5A007CB6FE /* TwoPass Extension */;
+			targetProxy = 1ABB868E253E3A5A007CB6FE /* PBXContainerItemProxy */;
+		};
+		1ABB869E253E3A5A007CB6FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ABB867F253E3A59007CB6FE /* TwoPass */;
+			targetProxy = 1ABB869D253E3A5A007CB6FE /* PBXContainerItemProxy */;
+		};
 		1ABD60682537BA3B00E51B38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1ABD605A2537BA3B00E51B38 /* 2PassExtension */;
@@ -1369,6 +1623,14 @@
 				1A3BFF271E827910008B0C81 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1ABB8682253E3A59007CB6FE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ABB8683253E3A59007CB6FE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1505,7 +1767,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
@@ -1530,7 +1792,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
@@ -1597,6 +1859,122 @@
 			};
 			name = Release;
 		};
+		1ABB86A1253E3A5A007CB6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = TwoPass/TwoPass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = TwoPass_Extension;
+				INFOPLIST_FILE = TwoPass/Info.plist;
+				MARKETING_VERSION = 2.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		1ABB86A2253E3A5A007CB6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = TwoPass/TwoPass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = TwoPass_Extension;
+				INFOPLIST_FILE = TwoPass/Info.plist;
+				MARKETING_VERSION = 2.2;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		1ABB86A4253E3A5A007CB6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE16AB53BC359EBC4D0F3EF /* Pods-TwoPass Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "TwoPass Extension/TwoPass Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "TwoPass Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 2.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		1ABB86A5253E3A5A007CB6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D937F96CAE13CC83A69D20 /* Pods-TwoPass Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "TwoPass Extension/TwoPass Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA56SWJ3YH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "TwoPass Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 2.2;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarik.Auth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 		1ABD606B2537BA3B00E51B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57D10A0986D0D67F93172165 /* Pods-2PassExtension.debug.xcconfig */;
@@ -1617,7 +1995,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tarik.Auth.-Pass";
@@ -1648,7 +2026,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tarik.Auth.-Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1693,6 +2071,24 @@
 			buildConfigurations = (
 				1A3BFF491E827911008B0C81 /* Debug */,
 				1A3BFF4A1E827911008B0C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ABB86A6253E3A5A007CB6FE /* Build configuration list for PBXNativeTarget "TwoPass Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABB86A4253E3A5A007CB6FE /* Debug */,
+				1ABB86A5253E3A5A007CB6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ABB86A7253E3A5A007CB6FE /* Build configuration list for PBXNativeTarget "TwoPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABB86A1253E3A5A007CB6FE /* Debug */,
+				1ABB86A2253E3A5A007CB6FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

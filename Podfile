@@ -1,14 +1,17 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '13.0'
 use_frameworks!
 
 def shared_pods
-    pod 'RealmSwift'
     pod 'Base32'
     pod 'OneTimePassword'
+    pod 'RealmSwift'
+
 end
 
+#app
 target 'TOTP' do
+  platform :ios, '13.0'
+  use_frameworks!
   shared_pods
   pod 'Firebase/Core'
   pod 'Firebase/RemoteConfig'
@@ -20,6 +23,13 @@ target 'TOTP' do
 
 end
 
+#widget
 target '2PassExtension' do
+  shared_pods
+end
+
+#watch
+target 'TwoPass Extension' do
+  platform :watchos, '4.0'
   shared_pods
 end

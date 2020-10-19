@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TwoPass" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="qQY-eb-hpa">
+                            <items>
+                                <tableRow identifier="CodeTableViewRow" selectable="NO" id="jaM-N6-8uR" customClass="CodeTableViewRow" customModule="TwoPass_Extension">
+                                    <group key="rootItem" width="1" height="94" alignment="left" layout="vertical" spacing="5" id="eEs-Z2-vvc">
+                                        <items>
+                                            <label width="123" height="39" alignment="left" text="345 678" textAlignment="center" id="awx-2X-o6c">
+                                                <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                            </label>
+                                            <label width="123" height="20" alignment="left" text="name" minimumScaleFactor="0.59999999999999998" id="Xsf-Ld-Nws"/>
+                                            <label width="123" height="20" alignment="left" text="issuer" id="HpO-xk-717"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="codeLabel" destination="awx-2X-o6c" id="yBA-J6-Pge"/>
+                                        <outlet property="issuerLabel" destination="HpO-xk-717" id="9Zj-Lj-oc9"/>
+                                        <outlet property="nameLabel" destination="Xsf-Ld-Nws" id="w0Y-eu-Kj7"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="qQY-eb-hpa" id="cWY-OK-5ic"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>
