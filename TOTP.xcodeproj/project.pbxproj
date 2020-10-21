@@ -17,7 +17,7 @@
 		1A13E9BA2533529F00EC95E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13E9B92533529F00EC95E4 /* Constants.swift */; };
 		1A14D3902534DD2C00CC56CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A14D38F2534DD2C00CC56CF /* GoogleService-Info.plist */; };
 		1A1CEAC91E8549D50008F075 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
-		1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
+		1A1CEACB1E85516F0008F075 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmManager.swift */; };
 		1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */; };
 		1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF211E827910008B0C81 /* Main.storyboard */; };
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
@@ -33,7 +33,7 @@
 		1ABD60662537BA3B00E51B38 /* _Pass.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD60612537BA3B00E51B38 /* _Pass.intentdefinition */; };
 		1ABD60692537BA3B00E51B38 /* 2PassExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1ABD605B2537BA3B00E51B38 /* 2PassExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1ABD60752537BA9000E51B38 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
-		1ABD607A2537BA9300E51B38 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmData.swift */; };
+		1ABD607A2537BA9300E51B38 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEACA1E85516F0008F075 /* RealmManager.swift */; };
 		1ABD607B2537BAA300E51B38 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3515D2531EFAD008F43A8 /* Array+Extensions.swift */; };
 		1AC1EB0BB57FB629CD560AC6 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF7430E5CC662F6070E5A5 /* AddItemInteractor.swift */; };
 		1AC351442531C0AA008F43A8 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351432531C0AA008F43A8 /* UIManager.swift */; };
@@ -154,7 +154,7 @@
 		1A13E9B92533529F00EC95E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1A14D38F2534DD2C00CC56CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		1A1CEACA1E85516F0008F075 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		1A1CEACA1E85516F0008F075 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		1A3BFF1A1E827910008B0C81 /* TOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF1D1E827910008B0C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A3BFF221E827910008B0C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -461,7 +461,7 @@
 		1A8236E61E83F52700D1A4D7 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				1A1CEACA1E85516F0008F075 /* RealmData.swift */,
+				1A1CEACA1E85516F0008F075 /* RealmManager.swift */,
 				1A3DA42D253E18F000CE5F6D /* CloudError.swift */,
 				1AC351432531C0AA008F43A8 /* UIManager.swift */,
 			);
@@ -1224,7 +1224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A3BFF1E1E827910008B0C81 /* AppDelegate.swift in Sources */,
-				1A1CEACB1E85516F0008F075 /* RealmData.swift in Sources */,
+				1A1CEACB1E85516F0008F075 /* RealmManager.swift in Sources */,
 				1A1CEAC91E8549D50008F075 /* User.swift in Sources */,
 				0EC83950B3E8611A9177E145 /* MainListAssemblyContainer.swift in Sources */,
 				E1AF5F888A653EF69095D0C5 /* MainListViewInput.swift in Sources */,
@@ -1326,7 +1326,7 @@
 				1A3DA452253E1B7B00CE5F6D /* CloudError.swift in Sources */,
 				1ABD60602537BA3B00E51B38 /* _Pass.swift in Sources */,
 				1ABD607B2537BAA300E51B38 /* Array+Extensions.swift in Sources */,
-				1ABD607A2537BA9300E51B38 /* RealmData.swift in Sources */,
+				1ABD607A2537BA9300E51B38 /* RealmManager.swift in Sources */,
 				1ABD60652537BA3B00E51B38 /* _Pass.intentdefinition in Sources */,
 				1ABD60752537BA9000E51B38 /* User.swift in Sources */,
 				1A8FBA6F253983250068B02F /* FileManager+Extension.swift in Sources */,
@@ -1498,7 +1498,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
@@ -1523,7 +1523,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_ENTITLEMENTS = TOTP/TOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TOTP/Info.plist;
@@ -1610,7 +1610,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = 2PassExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = 2Pass/Info.plist;
@@ -1641,7 +1641,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = 2PassExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = 2Pass/Info.plist;

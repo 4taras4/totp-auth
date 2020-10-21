@@ -19,7 +19,9 @@ struct Provider: IntentTimelineProvider {
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (CodeEntry) -> ()) {
-        let entry = CodeEntry(date: Date(), otp: "OTP Code", name: "account.com", issuer: "", configuration: configuration)
+        let user = readContents().first!
+        let code = convertUser(user: user)
+        let entry = CodeEntry(date: Date(), otp: code.otp, name: code.name, issuer: code.issuer, configuration: configuration)
         completion(entry)
     }
 

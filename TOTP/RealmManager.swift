@@ -21,11 +21,6 @@ class RealmManager {
     fileprivate let iCloudDocumentsURL = FileManager.default.url(forUbiquityContainerIdentifier: Constants.iCloud.appId)?.appendingPathComponent(Constants.iCloud.documents, isDirectory: true)
     fileprivate let iCloudDocumentToCheckURL = FileManager.default.url(forUbiquityContainerIdentifier: Constants.iCloud.appId)?.appendingPathComponent(Constants.iCloud.documents, isDirectory: true).appendingPathComponent(Constants.iCloud.realm, isDirectory: false)
     
-    init() {
-        print("init with shared container")
-        widgetDataMigration()
-    }
-    
     func saveNewUser(name:String?, issuer:String?, token:String, completionHandler: @escaping((Bool)->())) {
         do {
             let realm = try Realm()
@@ -70,7 +65,7 @@ class RealmManager {
         }
     }
     
-    private func widgetDataMigration() {
+    func widgetDataMigration() {
         let archiveURL = FileManager.sharedContainerURL().appendingPathComponent(Constants.settings.contentsJson)
         let encoder = JSONEncoder()
         let users = fetchCodesList() ?? []
@@ -147,7 +142,6 @@ class RealmManager {
                 do {
                     guard let downloadUrl = iCloudDocumentToCheckURL else {
                         throw CloudError.downloadError("No saved backups")
-                        return
                     }
                     try fileManager.startDownloadingUbiquitousItem(at: downloadUrl)
                 } catch let error {
