@@ -23,6 +23,8 @@
 		1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3BFF261E827910008B0C81 /* LaunchScreen.storyboard */; };
 		1A3DA42E253E18F000CE5F6D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DA42D253E18F000CE5F6D /* CloudError.swift */; };
 		1A3DA452253E1B7B00CE5F6D /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DA42D253E18F000CE5F6D /* CloudError.swift */; };
+		1A5BF9EC2540DC04009B8507 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF9EB2540DC04009B8507 /* WatchSessionManager.swift */; };
+		1A5BFA012540E0C5009B8507 /* ConnectivityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BFA002540E0C5009B8507 /* ConnectivityDelegate.swift */; };
 		1A8FBA6A2539831A0068B02F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBA692539831A0068B02F /* FileManager+Extension.swift */; };
 		1A8FBA6F253983250068B02F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBA692539831A0068B02F /* FileManager+Extension.swift */; };
 		1ABB8684253E3A59007CB6FE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABB8682253E3A59007CB6FE /* Interface.storyboard */; };
@@ -215,6 +217,8 @@
 		1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF3F1E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3DA42D253E18F000CE5F6D /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
+		1A5BF9EB2540DC04009B8507 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		1A5BFA002540E0C5009B8507 /* ConnectivityDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityDelegate.swift; sourceTree = "<group>"; };
 		1A8FBA642538F5370068B02F /* 2PassExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 2PassExtension.entitlements; sourceTree = "<group>"; };
 		1A8FBA692539831A0068B02F /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		1A97099F252D25E400EFE062 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -549,6 +553,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1CEACA1E85516F0008F075 /* RealmManager.swift */,
+				1A5BF9EB2540DC04009B8507 /* WatchSessionManager.swift */,
 				1A3DA42D253E18F000CE5F6D /* CloudError.swift */,
 				1AC351432531C0AA008F43A8 /* UIManager.swift */,
 			);
@@ -587,6 +592,7 @@
 				1ABB8709253E3C74007CB6FE /* CodeTableViewRow.swift */,
 				1ABB8718253E3D8C007CB6FE /* WatchDataManager.swift */,
 				1ABB8693253E3A5A007CB6FE /* ExtensionDelegate.swift */,
+				1A5BFA002540E0C5009B8507 /* ConnectivityDelegate.swift */,
 				1ABB8699253E3A5A007CB6FE /* Assets.xcassets */,
 				1ABB869B253E3A5A007CB6FE /* Info.plist */,
 				1ABB869C253E3A5A007CB6FE /* PushNotificationPayload.apns */,
@@ -1506,6 +1512,7 @@
 				72BB18E6577AB6AD9AD6668A /* AddItemManualyViewController.swift in Sources */,
 				F7BD3A4DB6537091F5FE6351 /* AddItemManualyModuleInput.swift in Sources */,
 				4330879BD4EE740E90492865 /* AddItemManualyPresenter.swift in Sources */,
+				1A5BF9EC2540DC04009B8507 /* WatchSessionManager.swift in Sources */,
 				9131302AB0FE85EA2FE2BBAD /* AddItemManualyInteractorInput.swift in Sources */,
 				28921BD4FF7BCF02E0E7B5E7 /* AddItemManualyInteractorOutput.swift in Sources */,
 				3E0C974B97E3D4D2AA20EA1E /* AddItemManualyInteractor.swift in Sources */,
@@ -1552,6 +1559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5BFA012540E0C5009B8507 /* ConnectivityDelegate.swift in Sources */,
 				1ABB8719253E3D8C007CB6FE /* WatchDataManager.swift in Sources */,
 				1ABB870A253E3C74007CB6FE /* CodeTableViewRow.swift in Sources */,
 				1ABB8694253E3A5A007CB6FE /* ExtensionDelegate.swift in Sources */,
@@ -1872,6 +1880,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = TwoPass/TwoPass.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = TwoPass_Extension;
@@ -1902,6 +1911,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = TwoPass/TwoPass.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = TwoPass_Extension;
@@ -1930,6 +1940,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "TwoPass Extension/TwoPass Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "TwoPass Extension/Info.plist";
@@ -1959,6 +1970,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "TwoPass Extension/TwoPass Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GA56SWJ3YH;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "TwoPass Extension/Info.plist";

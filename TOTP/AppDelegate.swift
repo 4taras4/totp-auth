@@ -38,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         RealmManager.shared.widgetDataMigration()
         FirebaseApp.configure()
+        if let watchData = WatchSessionManager.shared.replyUserData() {
+            WatchSessionManager.shared.sendData(data: watchData)
+        }
         return true
     }
 }

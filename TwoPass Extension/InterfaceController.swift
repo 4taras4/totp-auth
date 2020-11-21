@@ -9,13 +9,19 @@
 import WatchKit
 import Foundation
 import RealmSwift
+import WatchConnectivity
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, ContentUpdateDelegate {
+   
+    
     @IBOutlet var tableView: WKInterfaceTable!
-
+    private lazy var connectivityDelegate: ConnectivityDelegate = {
+        return ConnectivityDelegate()
+    }()
     var refreshTimer: Timer?
     var interval = 30.0
     var updated: Int = 0
+    
     var codes = [Code]() {
         didSet {
             updateTimerIfNeeded()
@@ -28,6 +34,9 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func willActivate() {
+        WCSession.default.delegate = connectivityDelegate
+        WCSession.default.activate()
+        connectivityDelegate.delegateUI = self
         startRefreshData()
     }
     
@@ -72,5 +81,9 @@ class InterfaceController: WKInterfaceController {
             refreshTimer = nil
             refreshTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(refreshData), userInfo: nil, repeats: true)
         }
+    }
+    
+    func updateUI() {
+        refreshData()
     }
 }

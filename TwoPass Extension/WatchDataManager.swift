@@ -9,6 +9,10 @@
 import WatchKit
 import OneTimePassword
 import Base32
+import WatchConnectivity
+protocol ContentUpdateDelegate: class {
+    func updateUI()
+}
 
 class WatchDataManager {
    
@@ -34,6 +38,16 @@ class WatchDataManager {
                 contents = try decoder.decode([User].self, from: codeData)
             } catch {
                 print("Error: Can't decode contents")
+            }
+        }
+        if contents.isEmpty {
+            if let localStorage = UserDefaults.standard.object(forKey: Constants.settings.contentsJson) as? Data {
+                print("Get items from local storage")
+                do {
+                    contents = try decoder.decode([User].self, from: localStorage)
+                } catch {
+                    print("Error: Can't decode contents")
+                }
             }
         }
         return contents
