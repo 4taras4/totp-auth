@@ -32,15 +32,15 @@ class SettingsViewController: UITableViewController {
 // MARK: SettingsViewInput
 extension SettingsViewController: SettingsViewInput {
     func showAlert(error: String) {
-        UIManager.shared.showAlert(title: "Error ❌", message: error)
+        UIManager.shared.showAlert(title: Constants.text.settingsErrorAlertTitle, message: error)
     }
     
     func backupCreated() {
-        UIManager.shared.showAlert(title: "Success 🎉", message: "Backup created ✅")
+        UIManager.shared.showAlert(title: Constants.text.settingsSuccessAlertTitle, message: Constants.text.settingsSuccessBackupDataCreatedAlertDescription)
     }
     
     func restoredFromBackup() {
-        UIManager.shared.showAlert(title: "Success 🎉", message: "Data restored from backup  ✅")
+        UIManager.shared.showAlert(title: Constants.text.settingsSuccessAlertTitle, message: Constants.text.settingsSuccessRestoredDataAlertDescription)
     }
     
     func setSwitch(isEnabled: Bool) {
@@ -48,7 +48,7 @@ extension SettingsViewController: SettingsViewInput {
     }
     
     func mailUnavailable() {
-        UIManager.shared.showAlert(title: "Error  ❌", message: "Mail client unavailable. Please login to native Mail client to send message")
+        UIManager.shared.showAlert(title: Constants.text.settingsErrorAlertTitle, message: Constants.text.settingsMailUnavailableAlertDescription)
     }
     
 	func setupInitialState() {

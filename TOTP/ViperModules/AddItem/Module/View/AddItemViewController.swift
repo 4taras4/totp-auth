@@ -14,6 +14,9 @@ class AddItemViewController: UIViewController {
 	// MARK: Properties
 	var output: AddItemViewOutput!
 
+    @IBAction func cameraSettingsAction(_ sender: Any) {
+        output.cameraSettingsPressed()
+    }
     @IBAction func addManualyAction(_ sender: Any) {
         output.setManualyPressed()
     }
@@ -33,7 +36,7 @@ class AddItemViewController: UIViewController {
 // MARK: AddItemViewInput
 extension AddItemViewController: AddItemViewInput {
     func failedSaveData() {
-        UIManager.shared.showAlert(title: "Error", message: "Can't add token")
+        UIManager.shared.showAlert(title: Constants.text.settingsErrorAlertTitle, message: Constants.text.cantAddTokenAlertDescription)
     }
     
 

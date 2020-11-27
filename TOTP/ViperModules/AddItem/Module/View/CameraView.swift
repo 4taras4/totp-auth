@@ -37,6 +37,10 @@ final class CameraView: UIView {
         commonInit()
     }
 
+    deinit {
+        captureSession?.stopRunning()
+    }
+    
     private func commonInit() {
         contentMode = .scaleAspectFit
         beginSession()

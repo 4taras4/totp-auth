@@ -13,4 +13,6 @@ protocol AddItemViewOutput: class {
     func setTokenUrl(string: String)
     
     func setManualyPressed()
+    
+    func cameraSettingsPressed()
 }

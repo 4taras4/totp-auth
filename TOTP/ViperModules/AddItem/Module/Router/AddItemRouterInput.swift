@@ -13,4 +13,6 @@ protocol AddItemRouterInput: class {
     func popToRoot()
     
     func pushManualyViewController()
+    
+    func showSettingsAlert()
 }
