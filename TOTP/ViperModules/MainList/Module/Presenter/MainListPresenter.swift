@@ -48,7 +48,6 @@ final class MainListPresenter: NSObject, MainListViewOutput {
     }
     
     @objc func refreshData() {
-        print(RealmManager.shared.fetchCodesList())
         interactor.converUserData(users: RealmManager.shared.fetchCodesList() ?? [])
     }
     
@@ -175,9 +174,9 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
     }
     
     private func deleteRowAtIndexPath(indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "Remove selected account", message: "if you remove account it's will be deleted permamently", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
-        let okAction = UIAlertAction(title: "Remove", style: .destructive, handler: { _ in
+        let alertController = UIAlertController(title: Constants.text.removeBackupAlertTitle, message: Constants.text.removeBackupAlertDescription, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: Constants.text.cancelAlertButton, style: .cancel)
+        let okAction = UIAlertAction(title: Constants.text.removeAlertButton, style: .destructive, handler: { _ in
             guard let item = RealmManager.shared.getUserBy(token: self.codeList[indexPath.row].token) else { return }
             RealmManager.shared.removeObject(user: item, completionHandler: { success in
                 if success {
@@ -222,9 +221,9 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
         } else {
             switch section {
             case 0:
-                return "Favourites"
+                return Constants.text.favouritesTableTitle
             default:
-                return "Full List"
+                return Constants.text.fullListTableTitle
             }
         }
     }

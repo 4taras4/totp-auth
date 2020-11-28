@@ -30,12 +30,17 @@ struct Constants {
         static let cameraAlertDescription = "Go to Settings and allow camera permission to scan QR"
         static let settingsAlertButton = "Settings"
         static let cancelAlertButton = "Cancel"
+        static let removeAlertButton = "Remove"
         static let settingsErrorAlertTitle = "Error ❌"
         static let settingsSuccessAlertTitle = "Success 🎉"
         static let settingsSuccessRestoredDataAlertDescription = "Data restored from backup ✅"
         static let settingsSuccessBackupDataCreatedAlertDescription = "Backup created ✅"
         static let settingsMailUnavailableAlertDescription = "Mail client unavailable. Please login to native Mail client to send message"
         static let cantAddTokenAlertDescription = "Can't add token"
+        static let favouritesTableTitle = "Favourites"
+        static let fullListTableTitle = "Full List"
+        static let removeBackupAlertTitle = "Remove selected account"
+        static let removeBackupAlertDescription = "if you remove account it's will be deleted permamently"
 
     }
 }
