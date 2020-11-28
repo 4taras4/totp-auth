@@ -105,12 +105,19 @@
                                 <action selector="settingsAction:" destination="BYZ-38-t0r" id="WKX-FS-UHV"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rhL-dB-37H">
-                            <color key="tintColor" systemColor="labelColor"/>
-                            <connections>
-                                <action selector="addAction:" destination="BYZ-38-t0r" id="MwM-z3-F6I"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="rhL-dB-37H">
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="addAction:" destination="BYZ-38-t0r" id="MwM-z3-F6I"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="arrow.up.arrow.down.square" catalog="system" id="GF6-Gt-fLC">
+                                <connections>
+                                    <action selector="favouriteAction:" destination="BYZ-38-t0r" id="YJm-8P-ZDA"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
@@ -609,6 +616,7 @@
     <resources>
         <image name="Group" width="1193" height="1444"/>
         <image name="TouchID_on" width="155" height="155"/>
+        <image name="arrow.up.arrow.down.square" catalog="system" width="128" height="114"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">

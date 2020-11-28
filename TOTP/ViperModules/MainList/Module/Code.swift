@@ -12,4 +12,5 @@ struct Code {
     var name: String?
     var issuer: String?
     var code: String
+    var token: String?
 }

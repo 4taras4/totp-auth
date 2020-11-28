@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainListInteractorOutput: class {
-    func listOfCodes(codes: [Code])
+    func listOfCodes(codes: [Code], favourites: [Code])
 }

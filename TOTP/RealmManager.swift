@@ -21,13 +21,14 @@ class RealmManager {
     fileprivate let iCloudDocumentsURL = FileManager.default.url(forUbiquityContainerIdentifier: Constants.iCloud.appId)?.appendingPathComponent(Constants.iCloud.documents, isDirectory: true)
     fileprivate let iCloudDocumentToCheckURL = FileManager.default.url(forUbiquityContainerIdentifier: Constants.iCloud.appId)?.appendingPathComponent(Constants.iCloud.documents, isDirectory: true).appendingPathComponent(Constants.iCloud.realm, isDirectory: false)
     
-    func saveNewUser(name:String?, issuer:String?, token:String, completionHandler: @escaping((Bool)->())) {
+    func saveNewUser(name: String?, issuer: String?, token: String, isFav: Bool = false, completionHandler: @escaping((Bool)->())) {
         do {
             let realm = try Realm()
             let newUser = User()
             newUser.name = name
             newUser.issuer = issuer
             newUser.token = token
+            newUser.isFavourite = isFav
             try realm.write {
                 realm.add(newUser, update: .all)
                 widgetDataMigration()
@@ -45,6 +46,20 @@ class RealmManager {
             let realm = try Realm()
             userList = realm.objects(User.self)
             return userList?.toArray()
+        } catch let error {
+            print(error)
+            return nil
+        }
+    }
+    
+    func getUserBy(token: String?) -> User? {
+        guard let primaryKey = token else {
+            print("No primary key for user")
+            return nil
+        }
+        do {
+            let realm = try Realm()
+            return realm.object(ofType: User.self, forPrimaryKey: primaryKey)
         } catch let error {
             print(error)
             return nil
@@ -128,6 +143,7 @@ class RealmManager {
                         try fileManager.removeItem(at: Realm.Configuration.defaultConfiguration.fileURL!)
                     }
                     try fileManager.copyItem(at: DocumentsDirectory.iCloudDocumentsURL!.appendingPathComponent(Constants.iCloud.realm), to: DocumentsDirectory.localDocumentsURL.appendingPathComponent(Constants.iCloud.realm))
+                    self.runMigrationIfNeeded()
                     let realm = try Realm()
                     try realm.write {
                         let arrays = self.fetchCodesList()
@@ -149,6 +165,14 @@ class RealmManager {
                 }
             }
         }
+    }
+    
+    func runMigrationIfNeeded() {
+        Realm.Configuration.defaultConfiguration = Realm.Configuration(
+            schemaVersion: 3,
+            migrationBlock: { migration, oldSchemaVersion in
+                    if (oldSchemaVersion < 3) {}
+        })
     }
     
     private func isCloudEnabled() -> Bool {

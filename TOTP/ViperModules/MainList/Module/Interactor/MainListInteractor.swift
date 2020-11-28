@@ -14,12 +14,16 @@ final class MainListInteractor: MainListInteractorInput {
 
     func converUserData(users: [User]) {
         var codes = [Code]()
+        var favouritesArray = [Code]()
         for u in users {
             if let c = convertUser(user: u) {
+                if u.isFavourite == true {
+                    favouritesArray.append(c)
+                }
                 codes.append(c)
             }
         }
-        output?.listOfCodes(codes: codes)
+        output?.listOfCodes(codes: codes, favourites: favouritesArray)
     }
     
 
@@ -44,6 +48,6 @@ final class MainListInteractor: MainListInteractorInput {
             print("Invalid generator parameters")
             return nil
         }
-        return Code(name: user.name, issuer: user.issuer, code: currentCode)
+        return Code(name: user.name, issuer: user.issuer, code: currentCode, token: user.token)
     }
 }

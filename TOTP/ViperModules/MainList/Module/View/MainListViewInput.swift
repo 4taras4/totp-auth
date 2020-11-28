@@ -12,4 +12,5 @@ protocol MainListViewInput: class {
     
     func reloadTable()
 
+    func changeIsEdit()
 }
