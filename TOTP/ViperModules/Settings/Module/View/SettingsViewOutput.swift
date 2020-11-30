@@ -12,4 +12,7 @@ protocol SettingsViewOutput: class, UITableViewDelegate {
 	func viewIsReady()
     
     func blurSetting(isEnabled: Bool)
+ 
+    func biometricSetting(isEnabled: Bool)
+
 }

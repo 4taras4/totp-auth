@@ -12,8 +12,10 @@ protocol SettingsViewInput: class {
     
     func mailUnavailable()
     
-    func setSwitch(isEnabled: Bool)
+    func setBlurSwitch(isEnabled: Bool)
     
+    func setBiometricSwitch(isEnabled: Bool)
+
     func showAlert(error: String)
     
     func backupCreated()

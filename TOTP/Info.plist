@@ -27,7 +27,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>The camera is needed to scan QR code</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Application whant to use autorization by FaceID to safe your application data.</string>
+	<string>$(PRODUCT_NAME) Authentication with TouchId or FaceID</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>

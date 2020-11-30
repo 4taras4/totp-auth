@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Realm configuration
         RealmManager.shared.runMigrationIfNeeded()
         RealmManager.shared.widgetDataMigration()
-
+        BiometricsManager.shared.showAuthIfNeeded()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         FirebaseApp.configure()
         return true

@@ -11,6 +11,7 @@ import UIKit
 struct Constants {
     enum settings {
         static let blur = "blur"
+        static let biometric = "biometric"
         static let contentsJson = "contents.json"
         static let appGroup = "group.totp.app"
     }
@@ -41,6 +42,7 @@ struct Constants {
         static let fullListTableTitle = "Full List"
         static let removeBackupAlertTitle = "Remove selected account"
         static let removeBackupAlertDescription = "if you remove account it's will be deleted permamently"
+        static let biometricDescription = "Log in with Biometrics"
 
     }
 }

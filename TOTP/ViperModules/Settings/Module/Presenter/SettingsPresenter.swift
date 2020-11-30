@@ -20,14 +20,18 @@ final class SettingsPresenter: NSObject, SettingsViewOutput {
     // MARK: -
     // MARK: SettingsViewOutput
     func viewIsReady() {
-        view.setSwitch(isEnabled: UserDefaults.standard.bool(forKey: Constants.settings.blur))
+        view.setBlurSwitch(isEnabled: UserDefaults.standard.bool(forKey: Constants.settings.blur))
+        view.setBiometricSwitch(isEnabled: UserDefaults.standard.bool(forKey: Constants.settings.biometric))
     }
     
     func blurSetting(isEnabled: Bool) {
         interactor.setBlur(isEnabled: isEnabled)
     }
     
-
+    func biometricSetting(isEnabled: Bool) {
+        interactor.setBiometric(isEnabled: isEnabled)
+    }
+    
     func askReview() {
         if let url = URL(string: "https://apps.apple.com/us/app/2pass-totp/id1219919851?action=write-review") {
             UIApplication.shared.open(url)
