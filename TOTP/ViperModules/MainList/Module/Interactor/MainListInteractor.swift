@@ -14,12 +14,16 @@ final class MainListInteractor: MainListInteractorInput {
 
     func converUserData(users: [User]) {
         var codes = [Code]()
+        var favouritesArray = [Code]()
         for u in users {
             if let c = convertUser(user: u) {
+                if u.isFavourite == true {
+                    favouritesArray.append(c)
+                }
                 codes.append(c)
             }
         }
-        output?.listOfCodes(codes: codes)
+        output?.listOfCodes(codes: codes, favourites: favouritesArray)
     }
     
 
@@ -44,6 +48,34 @@ final class MainListInteractor: MainListInteractorInput {
             print("Invalid generator parameters")
             return nil
         }
-        return Code(name: user.name, issuer: user.issuer, code: currentCode)
+        return Code(name: user.name, issuer: user.issuer, code: currentCode, token: user.token)
+    }
+    
+    func deleteRow(with token: String?) {
+        let alertController = UIAlertController(title: Constants.text.removeBackupAlertTitle, message: Constants.text.removeBackupAlertDescription, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: Constants.text.cancelAlertButton, style: .cancel)
+        let okAction = UIAlertAction(title: Constants.text.removeAlertButton, style: .destructive, handler: { _ in
+            guard let item = RealmManager.shared.getUserBy(token: token) else { return }
+            RealmManager.shared.removeObject(user: item, completionHandler: { success in
+                if success {
+                    self.output?.dataBaseOperationFinished()
+                }
+            })
+        })
+
+        alertController.addAction(cancelAction)
+        alertController.addAction(okAction)
+        if let topController = UIApplication.topViewController() {
+            topController.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    func updateRow(with token: String?, isFavourite: Bool) {
+        guard let item = RealmManager.shared.getUserBy(token: token) else { return }
+        RealmManager.shared.saveNewUser(name: item.name, issuer: item.issuer, token: item.token ?? "", isFav: isFavourite, completionHandler: { completed in
+            if completed {
+                self.output?.dataBaseOperationFinished()
+            }
+        })
     }
 }

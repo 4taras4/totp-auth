@@ -35,6 +35,31 @@ class UIManager {
                 afterPresented: nil)
     }
 
+    func showAlertTwoButtons(title: String? = nil, message: String? = nil, confirmTitle: String = "Confirm", noTitle: String = "Cancel", pressConfirm:(()->())? = nil, pressNo: (()->())? = nil) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: confirmTitle, style: .default, handler:{ (UIAlertAction) in
+            if let tap = pressConfirm {
+                tap()
+            }
+        })
+        alertController.addAction(OKAction)
+        let cancelAction = UIAlertAction(title: noTitle, style: .cancel, handler: { (UIAlertAction) in
+            if let tap = pressNo {
+                tap()
+            }
+        })
+        alertController.addAction(cancelAction)
+
+        if let topController = UIApplication.topViewController() {
+            if let popoverPresentationController = alertController.popoverPresentationController {
+                popoverPresentationController.sourceView = topController.view
+                popoverPresentationController.sourceRect = topController.view.bounds
+            }
+            topController.present(alertController, animated: true, completion: nil)
+        }
+    }
+
+    
     func present<T: UIViewController>(viewController: T.Type, useSwinject: Bool, animated: Bool, isNeedNavigation: Bool = false, presentationStyle: UIModalPresentationStyle = .overFullScreen, beforePresented: ((T) -> ())? = nil, afterPresented: ((T) -> ())? = nil) where T: NibIdentifiable {
         guard let topController = UIApplication.topViewController() else {
             print("** Error: Couldn't load top view controller **")
@@ -104,57 +129,6 @@ class UIManager {
                topController.present(alertController, animated: true, completion: nil)
            }
        }
-    }
-    
-    func showAlertTwoButtons(title: String? = nil, message: String? = nil, confirmTitle: String = "Confirm", noTitle: String = "Cancel", pressConfirm:(()->())? = nil, pressNo: (()->())? = nil) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let OKAction = UIAlertAction(title: confirmTitle, style: .default, handler:{ (UIAlertAction) in
-            if let tap = pressConfirm {
-                tap()
-            }
-        })
-        alertController.addAction(OKAction)
-        let cancelAction = UIAlertAction(title: noTitle, style: .cancel, handler: { (UIAlertAction) in
-            if let tap = pressNo {
-                tap()
-            }
-        })
-        alertController.addAction(cancelAction)
-        
-        if let topController = UIApplication.topViewController() {
-            if let popoverPresentationController = alertController.popoverPresentationController {
-                popoverPresentationController.sourceView = topController.view
-                popoverPresentationController.sourceRect = topController.view.bounds
-            }
-            topController.present(alertController, animated: true, completion: nil)
-        }
-    }
-    
-
-    func presentLocalNotification(with identifier: String, content: UNNotificationContent) {
-        DispatchQueue.main.async {
-            let req = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
-            UNUserNotificationCenter.current().add(req)
-            
-        }
-    }
-
-    func removeLocalNotifications(_ identifiers: [String] = []) {
-        if identifiers.isEmpty {
-            print("***** Remove ALL local notifications *****")
-
-            UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-            UNUserNotificationCenter.current().removeAllDeliveredNotifications()
-        } else {
-            print("***** Remove local notifications: \(identifiers) *****")
-
-            UNUserNotificationCenter.current().getDeliveredNotifications(completionHandler: { notifications in
-                UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: identifiers)
-            })
-            UNUserNotificationCenter.current().getPendingNotificationRequests(completionHandler: { notifications in
-                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: identifiers)
-            })
-        }
     }
 
     private init() {}

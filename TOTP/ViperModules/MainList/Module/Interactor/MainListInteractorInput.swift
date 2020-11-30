@@ -10,4 +10,7 @@ import Foundation
 
 protocol MainListInteractorInput: class {
     func converUserData(users: [User])
+    func deleteRow(with token: String?)
+    func updateRow(with token: String?, isFavourite: Bool)
+
 }

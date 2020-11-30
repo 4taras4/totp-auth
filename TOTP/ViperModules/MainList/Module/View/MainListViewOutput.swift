@@ -17,4 +17,6 @@ protocol MainListViewOutput: class, UITableViewDelegate, UITableViewDataSource {
     func settingsButtonPressed()
     
     func addItemButtonPressed()
+    
+    func favItemButtonPressed()
 }

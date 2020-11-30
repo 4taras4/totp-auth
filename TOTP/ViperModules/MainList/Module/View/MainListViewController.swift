@@ -24,6 +24,10 @@ class MainListViewController: UIViewController {
         output.settingsButtonPressed()
     }
     
+    @IBAction func favouriteAction(_ sender: Any) {
+        output.favItemButtonPressed()
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     // MARK: -
 	// MARK: Life cycle
@@ -64,6 +68,9 @@ extension MainListViewController: MainListViewInput {
 
 	}
 
+    func changeIsEdit() {
+        tableView.setEditing(!tableView.isEditing, animated: true)
+    }
 }
 
 extension MainListViewController: NibIdentifiable {

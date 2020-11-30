@@ -30,13 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.autoBlur.isAutoBlur = UserDefaults.standard.bool(forKey: Constants.settings.blur)
         AppDelegate.autoBlur.blurStyle = .dark
         //Realm configuration
-        Realm.Configuration.defaultConfiguration = Realm.Configuration(
-            schemaVersion: 1,
-            migrationBlock: { migration, oldSchemaVersion in
-                    if (oldSchemaVersion < 1) {}
-        })
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        RealmManager.shared.runMigrationIfNeeded()
         RealmManager.shared.widgetDataMigration()
+
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         FirebaseApp.configure()
         return true
     }

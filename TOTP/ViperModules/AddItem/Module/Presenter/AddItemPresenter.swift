@@ -29,6 +29,10 @@ final class AddItemPresenter: AddItemViewOutput {
     func setManualyPressed() {
         router.pushManualyViewController()
     }
+    
+    func cameraSettingsPressed() {
+        router.showSettingsAlert()
+    }
 }
 
 // MARK: -
@@ -42,8 +46,6 @@ extension AddItemPresenter: AddItemInteractorOutput {
         router.popToRoot()
         SKStoreReviewController.requestReview()
     }
-    
-
 }
 
 // MARK: -
