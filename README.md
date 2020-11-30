@@ -19,6 +19,9 @@ This application provides one time passwords to be used with the two factor auth
 - [x] VIPER Architecture
 - [x] Widget on swiftUI
 - [x] Backup data to iCloud
+- [x] iPad support
+- [x] Favourite section
+- [x] Face ID authorization
 - [ ] Apple watch support
 - [ ] Mac compability
 - [ ] Test coverage
