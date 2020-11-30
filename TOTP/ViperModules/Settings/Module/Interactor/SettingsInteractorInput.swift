@@ -10,7 +10,9 @@ import Foundation
 
 protocol SettingsInteractorInput: class {
     func setBlur(isEnabled: Bool)
-    
+  
+    func setBiometric(isEnabled: Bool)
+
     func createBackup()
     
     func restoreFromBackup()

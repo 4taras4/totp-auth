@@ -46,9 +46,9 @@ public class AutoBlurScreen {
         blurEffectView.frame = UIManager.shared.window!.frame
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         newBlur.addSubview(blurEffectView)
-        if let top = UIApplication.topViewController() {
+        if let top = UIApplication.topViewController()?.navigationController {
             top.view.addSubview(newBlur)
-        }
+        } 
     }
 
     public func removeBlurEffect() {

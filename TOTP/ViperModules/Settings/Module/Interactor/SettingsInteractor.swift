@@ -16,6 +16,14 @@ final class SettingsInteractor: SettingsInteractorInput {
         AppDelegate.autoBlur.isAutoBlur = isEnabled
     }
     
+    func setBiometric(isEnabled: Bool) {
+        if isEnabled {
+            BiometricsManager.shared.showAuthIfNeeded()
+        }
+        UserDefaults.standard.set(isEnabled, forKey: Constants.settings.biometric)
+        BiometricsManager.shared.biometricEnabled = isEnabled
+    }
+    
     func createBackup() {
         do {
             try RealmManager.shared.uploadDatabaseToCloudDrive()
