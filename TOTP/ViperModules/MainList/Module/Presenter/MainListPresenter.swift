@@ -66,6 +66,11 @@ final class MainListPresenter: NSObject, MainListViewOutput {
 // MARK: -
 // MARK: MainListInteractorOutput
 extension MainListPresenter: MainListInteractorOutput {
+   
+    func dataBaseOperationFinished() {
+        refreshData()
+    }
+    
     func listOfCodes(codes: [Code], favourites: [Code]) {
         favouriteList = favourites
         codeList = codes
@@ -126,9 +131,9 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
         if favouriteList.isEmpty {
             switch editingStyle {
             case .delete:
-                deleteRowAtIndexPath(indexPath: indexPath)
+                interactor.deleteRow(with: codeList[indexPath.row].token)
             case .insert:
-                updateRowAtIndexPath(indexPath: indexPath, isFavourite: true)
+                interactor.updateRow(with: codeList[indexPath.row].token, isFavourite: true)
             default:
                 break
             }
@@ -137,18 +142,18 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
             case 0:
                 switch editingStyle {
                 case .delete:
-                    updateRowAtIndexPath(indexPath: indexPath, isFavourite: false)
+                    interactor.updateRow(with: codeList[indexPath.row].token, isFavourite: false)
                 case .insert:
-                    updateRowAtIndexPath(indexPath: indexPath, isFavourite: true)
+                    interactor.updateRow(with: codeList[indexPath.row].token, isFavourite: true)
                 default:
                     break
                 }
             case 1:
                 switch editingStyle {
                 case .delete:
-                    deleteRowAtIndexPath(indexPath: indexPath)
+                    interactor.deleteRow(with: codeList[indexPath.row].token)
                 case .insert:
-                    updateRowAtIndexPath(indexPath: indexPath, isFavourite: true)
+                    interactor.updateRow(with: codeList[indexPath.row].token, isFavourite: true)
                 default:
                     break
                 }
@@ -171,35 +176,6 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
                 return tableView.isEditing ? .insert : .delete
             }
         }
-    }
-    
-    private func deleteRowAtIndexPath(indexPath: IndexPath) {
-        let alertController = UIAlertController(title: Constants.text.removeBackupAlertTitle, message: Constants.text.removeBackupAlertDescription, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: Constants.text.cancelAlertButton, style: .cancel)
-        let okAction = UIAlertAction(title: Constants.text.removeAlertButton, style: .destructive, handler: { _ in
-            guard let item = RealmManager.shared.getUserBy(token: self.codeList[indexPath.row].token) else { return }
-            RealmManager.shared.removeObject(user: item, completionHandler: { success in
-                if success {
-                    self.refreshData()
-                }
-            })
-        })
-
-        alertController.addAction(cancelAction)
-        alertController.addAction(okAction)
-        if let topController = UIApplication.topViewController() {
-            topController.present(alertController, animated: true, completion: nil)
-        }
-    }
-    
-    
-    private func updateRowAtIndexPath(indexPath: IndexPath, isFavourite: Bool = false) {
-        guard let item = RealmManager.shared.getUserBy(token: self.codeList[indexPath.row].token) else { return }
-        RealmManager.shared.saveNewUser(name: item.name, issuer: item.issuer, token: item.token ?? "", isFav: isFavourite, completionHandler: { completed in
-            if completed {
-                self.refreshData()
-            }
-        })
     }
     //added for ADDS baner spacing when you have a lot of items in the list
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
