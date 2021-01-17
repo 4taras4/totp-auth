@@ -22,6 +22,8 @@ This application provides one time passwords to be used with the two factor auth
 - [x] iPad support
 - [x] Favourite section
 - [x] Face ID authorization
+- [ ] Export Code function
+- [ ] Add folders
 - [ ] Apple watch support
 - [ ] Mac compability
 - [ ] Test coverage
