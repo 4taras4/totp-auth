@@ -78,6 +78,6 @@ extension AddFolderItemsPresenter: AddFolderItemsModuleInput, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Select account which you wish to add on folder:\(folderName).\n Unselect if you want to remove item from folder"
+        return Constants.text.addItemsToFolderHeader1 + "\(folderName)" + Constants.text.addItemsToFolderHeader2
     }
 }

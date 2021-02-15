@@ -21,7 +21,7 @@ final class FolderSettingsPresenter: NSObject, FolderSettingsViewOutput {
     // MARK: -
     // MARK: FolderSettingsViewOutput
     func viewIsReady() {
-        addFolerItem.name = "Add new Item"
+        addFolerItem.name = Constants.text.addNewItemText
         interactor.getFoldersArray()
     }
     
@@ -88,14 +88,14 @@ extension FolderSettingsPresenter: UITableViewDelegate, UITableViewDataSource {
     
     
     fileprivate func showCreateFolderAlert() {
-        let alert = UIAlertController(title: "Enter Folder name", message: "After creating Folder go to folder settings and add items to folder", preferredStyle: .alert)
+        let alert = UIAlertController(title: Constants.text.folderNameTitle, message: Constants.text.folderNameDescription, preferredStyle: .alert)
         alert.addTextField { (textField) in
-            textField.placeholder = "Folder name"
+            textField.placeholder = Constants.text.folderNamePlaceholder
         }
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (_) in
+        alert.addAction(UIAlertAction(title: Constants.text.cancelAlertButton, style: .destructive, handler: { (_) in
           
         }))
-        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { [weak alert] (_) in
+        alert.addAction(UIAlertAction(title: Constants.text.createAlertButton, style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
             print("Text field: \(String(describing: textField?.text))")
             self.interactor.createFolder(with: textField!.text!)
@@ -106,7 +106,7 @@ extension FolderSettingsPresenter: UITableViewDelegate, UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Folders"
+        return Constants.text.folderHeaderTitle
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

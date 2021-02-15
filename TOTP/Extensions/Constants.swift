@@ -31,6 +31,7 @@ struct Constants {
         static let cameraAlertDescription = "Go to Settings and allow camera permission to scan QR"
         static let settingsAlertButton = "Settings"
         static let cancelAlertButton = "Cancel"
+        static let createAlertButton = "Create"
         static let removeAlertButton = "Remove"
         static let settingsErrorAlertTitle = "Error ❌"
         static let settingsSuccessAlertTitle = "Success 🎉"
@@ -43,6 +44,13 @@ struct Constants {
         static let removeBackupAlertTitle = "Remove selected account"
         static let removeBackupAlertDescription = "if you remove account it's will be deleted permamently"
         static let biometricDescription = "Log in with Biometrics"
+        static let addItemsToFolderHeader1 = "Select account to add on folder:"
+        static let addItemsToFolderHeader2 = ".\nUnselect if you want to remove item from folder"
+        static let addNewItemText = "Add new item"
+        static let folderNamePlaceholder = "Folder name"
+        static let folderNameTitle = "Enter Folder name"
+        static let folderHeaderTitle = "Folders"
+        static let folderNameDescription = "After creating Folder go to folder settings and add items to folder"
 
     }
 }
