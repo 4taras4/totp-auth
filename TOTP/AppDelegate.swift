@@ -23,7 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var autoBlur = AutoBlurScreen()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        assembler.apply(assemblies: [MainListAssemblyContainer(), SettingsAssemblyContainer(), AddItemAssemblyContainer(), AddItemManualyAssemblyContainer()])
+        assembler.apply(assemblies: [MainListAssemblyContainer(),
+                                     SettingsAssemblyContainer(),
+                                     AddItemAssemblyContainer(),
+                                     AddItemManualyAssemblyContainer(),
+                                     AddFolderItemsAssemblyContainer(),
+                                     FolderSettingsAssemblyContainer()])
         window = UIWindow(frame: UIScreen.main.bounds)
        
         UIManager.shared.configure(with: window!)

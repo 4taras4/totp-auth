@@ -10,10 +10,15 @@
 		05AD6A3FB9C5B2A5E2A4A703 /* SettingsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C26EFD6A560520F3761D9 /* SettingsInteractorOutput.swift */; };
 		0927BFC9F0B6E7B34883B363 /* AddItemContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD7AEDACDF0DE0002B52E3D /* AddItemContainerTests.swift */; };
 		0EC83950B3E8611A9177E145 /* MainListAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94730995D2303C26B477235 /* MainListAssemblyContainer.swift */; };
+		11112428D97E25E16401C34F /* AddFolderItemsAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D49AB7ED91BFEDA46BE47A /* AddFolderItemsAssemblyContainer.swift */; };
 		117FF8C712A904570BC4334A /* AddItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0447B7A0AC00025345CDC /* AddItemRouter.swift */; };
 		15FE519000C07D355C06D9FE /* AddItemManualyViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA7498D5F6A98F71B959EA /* AddItemManualyViewInput.swift */; };
 		17D3D1D350BC3CBA69116C80 /* SettingsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C801D7CC4AC0420AF1603 /* SettingsInteractorTests.swift */; };
+		18C55C4F044CA5DEE8ADF817 /* AddFolderItemsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCA03A2FDCF55F5327CD3C /* AddFolderItemsInteractorOutput.swift */; };
 		1A089C9F1E9E0FBA009AB64B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */; };
+		1A0E849F25DA9A5F008B9062 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA959A25D7F98100001299 /* Folder.swift */; };
+		1A0E84F325DAB22E008B9062 /* FolderItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0E84F125DAB22E008B9062 /* FolderItemCollectionViewCell.swift */; };
+		1A0E84F425DAB22E008B9062 /* FolderItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0E84F225DAB22E008B9062 /* FolderItemCollectionViewCell.xib */; };
 		1A13E9BA2533529F00EC95E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13E9B92533529F00EC95E4 /* Constants.swift */; };
 		1A14D3902534DD2C00CC56CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A14D38F2534DD2C00CC56CF /* GoogleService-Info.plist */; };
 		1A1CEAC91E8549D50008F075 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CEAC81E8549D50008F075 /* User.swift */; };
@@ -45,17 +50,23 @@
 		1AC3516A2532036B008F43A8 /* AutoBlurManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC351692532036B008F43A8 /* AutoBlurManager.swift */; };
 		1AC3516E253205E1008F43A8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3516D253205E1008F43A8 /* String+Extension.swift */; };
 		1ADD098B257546BB004991A5 /* BiometricsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD098A257546BB004991A5 /* BiometricsManager.swift */; };
+		1AEA959B25D7F98100001299 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA959A25D7F98100001299 /* Folder.swift */; };
 		1AF5ADB4253E293800C390FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13E9B92533529F00EC95E4 /* Constants.swift */; };
 		22AC4FB4DDC6FED5267A8FC5 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB67CE339D2223208970274 /* SettingsRouter.swift */; };
 		23083E874FE87FDF474F2BCD /* SettingsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334838E8B2A8A18402C0431E /* SettingsModuleInput.swift */; };
 		26D75269F9F49B4E8F5CA86F /* AddItemManualyRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3959BBB3E94B67E43A2F8FD3 /* AddItemManualyRouterInput.swift */; };
+		27E013230C450761AD3E0496 /* AddFolderItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F8B913234462A68236D36 /* AddFolderItemsRouter.swift */; };
 		28921BD4FF7BCF02E0E7B5E7 /* AddItemManualyInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1EE5FCF6FE03CB5F9C81D /* AddItemManualyInteractorOutput.swift */; };
 		29BC875444BBCB7AD8130409 /* MainListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69DACA719F06C76D52DAF8C /* MainListRouter.swift */; };
+		2BD1F1E4B382A47ED91B06FF /* FolderSettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2711261CFEBE4E7C7A77D4D /* FolderSettingsViewInput.swift */; };
 		2DC7F2CD9E7836126B31FCA7 /* AddItemInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC79D4050C5B42D4B3707FD /* AddItemInteractorTests.swift */; };
+		2EAEA7A6B27F9BC5EBC2A899 /* AddFolderItemsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC74AD28B6A03AE5AA8E38 /* AddFolderItemsViewInput.swift */; };
 		326615FE7795F5B9560C0AF0 /* MainListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7501E5DA37A8E874A31D04 /* MainListModuleInput.swift */; };
+		3465554F77A6A61B8DF98F7C /* FolderSettingsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F3B3E0A0D5AA17E035331 /* FolderSettingsInteractorInput.swift */; };
 		36ED695EA17E4BCCF4846181 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9229131756E17B9A3F9CDF /* AddItemViewController.swift */; };
 		37311894741521D6ABED7088 /* Pods_2PassExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F385EAB79A077BF611EFC8 /* Pods_2PassExtension.framework */; };
 		37B2C686F3C0995DA2A833E7 /* AddItemModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A1566A66C1CB54CEFC263 /* AddItemModuleInput.swift */; };
+		3C1003C1C69669EF947F3AA0 /* AddFolderItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70C97778C10106985EFF68 /* AddFolderItemsViewController.swift */; };
 		3C694E21BB32085E94535930 /* MainListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D545448CD4693F08C1939FEB /* MainListInteractorTests.swift */; };
 		3E0C974B97E3D4D2AA20EA1E /* AddItemManualyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DF2EB8D185D7280FF42C7 /* AddItemManualyInteractor.swift */; };
 		3F28408715D9E62B5DDFC9EA /* SettingsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7833D5938152E3A9FF95DD /* SettingsInteractorInput.swift */; };
@@ -63,15 +74,22 @@
 		4403F0A917F435076CEB6C6E /* AddItemInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CDEBFB088303A4C4BD706 /* AddItemInteractorInput.swift */; };
 		4435D9D79C1633894961F921 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777F87F040722F9BF906EDF /* SettingsViewTests.swift */; };
 		44F0CA7B54A39FB962388880 /* SettingsContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55181F2984022CBB9789D63D /* SettingsContainerTests.swift */; };
+		452C19B403E3A0403B5C37D5 /* FolderSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10543D07A1E1A38A252E8D /* FolderSettingsRouter.swift */; };
 		4B8D1384E2FC861870686C53 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C08EAFB98D93F61EDB59C /* SettingsViewOutput.swift */; };
 		507932F60A5DF7A27004E601 /* MainListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28CE7EC59DE61D31D95041 /* MainListRouterInput.swift */; };
+		55D36E6496C2861C11245B14 /* AddFolderItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2EE2018A6BDABF4474518 /* AddFolderItemsPresenter.swift */; };
 		5A4A9E4C8BABE063629EE415 /* AddItemManualyViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878160D4930127ABEA768133 /* AddItemManualyViewOutput.swift */; };
 		5CEEEB20CEC412886D386DD5 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */; };
 		6AD212CD6401C8CF4B25FBFF /* AddItemManualyContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E97BF4B20F0A057BC69CF0 /* AddItemManualyContainerTests.swift */; };
 		6BB933969D70B1F1F76267FC /* MainListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05489DB5EF3CD3F45EA31F4D /* MainListPresenter.swift */; };
+		6C37DB6011DE9DB4E7A48158 /* FolderSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A750C715330693A6D22E9AA /* FolderSettingsViewController.swift */; };
 		720846EE1F54B722FAF7ADC1 /* MainListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6231BCCAB3B2D97B68BE7 /* MainListInteractor.swift */; };
 		72BB18E6577AB6AD9AD6668A /* AddItemManualyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128FB70F6851E9B9511A6F8 /* AddItemManualyViewController.swift */; };
+		736FE5F2E57F8FFF0850886E /* AddFolderItemsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CC7F108D1D00A327E1D11 /* AddFolderItemsInteractorTests.swift */; };
 		75DB91D19AB2ED50F05ADE46 /* AddItemRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C914960D8EB4A1248553CA /* AddItemRouterTests.swift */; };
+		765062D8A235FBC0F9FE0CFB /* FolderSettingsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3F23E371A890F33BCBB5A /* FolderSettingsRouterTests.swift */; };
+		7A6FE97393C56B4785454314 /* AddFolderItemsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C904E642781F31F4746BCA /* AddFolderItemsViewTests.swift */; };
+		7ADEF5FBF6A147DB58369D07 /* FolderSettingsAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB001F7A91FE7819A8F37CB2 /* FolderSettingsAssemblyContainer.swift */; };
 		7C2A013915943D8869E714FA /* AddItemViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6AA71328789F2675B3BD2 /* AddItemViewInput.swift */; };
 		7C50AE4C0BE16E57C143DF6F /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B46487161375051334463 /* MainListViewController.swift */; };
 		7F604C47AB2B79B3BDD493BD /* MainListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1947826FF8354A70FEF82 /* MainListInteractorOutput.swift */; };
@@ -81,18 +99,34 @@
 		9131302AB0FE85EA2FE2BBAD /* AddItemManualyInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AA5DB6B3B4BCE993522726 /* AddItemManualyInteractorInput.swift */; };
 		918B329B5D61A0501F8CC7D5 /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9F9DBAD2F8A5C7108B878 /* SettingsViewInput.swift */; };
 		922FF0DCEA5F150653445DF3 /* AddItemPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875F70B82BA91326012A2962 /* AddItemPresenterTests.swift */; };
+		950F107459BBC43915486B2A /* FolderSettingsContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB30B7BD97E65B7209E5D58 /* FolderSettingsContainerTests.swift */; };
+		95B3DB759A87F967B043A1A8 /* FolderSettingsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE1DAE0247C9887C2D10EB /* FolderSettingsInteractorTests.swift */; };
 		980103A08C9CEE28626543B6 /* AddItemInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EE915FED6E2F6D3908086 /* AddItemInteractorOutput.swift */; };
+		9A18E3CBE54949279B2EA608 /* AddFolderItemsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B3DF6ED970888FC374F50 /* AddFolderItemsViewOutput.swift */; };
+		A4544E8D7951CA2E2C46AA7B /* FolderSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F44020C5EF33F4F4FADBA /* FolderSettingsPresenter.swift */; };
+		A4BF4C5A114A4E1267EB0313 /* FolderSettingsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1288E58199FFA1B40B0DF56B /* FolderSettingsModuleInput.swift */; };
 		A7816199CA5EA5A1BEE664AF /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F922BF762F3B9E29380D9A /* SettingsRouterInput.swift */; };
 		ABBF3DB06AB11B87C5BEE772 /* MainListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0845CB861304649E73F0354 /* MainListViewTests.swift */; };
+		AC04F44CAD89D850451DDFBF /* FolderSettingsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C98AC9F8F86C3DACD99F99 /* FolderSettingsInteractorOutput.swift */; };
 		B57786B73F0DD77FE85336D7 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C60483B7A9B19F7CC8345A /* SettingsPresenter.swift */; };
 		B70B0922EDD4182B010B0606 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5DE0CE246A91A81454EEEA /* SettingsInteractor.swift */; };
 		B95E80F8B6F4C4B2D325E8FD /* AddItemManualyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68489C1C4D715C9129EDAA /* AddItemManualyViewTests.swift */; };
 		BB4A90CA4332357A68D5537F /* AddItemManualyRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7268AE859126675159CB6EB /* AddItemManualyRouterTests.swift */; };
+		BB682C9823C2EE9AC3ED2A54 /* AddFolderItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20729590BDF9AB0B4968C1D4 /* AddFolderItemsInteractor.swift */; };
+		BB81F9328E47A1E9744EAD81 /* AddFolderItemsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8A792D8777F0B67C330A5 /* AddFolderItemsPresenterTests.swift */; };
 		BCF05FA93A9F6FFB33FFC3C1 /* AddItemManualyAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD10721CB56B182F3BB05F /* AddItemManualyAssemblyContainer.swift */; };
+		C254D0EEFFAF96EE7FD2B69D /* AddFolderItemsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A78C74B5C3761AE86B3BE /* AddFolderItemsModuleInput.swift */; };
+		C5630E95EAE27631C73925C7 /* AddFolderItemsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF46F78C84EAE9823A461FE /* AddFolderItemsInteractorInput.swift */; };
 		C59D077292158A8937841396 /* AddItemManualyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA20D8B513C694B26F93D822 /* AddItemManualyInteractorTests.swift */; };
+		C7E352E9F291D7BF82DD747B /* FolderSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4168BEAEB8BBB65FF76E74 /* FolderSettingsInteractor.swift */; };
+		D3DC1DA50F159E944A1E7C40 /* AddFolderItemsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E37D9A7671109DA36AE32D /* AddFolderItemsRouterInput.swift */; };
+		DB70EB0AB7C9AAA8D404859C /* AddFolderItemsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693251DD2E38CB56F6679B7 /* AddFolderItemsRouterTests.swift */; };
 		DDC272772EE59F1F8EB03FD4 /* MainListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8AD4864E1B2289790B806 /* MainListInteractorInput.swift */; };
+		DF728F9770AC374FAAD1DF97 /* FolderSettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC226963F38C015A18F7D38E /* FolderSettingsRouterInput.swift */; };
+		DF802965C776701674B41855 /* FolderSettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04D1018CE8199FAC7DEACC /* FolderSettingsViewOutput.swift */; };
 		E1AF5F888A653EF69095D0C5 /* MainListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB48426ECB293BA6298FE7F /* MainListViewInput.swift */; };
 		E5002B4AA1420850E102624E /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDD93A13984A551A6AECB0 /* SettingsPresenterTests.swift */; };
+		E580DD396CDA707D50E1F703 /* FolderSettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3629374B0408957B2FE68 /* FolderSettingsPresenterTests.swift */; };
 		E67298070946DA3B570ED51F /* AddItemViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1BE37C09AAD2CF38D6983 /* AddItemViewOutput.swift */; };
 		E80EE4676C2E047D7BFD333A /* MainListContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249BFA55CDE132AAC13B6CE7 /* MainListContainerTests.swift */; };
 		EC53BFE41229EFA72B60BFBF /* SettingsAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CDE88258EFAD1873605B4 /* SettingsAssemblyContainer.swift */; };
@@ -102,23 +136,18 @@
 		F2AE3FEE845FEE0971118A8F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85685F78B1894B3F5E8A78E5 /* SettingsViewController.swift */; };
 		F3158B521E8878520006243A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3158B511E8878520006243A /* Assets.xcassets */; };
 		F3B8503B213EF68300C7FE67 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B8503A213EF68300C7FE67 /* CloudKit.framework */; };
+		F52FB633EB9DEA6138CF6D10 /* AddFolderItemsContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0675550C3DE79E671CA1FAE7 /* AddFolderItemsContainerTests.swift */; };
 		F6494DE5F11D3C1E4D036CC3 /* AddItemViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D24A2F41BDC57AA57B6978 /* AddItemViewTests.swift */; };
 		F713230F2E4C67A2FB9D1D31 /* Pods_TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A97099F252D25E400EFE062 /* Pods_TOTP.framework */; };
 		F7BD3A4DB6537091F5FE6351 /* AddItemManualyModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083FFACA9EA9C05D5418CDE /* AddItemManualyModuleInput.swift */; };
 		F7F5C0F11DDFDA5753CD081D /* MainListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35338837CE733AAF52375EA /* MainListPresenterTests.swift */; };
 		F87F72E008F4FE0A189E1768 /* MainListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158862FBA8FBCB4BAF74008 /* MainListRouterTests.swift */; };
 		FDC6CAB5E56AC00ECD4657FB /* MainListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9318BB744C8BA18414AE88 /* MainListViewOutput.swift */; };
+		FFA2F801E1ACBB6A2E827861 /* FolderSettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A72DA1CBD315D4000181F /* FolderSettingsViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1A3BFF2F1E827911008B0C81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A3BFF191E827910008B0C81;
-			remoteInfo = TOTP;
-		};
-		1A3BFF3A1E827911008B0C81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1A3BFF121E827910008B0C81 /* Project object */;
 			proxyType = 1;
@@ -149,9 +178,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02D49AB7ED91BFEDA46BE47A /* AddFolderItemsAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsAssemblyContainer.swift; sourceTree = "<group>"; };
 		05489DB5EF3CD3F45EA31F4D /* MainListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListPresenter.swift; sourceTree = "<group>"; };
+		0675550C3DE79E671CA1FAE7 /* AddFolderItemsContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsContainerTests.swift; sourceTree = "<group>"; };
+		102A78C74B5C3761AE86B3BE /* AddFolderItemsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsModuleInput.swift; sourceTree = "<group>"; };
 		115B46487161375051334463 /* MainListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
+		1288E58199FFA1B40B0DF56B /* FolderSettingsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsModuleInput.swift; sourceTree = "<group>"; };
+		187F3B3E0A0D5AA17E035331 /* FolderSettingsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsInteractorInput.swift; sourceTree = "<group>"; };
 		1A089C9E1E9E0FBA009AB64B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		1A0E84F125DAB22E008B9062 /* FolderItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A0E84F225DAB22E008B9062 /* FolderItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		1A13E9B92533529F00EC95E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1A14D38F2534DD2C00CC56CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1A1CEAC81E8549D50008F075 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -163,7 +199,6 @@
 		1A3BFF291E827910008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF341E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BFF3F1E827911008B0C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3DA42D253E18F000CE5F6D /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
 		1A8FBA642538F5370068B02F /* 2PassExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 2PassExtension.entitlements; sourceTree = "<group>"; };
@@ -188,14 +223,18 @@
 		1AC351692532036B008F43A8 /* AutoBlurManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoBlurManager.swift; sourceTree = "<group>"; };
 		1AC3516D253205E1008F43A8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1ADD098A257546BB004991A5 /* BiometricsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsManager.swift; sourceTree = "<group>"; };
+		1AEA959A25D7F98100001299 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		1D9318BB744C8BA18414AE88 /* MainListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListViewOutput.swift; sourceTree = "<group>"; };
+		1DB2EE2018A6BDABF4474518 /* AddFolderItemsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsPresenter.swift; sourceTree = "<group>"; };
 		1DE0D8873922AA8DD74C12F3 /* Pods_TOTP_2Pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP_2Pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20729590BDF9AB0B4968C1D4 /* AddFolderItemsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsInteractor.swift; sourceTree = "<group>"; };
 		2083FFACA9EA9C05D5418CDE /* AddItemManualyModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyModuleInput.swift; sourceTree = "<group>"; };
 		20E0447B7A0AC00025345CDC /* AddItemRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemRouter.swift; sourceTree = "<group>"; };
 		21A48D179C8350645358450A /* AddItemManualyRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyRouter.swift; sourceTree = "<group>"; };
 		226FED2B758F8EEA22BA4630 /* AddItemManualyPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyPresenterTests.swift; sourceTree = "<group>"; };
 		249BFA55CDE132AAC13B6CE7 /* MainListContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListContainerTests.swift; sourceTree = "<group>"; };
 		24FD10721CB56B182F3BB05F /* AddItemManualyAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyAssemblyContainer.swift; sourceTree = "<group>"; };
+		2BD3F23E371A890F33BCBB5A /* FolderSettingsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsRouterTests.swift; sourceTree = "<group>"; };
 		2FD7AEDACDF0DE0002B52E3D /* AddItemContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemContainerTests.swift; sourceTree = "<group>"; };
 		30C9F9DBAD2F8A5C7108B878 /* SettingsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
 		315F7DCC79E09C2521FB30DC /* AddItemPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemPresenter.swift; sourceTree = "<group>"; };
@@ -203,6 +242,8 @@
 		38D6AA71328789F2675B3BD2 /* AddItemViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemViewInput.swift; sourceTree = "<group>"; };
 		3959BBB3E94B67E43A2F8FD3 /* AddItemManualyRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyRouterInput.swift; sourceTree = "<group>"; };
 		3A9EE915FED6E2F6D3908086 /* AddItemInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemInteractorOutput.swift; sourceTree = "<group>"; };
+		3BFC74AD28B6A03AE5AA8E38 /* AddFolderItemsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsViewInput.swift; sourceTree = "<group>"; };
+		3CB30B7BD97E65B7209E5D58 /* FolderSettingsContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsContainerTests.swift; sourceTree = "<group>"; };
 		3DC79D4050C5B42D4B3707FD /* AddItemInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemInteractorTests.swift; sourceTree = "<group>"; };
 		404A1566A66C1CB54CEFC263 /* AddItemModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemModuleInput.swift; sourceTree = "<group>"; };
 		4083C7BA3B83740411E2E145 /* Pods_TOTP_2Pass_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP_2Pass_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,50 +252,71 @@
 		47C914960D8EB4A1248553CA /* AddItemRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemRouterTests.swift; sourceTree = "<group>"; };
 		48F922BF762F3B9E29380D9A /* SettingsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
 		4C2C801D7CC4AC0420AF1603 /* SettingsInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorTests.swift; sourceTree = "<group>"; };
+		4F4168BEAEB8BBB65FF76E74 /* FolderSettingsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsInteractor.swift; sourceTree = "<group>"; };
 		5158862FBA8FBCB4BAF74008 /* MainListRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListRouterTests.swift; sourceTree = "<group>"; };
 		55181F2984022CBB9789D63D /* SettingsContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsContainerTests.swift; sourceTree = "<group>"; };
 		57D10A0986D0D67F93172165 /* Pods-2PassExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2PassExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-2PassExtension/Pods-2PassExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		581C26EFD6A560520F3761D9 /* SettingsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorOutput.swift; sourceTree = "<group>"; };
+		587F8B913234462A68236D36 /* AddFolderItemsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsRouter.swift; sourceTree = "<group>"; };
 		5A52E92E5894C3245D71E571 /* AddItemRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemRouterInput.swift; sourceTree = "<group>"; };
+		5A750C715330693A6D22E9AA /* FolderSettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsViewController.swift; sourceTree = "<group>"; };
 		5D1CDEBFB088303A4C4BD706 /* AddItemInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemInteractorInput.swift; sourceTree = "<group>"; };
 		68C60483B7A9B19F7CC8345A /* SettingsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		68C7DF39C5DF4418CB206CCC /* Pods-TOTP-2Pass Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass Extension/Pods-TOTP-2Pass Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		72E8AD4864E1B2289790B806 /* MainListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListInteractorInput.swift; sourceTree = "<group>"; };
+		7A04D1018CE8199FAC7DEACC /* FolderSettingsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsViewOutput.swift; sourceTree = "<group>"; };
 		7E68489C1C4D715C9129EDAA /* AddItemManualyViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyViewTests.swift; sourceTree = "<group>"; };
 		84091A826092422A157247B6 /* Pods-2PassExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2PassExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-2PassExtension/Pods-2PassExtension.release.xcconfig"; sourceTree = "<group>"; };
 		84CDD93A13984A551A6AECB0 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
 		85685F78B1894B3F5E8A78E5 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		864B3DF6ED970888FC374F50 /* AddFolderItemsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsViewOutput.swift; sourceTree = "<group>"; };
 		875F70B82BA91326012A2962 /* AddItemPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemPresenterTests.swift; sourceTree = "<group>"; };
 		8777F87F040722F9BF906EDF /* SettingsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
 		878160D4930127ABEA768133 /* AddItemManualyViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyViewOutput.swift; sourceTree = "<group>"; };
+		88E37D9A7671109DA36AE32D /* AddFolderItemsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsRouterInput.swift; sourceTree = "<group>"; };
 		8B2DF2EB8D185D7280FF42C7 /* AddItemManualyInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyInteractor.swift; sourceTree = "<group>"; };
 		8EB48426ECB293BA6298FE7F /* MainListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListViewInput.swift; sourceTree = "<group>"; };
+		8F70C97778C10106985EFF68 /* AddFolderItemsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsViewController.swift; sourceTree = "<group>"; };
+		8FF46F78C84EAE9823A461FE /* AddFolderItemsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsInteractorInput.swift; sourceTree = "<group>"; };
 		95A4F67D3C9EB41180EC0E99 /* Pods_TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C1947826FF8354A70FEF82 /* MainListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListInteractorOutput.swift; sourceTree = "<group>"; };
 		9D5DE0CE246A91A81454EEEA /* SettingsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		9E7501E5DA37A8E874A31D04 /* MainListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListModuleInput.swift; sourceTree = "<group>"; };
 		9F4489D7522ED31BD5A57C2F /* SettingsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouterTests.swift; sourceTree = "<group>"; };
+		A0C98AC9F8F86C3DACD99F99 /* FolderSettingsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsInteractorOutput.swift; sourceTree = "<group>"; };
+		A32F44020C5EF33F4F4FADBA /* FolderSettingsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsPresenter.swift; sourceTree = "<group>"; };
+		A693251DD2E38CB56F6679B7 /* AddFolderItemsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsRouterTests.swift; sourceTree = "<group>"; };
+		AC226963F38C015A18F7D38E /* FolderSettingsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsRouterInput.swift; sourceTree = "<group>"; };
 		AC7833D5938152E3A9FF95DD /* SettingsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorInput.swift; sourceTree = "<group>"; };
 		B0AA5DB6B3B4BCE993522726 /* AddItemManualyInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyInteractorInput.swift; sourceTree = "<group>"; };
 		B2E97BF4B20F0A057BC69CF0 /* AddItemManualyContainerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyContainerTests.swift; sourceTree = "<group>"; };
 		B35338837CE733AAF52375EA /* MainListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListPresenterTests.swift; sourceTree = "<group>"; };
 		B94730995D2303C26B477235 /* MainListAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListAssemblyContainer.swift; sourceTree = "<group>"; };
 		BCD6231BCCAB3B2D97B68BE7 /* MainListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListInteractor.swift; sourceTree = "<group>"; };
+		BE3CC7F108D1D00A327E1D11 /* AddFolderItemsInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsInteractorTests.swift; sourceTree = "<group>"; };
+		C30A72DA1CBD315D4000181F /* FolderSettingsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsViewTests.swift; sourceTree = "<group>"; };
 		C340C55E61F56656F0D4D44D /* Pods_TOTPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D9716C0D19F8943D497700 /* AddItemManualyPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyPresenter.swift; sourceTree = "<group>"; };
 		C7CA7498D5F6A98F71B959EA /* AddItemManualyViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyViewInput.swift; sourceTree = "<group>"; };
+		CA10543D07A1E1A38A252E8D /* FolderSettingsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsRouter.swift; sourceTree = "<group>"; };
 		CA20D8B513C694B26F93D822 /* AddItemManualyInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyInteractorTests.swift; sourceTree = "<group>"; };
 		CA274FDF46A68F752DBA6176 /* Pods-TOTP-2Pass Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass Extension/Pods-TOTP-2Pass Extension.release.xcconfig"; sourceTree = "<group>"; };
+		CB001F7A91FE7819A8F37CB2 /* FolderSettingsAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsAssemblyContainer.swift; sourceTree = "<group>"; };
 		CBCC170E86B3884503BBA89F /* Pods-TOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP/Pods-TOTP.debug.xcconfig"; sourceTree = "<group>"; };
 		CF27DFE32B83A550FC5E60CA /* AddItemAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemAssemblyContainer.swift; sourceTree = "<group>"; };
 		D0845CB861304649E73F0354 /* MainListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListViewTests.swift; sourceTree = "<group>"; };
 		D0EF7430E5CC662F6070E5A5 /* AddItemInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemInteractor.swift; sourceTree = "<group>"; };
 		D128FB70F6851E9B9511A6F8 /* AddItemManualyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyViewController.swift; sourceTree = "<group>"; };
+		D2711261CFEBE4E7C7A77D4D /* FolderSettingsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsViewInput.swift; sourceTree = "<group>"; };
+		D3C904E642781F31F4746BCA /* AddFolderItemsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsViewTests.swift; sourceTree = "<group>"; };
 		D545448CD4693F08C1939FEB /* MainListInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListInteractorTests.swift; sourceTree = "<group>"; };
+		D5E8A792D8777F0B67C330A5 /* AddFolderItemsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsPresenterTests.swift; sourceTree = "<group>"; };
 		D7268AE859126675159CB6EB /* AddItemManualyRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemManualyRouterTests.swift; sourceTree = "<group>"; };
 		DB2A29769523DDF4F144509B /* Pods_TOTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TOTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0A1331B26F41A3777C564D /* Pods-TOTP-2Pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass.release.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass/Pods-TOTP-2Pass.release.xcconfig"; sourceTree = "<group>"; };
+		E4BCA03A2FDCF55F5327CD3C /* AddFolderItemsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddFolderItemsInteractorOutput.swift; sourceTree = "<group>"; };
 		E5B1BE37C09AAD2CF38D6983 /* AddItemViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddItemViewOutput.swift; sourceTree = "<group>"; };
+		E5B3629374B0408957B2FE68 /* FolderSettingsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsPresenterTests.swift; sourceTree = "<group>"; };
 		E5F385EAB79A077BF611EFC8 /* Pods_2PassExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2PassExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6647F245504EA6F1E33E001 /* Pods-TOTP-2Pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOTP-2Pass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TOTP-2Pass/Pods-TOTP-2Pass.debug.xcconfig"; sourceTree = "<group>"; };
 		E68CDE88258EFAD1873605B4 /* SettingsAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsAssemblyContainer.swift; sourceTree = "<group>"; };
@@ -265,6 +327,7 @@
 		EF28CE7EC59DE61D31D95041 /* MainListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainListRouterInput.swift; sourceTree = "<group>"; };
 		F3158B511E8878520006243A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3B8503A213EF68300C7FE67 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		FABE1DAE0247C9887C2D10EB /* FolderSettingsInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FolderSettingsInteractorTests.swift; sourceTree = "<group>"; };
 		FCB67CE339D2223208970274 /* SettingsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -287,13 +350,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A3BFF361E827911008B0C81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1ABD60582537BA3B00E51B38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +363,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0020C7894FDB35B8D772E4D0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8A792D8777F0B67C330A5 /* AddFolderItemsPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		043AB76D8548F68FFAAE1D31 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +422,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		12F5C8A572894FE4DD7254BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2BD3F23E371A890F33BCBB5A /* FolderSettingsRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		148C393AEC4A96E0D15B5739 /* ViperModules */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +437,8 @@
 				1E3CB4B32A0823D33F646D94 /* AddItem */,
 				2771AF5565A4A1B9B0344487 /* Settings */,
 				A124CEFC443C94A00A497AC6 /* AddItemManualy */,
+				C359A15B5FBADDA29B0B74E2 /* FolderSettings */,
+				4BEFD479889B40344EF362E0 /* AddFolderItems */,
 			);
 			path = ViperModules;
 			sourceTree = "<group>";
@@ -386,6 +460,16 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		1824EDA0A5ED98E091BB935C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2711261CFEBE4E7C7A77D4D /* FolderSettingsViewInput.swift */,
+				7A04D1018CE8199FAC7DEACC /* FolderSettingsViewOutput.swift */,
+				5A750C715330693A6D22E9AA /* FolderSettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1A3BFF111E827910008B0C81 = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +489,6 @@
 			children = (
 				1A3BFF1A1E827910008B0C81 /* TOTP.app */,
 				1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */,
-				1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */,
 				1ABD605B2537BA3B00E51B38 /* 2PassExtension.appex */,
 			);
 			name = Products;
@@ -508,6 +591,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1DC79483A30752535B04ACFA /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3608ABE564549821A59521FD /* Assembly */,
+				1824EDA0A5ED98E091BB935C /* View */,
+				B9B6432AB5845DCB60AE8950 /* Presenter */,
+				39407793CBF8301AA7994C47 /* Interactor */,
+				D6B17D05B219591536841739 /* Router */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		1E3CB4B32A0823D33F646D94 /* AddItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +613,14 @@
 				F68A5777A0C22ADA4D999F1C /* Router */,
 			);
 			path = AddItem;
+			sourceTree = "<group>";
+		};
+		2016C6A01B4BE47C07CC425A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A693251DD2E38CB56F6679B7 /* AddFolderItemsRouterTests.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		218B9E07DE77B7D766407D25 /* Presenter */ = {
@@ -537,6 +640,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		26FD5D029B43917F5BBC73AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				102A78C74B5C3761AE86B3BE /* AddFolderItemsModuleInput.swift */,
+				1DB2EE2018A6BDABF4474518 /* AddFolderItemsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		2771AF5565A4A1B9B0344487 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +659,14 @@
 				043AB76D8548F68FFAAE1D31 /* Router */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		2BC48165FA66660322D80EC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3C904E642781F31F4746BCA /* AddFolderItemsViewTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2C467B5D1A5A7096CA5A851B /* View */ = {
@@ -572,12 +692,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2C72F7D1D7847C1AFD0330E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C30A72DA1CBD315D4000181F /* FolderSettingsViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3376875A875BE9B3716D326C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8777F87F040722F9BF906EDF /* SettingsViewTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3608ABE564549821A59521FD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CB001F7A91FE7819A8F37CB2 /* FolderSettingsAssemblyContainer.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		3652E15F403ED2B966A6CD3F /* AddItemManualy */ = {
@@ -600,6 +736,16 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		39407793CBF8301AA7994C47 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				187F3B3E0A0D5AA17E035331 /* FolderSettingsInteractorInput.swift */,
+				A0C98AC9F8F86C3DACD99F99 /* FolderSettingsInteractorOutput.swift */,
+				4F4168BEAEB8BBB65FF76E74 /* FolderSettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		3940892A8B2D21C8978680A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,10 +764,40 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		3B4C7D52D0AE444D4258756E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				459FBFF8B3A1E36709D28619 /* Assembly */,
+				3E6A7C77C2346B26A8BEFF86 /* View */,
+				26FD5D029B43917F5BBC73AF /* Presenter */,
+				77F0BB433067495A42D6CB17 /* Interactor */,
+				CC04F93BE8C8D2FD35BC9353 /* Router */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		3C0A5E2A4C96B7ABB3517C5B /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
 				2FD7AEDACDF0DE0002B52E3D /* AddItemContainerTests.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3E6A7C77C2346B26A8BEFF86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BFC74AD28B6A03AE5AA8E38 /* AddFolderItemsViewInput.swift */,
+				864B3DF6ED970888FC374F50 /* AddFolderItemsViewOutput.swift */,
+				8F70C97778C10106985EFF68 /* AddFolderItemsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		459FBFF8B3A1E36709D28619 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				02D49AB7ED91BFEDA46BE47A /* AddFolderItemsAssemblyContainer.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -632,9 +808,23 @@
 				8EB48426ECB293BA6298FE7F /* MainListViewInput.swift */,
 				1D9318BB744C8BA18414AE88 /* MainListViewOutput.swift */,
 				115B46487161375051334463 /* MainListViewController.swift */,
+				1A0E84F125DAB22E008B9062 /* FolderItemCollectionViewCell.swift */,
+				1A0E84F225DAB22E008B9062 /* FolderItemCollectionViewCell.xib */,
 				1AC351612531F339008F43A8 /* MainListTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4BEFD479889B40344EF362E0 /* AddFolderItems */ = {
+			isa = PBXGroup;
+			children = (
+				84CBDF4827FE31777771C848 /* Assembly */,
+				2BC48165FA66660322D80EC4 /* View */,
+				FECFA93BAA786D373C988A23 /* Interactor */,
+				0020C7894FDB35B8D772E4D0 /* Presenter */,
+				2016C6A01B4BE47C07CC425A /* Router */,
+			);
+			path = AddFolderItems;
 			sourceTree = "<group>";
 		};
 		4C0DF97037C94EBDD69FA60C /* Presenter */ = {
@@ -651,6 +841,14 @@
 				875F70B82BA91326012A2962 /* AddItemPresenterTests.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		596916FBE00ABF7BF21EA521 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FABE1DAE0247C9887C2D10EB /* FolderSettingsInteractorTests.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		5BB22D4A17D93A75DC0459DE /* Assembly */ = {
@@ -714,6 +912,24 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		76AE4F6A9D4533AA684BF8FD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3CB30B7BD97E65B7209E5D58 /* FolderSettingsContainerTests.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		77F0BB433067495A42D6CB17 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8FF46F78C84EAE9823A461FE /* AddFolderItemsInteractorInput.swift */,
+				E4BCA03A2FDCF55F5327CD3C /* AddFolderItemsInteractorOutput.swift */,
+				20729590BDF9AB0B4968C1D4 /* AddFolderItemsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		79088581255BE54D26F296F0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,6 +952,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1CEAC81E8549D50008F075 /* User.swift */,
+				1AEA959A25D7F98100001299 /* Folder.swift */,
 				1AC351652531F3F6008F43A8 /* Code.swift */,
 				A34900EFF0301147B005B212 /* Assembly */,
 				49958402B5585AA3EDD1BE0E /* View */,
@@ -753,6 +970,14 @@
 				315F7DCC79E09C2521FB30DC /* AddItemPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84CBDF4827FE31777771C848 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0675550C3DE79E671CA1FAE7 /* AddFolderItemsContainerTests.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		A124CEFC443C94A00A497AC6 /* AddItemManualy */ = {
@@ -809,6 +1034,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		AF0A024B6BD1622A10881AE7 /* AddFolderItems */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C7D52D0AE444D4258756E /* Module */,
+			);
+			path = AddFolderItems;
+			sourceTree = "<group>";
+		};
 		B3837DF0D0B9278EE9EDAFF7 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,6 +1062,15 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		B9B6432AB5845DCB60AE8950 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1288E58199FFA1B40B0DF56B /* FolderSettingsModuleInput.swift */,
+				A32F44020C5EF33F4F4FADBA /* FolderSettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		BA90AED54019FEF9B2EB5164 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -846,6 +1088,18 @@
 				1AC351542531CE08008F43A8 /* CameraView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C359A15B5FBADDA29B0B74E2 /* FolderSettings */ = {
+			isa = PBXGroup;
+			children = (
+				76AE4F6A9D4533AA684BF8FD /* Assembly */,
+				2C72F7D1D7847C1AFD0330E0 /* View */,
+				596916FBE00ABF7BF21EA521 /* Interactor */,
+				DF3280563EA4865426B3741F /* Presenter */,
+				12F5C8A572894FE4DD7254BD /* Router */,
+			);
+			path = FolderSettings;
 			sourceTree = "<group>";
 		};
 		C5E5B22E39297B6E627D7A30 /* View */ = {
@@ -877,6 +1131,15 @@
 			path = MainList;
 			sourceTree = "<group>";
 		};
+		CC04F93BE8C8D2FD35BC9353 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88E37D9A7671109DA36AE32D /* AddFolderItemsRouterInput.swift */,
+				587F8B913234462A68236D36 /* AddFolderItemsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		D5CC72BEB7B0D7F4E37F3C83 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +1150,15 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		D6B17D05B219591536841739 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AC226963F38C015A18F7D38E /* FolderSettingsRouterInput.swift */,
+				CA10543D07A1E1A38A252E8D /* FolderSettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		D7FEE9DE408CE8382AD9042E /* ViperModules */ = {
 			isa = PBXGroup;
 			children = (
@@ -894,6 +1166,8 @@
 				6DB57220050CF45CC91AB93B /* AddItem */,
 				DF0944B1B6700907D97E3BE6 /* Settings */,
 				3652E15F403ED2B966A6CD3F /* AddItemManualy */,
+				FE72D5C03584E56A2469F977 /* FolderSettings */,
+				AF0A024B6BD1622A10881AE7 /* AddFolderItems */,
 			);
 			path = ViperModules;
 			sourceTree = "<group>";
@@ -904,6 +1178,14 @@
 				75A5FEEB136C7FB00498E455 /* Module */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		DF3280563EA4865426B3741F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5B3629374B0408957B2FE68 /* FolderSettingsPresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		E2DF796F4D8EC29355D70D63 /* MainList */ = {
@@ -938,6 +1220,22 @@
 				5D1CDEBFB088303A4C4BD706 /* AddItemInteractorInput.swift */,
 				3A9EE915FED6E2F6D3908086 /* AddItemInteractorOutput.swift */,
 				D0EF7430E5CC662F6070E5A5 /* AddItemInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FE72D5C03584E56A2469F977 /* FolderSettings */ = {
+			isa = PBXGroup;
+			children = (
+				1DC79483A30752535B04ACFA /* Module */,
+			);
+			path = FolderSettings;
+			sourceTree = "<group>";
+		};
+		FECFA93BAA786D373C988A23 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BE3CC7F108D1D00A327E1D11 /* AddFolderItemsInteractorTests.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -984,24 +1282,6 @@
 			productName = TOTPTests;
 			productReference = 1A3BFF2E1E827911008B0C81 /* TOTPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1A3BFF381E827911008B0C81 /* TOTPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3BFF481E827911008B0C81 /* Build configuration list for PBXNativeTarget "TOTPUITests" */;
-			buildPhases = (
-				1A3BFF351E827911008B0C81 /* Sources */,
-				1A3BFF361E827911008B0C81 /* Frameworks */,
-				1A3BFF371E827911008B0C81 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A3BFF3B1E827911008B0C81 /* PBXTargetDependency */,
-			);
-			name = TOTPUITests;
-			productName = TOTPUITests;
-			productReference = 1A3BFF391E827911008B0C81 /* TOTPUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		1ABD605A2537BA3B00E51B38 /* 2PassExtension */ = {
 			isa = PBXNativeTarget;
@@ -1056,12 +1336,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A3BFF191E827910008B0C81;
 					};
-					1A3BFF381E827911008B0C81 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GA56SWJ3YH;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1A3BFF191E827910008B0C81;
-					};
 					1ABD605A2537BA3B00E51B38 = {
 						CreatedOnToolsVersion = 12.0.1;
 						DevelopmentTeam = GA56SWJ3YH;
@@ -1084,7 +1358,6 @@
 			targets = (
 				1A3BFF191E827910008B0C81 /* TOTP */,
 				1A3BFF2D1E827911008B0C81 /* TOTPTests */,
-				1A3BFF381E827911008B0C81 /* TOTPUITests */,
 				1ABD605A2537BA3B00E51B38 /* 2PassExtension */,
 			);
 		};
@@ -1098,18 +1371,12 @@
 				1A3BFF281E827910008B0C81 /* LaunchScreen.storyboard in Resources */,
 				1A14D3902534DD2C00CC56CF /* GoogleService-Info.plist in Resources */,
 				F3158B521E8878520006243A /* Assets.xcassets in Resources */,
+				1A0E84F425DAB22E008B9062 /* FolderItemCollectionViewCell.xib in Resources */,
 				1A3BFF231E827910008B0C81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1A3BFF2C1E827911008B0C81 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3BFF371E827911008B0C81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1298,8 +1565,32 @@
 				28921BD4FF7BCF02E0E7B5E7 /* AddItemManualyInteractorOutput.swift in Sources */,
 				3E0C974B97E3D4D2AA20EA1E /* AddItemManualyInteractor.swift in Sources */,
 				26D75269F9F49B4E8F5CA86F /* AddItemManualyRouterInput.swift in Sources */,
+				1AEA959B25D7F98100001299 /* Folder.swift in Sources */,
 				81622E90B9BE8DC75D8D66BA /* AddItemManualyRouter.swift in Sources */,
 				1ADD098B257546BB004991A5 /* BiometricsManager.swift in Sources */,
+				7ADEF5FBF6A147DB58369D07 /* FolderSettingsAssemblyContainer.swift in Sources */,
+				2BD1F1E4B382A47ED91B06FF /* FolderSettingsViewInput.swift in Sources */,
+				DF802965C776701674B41855 /* FolderSettingsViewOutput.swift in Sources */,
+				6C37DB6011DE9DB4E7A48158 /* FolderSettingsViewController.swift in Sources */,
+				A4BF4C5A114A4E1267EB0313 /* FolderSettingsModuleInput.swift in Sources */,
+				A4544E8D7951CA2E2C46AA7B /* FolderSettingsPresenter.swift in Sources */,
+				3465554F77A6A61B8DF98F7C /* FolderSettingsInteractorInput.swift in Sources */,
+				AC04F44CAD89D850451DDFBF /* FolderSettingsInteractorOutput.swift in Sources */,
+				C7E352E9F291D7BF82DD747B /* FolderSettingsInteractor.swift in Sources */,
+				DF728F9770AC374FAAD1DF97 /* FolderSettingsRouterInput.swift in Sources */,
+				452C19B403E3A0403B5C37D5 /* FolderSettingsRouter.swift in Sources */,
+				11112428D97E25E16401C34F /* AddFolderItemsAssemblyContainer.swift in Sources */,
+				2EAEA7A6B27F9BC5EBC2A899 /* AddFolderItemsViewInput.swift in Sources */,
+				9A18E3CBE54949279B2EA608 /* AddFolderItemsViewOutput.swift in Sources */,
+				1A0E84F325DAB22E008B9062 /* FolderItemCollectionViewCell.swift in Sources */,
+				3C1003C1C69669EF947F3AA0 /* AddFolderItemsViewController.swift in Sources */,
+				C254D0EEFFAF96EE7FD2B69D /* AddFolderItemsModuleInput.swift in Sources */,
+				55D36E6496C2861C11245B14 /* AddFolderItemsPresenter.swift in Sources */,
+				C5630E95EAE27631C73925C7 /* AddFolderItemsInteractorInput.swift in Sources */,
+				18C55C4F044CA5DEE8ADF817 /* AddFolderItemsInteractorOutput.swift in Sources */,
+				BB682C9823C2EE9AC3ED2A54 /* AddFolderItemsInteractor.swift in Sources */,
+				D3DC1DA50F159E944A1E7C40 /* AddFolderItemsRouterInput.swift in Sources */,
+				27E013230C450761AD3E0496 /* AddFolderItemsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,13 +1618,16 @@
 				C59D077292158A8937841396 /* AddItemManualyInteractorTests.swift in Sources */,
 				812E697E6DD953A3D2E89D73 /* AddItemManualyPresenterTests.swift in Sources */,
 				BB4A90CA4332357A68D5537F /* AddItemManualyRouterTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3BFF351E827911008B0C81 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				950F107459BBC43915486B2A /* FolderSettingsContainerTests.swift in Sources */,
+				FFA2F801E1ACBB6A2E827861 /* FolderSettingsViewTests.swift in Sources */,
+				95B3DB759A87F967B043A1A8 /* FolderSettingsInteractorTests.swift in Sources */,
+				E580DD396CDA707D50E1F703 /* FolderSettingsPresenterTests.swift in Sources */,
+				765062D8A235FBC0F9FE0CFB /* FolderSettingsRouterTests.swift in Sources */,
+				F52FB633EB9DEA6138CF6D10 /* AddFolderItemsContainerTests.swift in Sources */,
+				7A6FE97393C56B4785454314 /* AddFolderItemsViewTests.swift in Sources */,
+				736FE5F2E57F8FFF0850886E /* AddFolderItemsInteractorTests.swift in Sources */,
+				BB81F9328E47A1E9744EAD81 /* AddFolderItemsPresenterTests.swift in Sources */,
+				DB70EB0AB7C9AAA8D404859C /* AddFolderItemsRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1349,6 +1643,7 @@
 				1ABD60752537BA9000E51B38 /* User.swift in Sources */,
 				1A8FBA6F253983250068B02F /* FileManager+Extension.swift in Sources */,
 				1AF5ADB4253E293800C390FE /* Constants.swift in Sources */,
+				1A0E849F25DA9A5F008B9062 /* Folder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1359,11 +1654,6 @@
 			isa = PBXTargetDependency;
 			target = 1A3BFF191E827910008B0C81 /* TOTP */;
 			targetProxy = 1A3BFF2F1E827911008B0C81 /* PBXContainerItemProxy */;
-		};
-		1A3BFF3B1E827911008B0C81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A3BFF191E827910008B0C81 /* TOTP */;
-			targetProxy = 1A3BFF3A1E827911008B0C81 /* PBXContainerItemProxy */;
 		};
 		1ABD60682537BA3B00E51B38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1567,7 +1857,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOTP.app/TOTP";
 			};
 			name = Debug;
@@ -1582,36 +1872,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOTP.app/TOTP";
-			};
-			name = Release;
-		};
-		1A3BFF491E827911008B0C81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = GA56SWJ3YH;
-				INFOPLIST_FILE = TOTPUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = TOTP;
-			};
-			name = Debug;
-		};
-		1A3BFF4A1E827911008B0C81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = GA56SWJ3YH;
-				INFOPLIST_FILE = TOTPUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmsu.TOTPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = TOTP;
 			};
 			name = Release;
 		};
@@ -1702,15 +1964,6 @@
 			buildConfigurations = (
 				1A3BFF461E827911008B0C81 /* Debug */,
 				1A3BFF471E827911008B0C81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A3BFF481E827911008B0C81 /* Build configuration list for PBXNativeTarget "TOTPUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A3BFF491E827911008B0C81 /* Debug */,
-				1A3BFF4A1E827911008B0C81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

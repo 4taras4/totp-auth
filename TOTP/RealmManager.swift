@@ -169,9 +169,9 @@ class RealmManager {
     
     func runMigrationIfNeeded() {
         Realm.Configuration.defaultConfiguration = Realm.Configuration(
-            schemaVersion: 3,
+            schemaVersion: 4,
             migrationBlock: { migration, oldSchemaVersion in
-                    if (oldSchemaVersion < 3) {}
+                    if (oldSchemaVersion < 4) {}
         })
     }
     
@@ -183,4 +183,61 @@ class RealmManager {
         }
     }
 }
-
+//MARK: - Folders
+extension RealmManager {
+    
+    func createFolder(name: String, completionHandler: @escaping((Result<Any?, Error>)->())) {
+        do {
+            let realm = try Realm()
+            let newFolder = Folder()
+            newFolder.name = name
+            newFolder.id = UUID().uuidString
+            try realm.write {
+                realm.add(newFolder, update: .all)
+                completionHandler(.success(nil))
+            }
+        } catch let error {
+            print("Can't add Folder: \(error)")
+            completionHandler(.failure(error))
+        }
+    }
+    
+    func addFolderItems(items: List<User>, for folder: Folder,  completionHandler: @escaping((Result<Any?, Error>)->())) {
+        do {
+            let realm = try Realm()
+            folder.codes = items
+            try realm.write {
+                realm.add(folder, update: .modified)
+                completionHandler(.success(nil))
+            }
+        } catch let error {
+            print("Can't add folder: \(error)")
+            completionHandler(.failure(error))
+        }
+    }
+    
+    func removeFolder(folder: Folder, completionHandler: @escaping((Result<Any?, Error>)->())) {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(folder)
+                widgetDataMigration()
+                completionHandler(.success(nil))
+            }
+        } catch let error {
+            print("Folder deteltion error:", error)
+            completionHandler(.failure(error))
+        }
+    }
+    func fetchFolders() -> [Folder]? {
+        var userList: Results<Folder>?
+        do {
+            let realm = try Realm()
+            userList = realm.objects(Folder.self)
+            return userList?.toArray()
+        } catch let error {
+            print(error)
+            return nil
+        }
+    }
+}

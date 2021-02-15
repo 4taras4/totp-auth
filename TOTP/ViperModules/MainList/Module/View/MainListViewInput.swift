@@ -11,6 +11,8 @@ protocol MainListViewInput: class {
 	func setupInitialState()
     
     func reloadTable()
+    
+    func reloadFoldersCollectionView()
 
     func changeIsEdit()
 }

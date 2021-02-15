@@ -10,5 +10,9 @@ import UIKit
 final class SettingsRouter: SettingsRouterInput {
 
 	weak var transitionHandler: UIViewController!
-
+    
+    func showFolderSettings() {
+        let settingsViewController = FolderSettingsViewController.instantiate(useSwinject: true)
+        transitionHandler.navigationController?.pushViewController(settingsViewController, animated: true)
+    }
 }

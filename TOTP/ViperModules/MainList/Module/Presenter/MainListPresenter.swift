@@ -14,12 +14,14 @@ final class MainListPresenter: NSObject, MainListViewOutput {
     weak var view: MainListViewInput!
     var interactor: MainListInteractorInput!
     var router: MainListRouterInput!
-    var codeList = [Code]()
-    var favouriteList = [Code]()
-
-    var refreshTimer: Timer?
-    var interval = 30.0
-    var updated: Int = 0
+    
+    fileprivate var codeList = [Code]()
+    fileprivate var favouriteList = [Code]()
+    fileprivate var folders = [Folder]()
+    
+    private var refreshTimer: Timer?
+    private var interval = 30.0
+    private var updated: Int = 0
     // MARK: -
     // MARK: MainListViewOutput
     func viewIsReady() {
@@ -61,11 +63,21 @@ final class MainListPresenter: NSObject, MainListViewOutput {
             refreshTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(refreshData), userInfo: nil, repeats: true)
         }
     }
+    
+    func reloadFolders() {
+        interactor.getFolders()
+    }
+    
 }
 
 // MARK: -
 // MARK: MainListInteractorOutput
 extension MainListPresenter: MainListInteractorOutput {
+    func listOfFolders(array: [Folder]) {
+        folders = array
+        view.reloadFoldersCollectionView()
+    }
+    
    
     func dataBaseOperationFinished() {
         refreshData()
@@ -181,7 +193,7 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return 20
+            return 10
         default:
             return 90
         }
@@ -193,7 +205,7 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if favouriteList.isEmpty {
-            return nil
+            return Constants.text.fullListTableTitle
         } else {
             switch section {
             case 0:
@@ -202,5 +214,17 @@ extension MainListPresenter: UITableViewDelegate, UITableViewDataSource {
                 return Constants.text.fullListTableTitle
             }
         }
+    }
+}
+
+extension MainListPresenter: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return folders.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FolderItemCollectionViewCell", for: indexPath) as! FolderItemCollectionViewCell
+        cell.setup(item: folders[indexPath.row])
+        return cell
     }
 }

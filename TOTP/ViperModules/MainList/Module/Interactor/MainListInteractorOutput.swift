@@ -10,5 +10,8 @@ import Foundation
 
 protocol MainListInteractorOutput: class {
     func listOfCodes(codes: [Code], favourites: [Code])
+  
     func dataBaseOperationFinished()
+   
+    func listOfFolders(array: [Folder])
 }
