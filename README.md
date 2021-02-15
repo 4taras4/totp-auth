@@ -22,9 +22,11 @@ This application provides one time passwords to be used with the two factor auth
 - [x] iPad support
 - [x] Favourite section
 - [x] Face ID authorization
-- [ ] Add folders
-- [ ] Apple watch support
+- [x] Add folders
 - [x] Mac M1 compability
+- [ ] Add context menu
+- [ ] Add Intro and tutorials
+- [ ] Apple watch support
 - [ ] Test coverage
 
 
