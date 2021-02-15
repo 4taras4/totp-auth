@@ -9,7 +9,7 @@ import OneTimePassword
 import Base32
 
 final class MainListInteractor: MainListInteractorInput {
-    
+   
 	weak var output: MainListInteractorOutput?
 
     func converUserData(users: [User]) {
@@ -78,4 +78,10 @@ final class MainListInteractor: MainListInteractorInput {
             }
         })
     }
+    
+    func getFolders() {
+        output?.listOfFolders(array: RealmManager.shared.fetchFolders() ?? [])
+    }
+    
+    
 }

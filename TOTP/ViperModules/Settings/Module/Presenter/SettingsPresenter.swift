@@ -68,17 +68,20 @@ extension SettingsPresenter: UITableViewDelegate {
         
         switch indexPath {
         case .init(row: 0, section: 1):
+            print("Open folder settings")
+            router.showFolderSettings()
+        case .init(row: 0, section: 2):
             print("Rate app")
             askReview()
-        case .init(row: 1, section: 1):
+        case .init(row: 1, section: 2):
             print("Write feedback")
             writeFeedback()
-        case .init(row: 0, section: 2):
+        case .init(row: 0, section: 3):
             print("Write db")
             UIManager.shared.showAlertTwoButtons(title: "Create backup?", message: "You are sure about crating backup to your iCloud?", pressConfirm: {
                 self.interactor.createBackup()
             })
-        case .init(row: 1, section: 2):
+        case .init(row: 1, section: 3):
             print("read db")
             UIManager.shared.showAlertTwoButtons(title: "Restore data from iCloud?", message: "ALL unsaved  to backup data will be ERASED and replaced by data from backup. You are sure about restoring data from iCloud?", pressConfirm: {
                 self.interactor.restoreFromBackup()

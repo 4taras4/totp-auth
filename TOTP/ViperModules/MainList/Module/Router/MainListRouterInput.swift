@@ -13,4 +13,6 @@ protocol MainListRouterInput: class {
     func openSettings()
     
     func addItem()
+    
+    func openFolder(item: Folder)
 }

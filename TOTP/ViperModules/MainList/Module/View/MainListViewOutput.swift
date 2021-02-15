@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-protocol MainListViewOutput: class, UITableViewDelegate, UITableViewDataSource {
+protocol MainListViewOutput: class, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
 	/// - author: Tarik
 	func viewIsReady()
     
@@ -19,4 +19,6 @@ protocol MainListViewOutput: class, UITableViewDelegate, UITableViewDataSource {
     func addItemButtonPressed()
     
     func favItemButtonPressed()
+    
+    func reloadFolders()
 }
