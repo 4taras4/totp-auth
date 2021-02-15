@@ -77,6 +77,10 @@ class MainListViewController: UIViewController {
 // MARK: -
 // MARK: MainListViewInput
 extension MainListViewController: MainListViewInput {
+    func changeCollectionView(isHidden: Bool) {
+        foldersCollectionView.isHidden = isHidden
+    }
+    
     func reloadTable() {
         tableView.reloadData()
     }

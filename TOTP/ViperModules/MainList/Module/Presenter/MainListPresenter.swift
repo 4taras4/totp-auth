@@ -75,7 +75,12 @@ final class MainListPresenter: NSObject, MainListViewOutput {
 extension MainListPresenter: MainListInteractorOutput {
     func listOfFolders(array: [Folder]) {
         folders = array
-        view.reloadFoldersCollectionView()
+        if array.count == 0 {
+            view.changeCollectionView(isHidden: true)
+        } else {
+            view.changeCollectionView(isHidden: false)
+            view.reloadFoldersCollectionView()
+        }
     }
     
    
@@ -226,5 +231,9 @@ extension MainListPresenter: UICollectionViewDelegate, UICollectionViewDataSourc
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FolderItemCollectionViewCell", for: indexPath) as! FolderItemCollectionViewCell
         cell.setup(item: folders[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        router.openFolder(item: folders[indexPath.row])
     }
 }

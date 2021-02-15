@@ -672,6 +672,86 @@
             </objects>
             <point key="canvasLocation" x="1845" y="1532"/>
         </scene>
+        <!--Folder Details View Controller-->
+        <scene sceneID="ffY-Ea-33B">
+            <objects>
+                <tableViewController storyboardIdentifier="FolderDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bN5-f4-9vy" customClass="FolderDetailsViewController" customModule="TOTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="v3R-kA-k9A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DetailListTableViewCell" rowHeight="86" id="YEO-Ht-t94" customClass="MainListTableViewCell" customModule="TOTP" customModuleProvider="target">
+                                <rect key="frame" x="20" y="55.333332061767578" width="374" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YEO-Ht-t94" id="TgU-cq-2xC">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dsdffds@dsffd.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4F-hH-PPo">
+                                            <rect key="frame" x="20" y="33" width="134" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf6-Iw-kNl">
+                                            <rect key="frame" x="20" y="10" width="131" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="XhH-Qy-hng">
+                                            <rect key="frame" x="20" y="72" width="334" height="4"/>
+                                            <color key="tintColor" systemColor="systemYellowColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="4" id="NpX-F8-Pd7"/>
+                                            </constraints>
+                                            <color key="progressTintColor" systemColor="systemIndigoColor"/>
+                                        </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxQ-RM-ObY">
+                                            <rect key="frame" x="159" y="10.000000000000004" width="195" height="56.333333333333343"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="195" id="3oY-g3-4cn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                            <color key="textColor" systemColor="systemIndigoColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jxQ-RM-ObY" firstAttribute="top" secondItem="TgU-cq-2xC" secondAttribute="top" constant="10" id="1G5-91-XW6"/>
+                                        <constraint firstItem="jxQ-RM-ObY" firstAttribute="leading" secondItem="y4F-hH-PPo" secondAttribute="trailing" constant="5" id="G2z-Io-a2X"/>
+                                        <constraint firstItem="y4F-hH-PPo" firstAttribute="top" secondItem="vf6-Iw-kNl" secondAttribute="bottom" constant="5" id="MUk-cx-Cva"/>
+                                        <constraint firstAttribute="trailing" secondItem="jxQ-RM-ObY" secondAttribute="trailing" constant="20" id="U4Z-Iw-Ham"/>
+                                        <constraint firstItem="vf6-Iw-kNl" firstAttribute="leading" secondItem="TgU-cq-2xC" secondAttribute="leading" constant="20" id="VrD-bQ-bBd"/>
+                                        <constraint firstAttribute="bottom" secondItem="XhH-Qy-hng" secondAttribute="bottom" constant="10" id="Xys-S5-x0A"/>
+                                        <constraint firstItem="y4F-hH-PPo" firstAttribute="leading" secondItem="TgU-cq-2xC" secondAttribute="leading" constant="20" id="aGX-7C-zu0"/>
+                                        <constraint firstItem="XhH-Qy-hng" firstAttribute="leading" secondItem="TgU-cq-2xC" secondAttribute="leading" constant="20" symbolic="YES" id="aVK-yp-ati"/>
+                                        <constraint firstItem="vf6-Iw-kNl" firstAttribute="top" secondItem="TgU-cq-2xC" secondAttribute="top" constant="10" id="ga4-qq-YPx"/>
+                                        <constraint firstItem="jxQ-RM-ObY" firstAttribute="leading" secondItem="vf6-Iw-kNl" secondAttribute="trailing" constant="8" symbolic="YES" id="gtI-Mo-aKw"/>
+                                        <constraint firstAttribute="trailing" secondItem="XhH-Qy-hng" secondAttribute="trailing" constant="20" symbolic="YES" id="n6P-tH-HwC"/>
+                                        <constraint firstItem="XhH-Qy-hng" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jxQ-RM-ObY" secondAttribute="bottom" constant="5.6699999999999999" id="vKs-j9-Ujf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="digitsLabel" destination="jxQ-RM-ObY" id="pJO-CJ-hcR"/>
+                                    <outlet property="issuerLabel" destination="vf6-Iw-kNl" id="nwW-Yt-vfZ"/>
+                                    <outlet property="nameLabel" destination="y4F-hH-PPo" id="BhJ-Pk-vRb"/>
+                                    <outlet property="timeProgressView" destination="XhH-Qy-hng" id="NWI-Yt-U9I"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bN5-f4-9vy" id="Xie-cq-yeE"/>
+                            <outlet property="delegate" destination="bN5-f4-9vy" id="dt2-Bh-gah"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLR-pf-yXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="1528"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PLp-vK-zmZ">
             <objects>

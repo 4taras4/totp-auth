@@ -1,5 +1,5 @@
 //
-//  AddFolderItemsAddFolderItemsViewController.swift
+//  FolderDetailsFolderDetailsViewController.swift
 //  TOTP
 //
 //  Created by Tarik on 15/02/2021.
@@ -10,22 +10,24 @@ import UIKit
 import Firebase
 import GoogleMobileAds
 
-class AddFolderItemsViewController: UITableViewController {
+class FolderDetailsViewController: UITableViewController {
 
 	// MARK: -
 	// MARK: Properties
-	var output: AddFolderItemsViewOutput!
+	var output: FolderDetailsViewOutput!
     var bannerView: GADBannerView!
 
 	// MARK: -
 	// MARK: Life cycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+		output.viewIsReady()
         tableView.delegate = output
         tableView.dataSource = output
-        output.viewIsReady()
         setupAddsViewElements()
-    }
+	}
+    
     
     func setupAddsViewElements() {
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
@@ -34,43 +36,48 @@ class AddFolderItemsViewController: UITableViewController {
         bannerView.rootViewController = self
         bannerView.delegate = self
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        bannerView.load(GADRequest())
-    }
 
-    static func instantiate(with folder: Folder) -> AddFolderItemsViewController {
-        let viewController = AddFolderItemsViewController.instantiate(useSwinject: true)
-        let output = container.resolve(AddFolderItemsPresenter.self, arguments: viewController, folder)
+    static func instantiate(with folder: Folder) -> FolderDetailsViewController {
+        let viewController = FolderDetailsViewController.instantiate(useSwinject: true)
+        let output = container.resolve(FolderDetailsPresenter.self, arguments: viewController, folder)
         viewController.output = output
         return viewController
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        output.refreshData()
+        bannerView.load(GADRequest())
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        output.invalidateTimer()
     }
 }
 
 // MARK: -
-// MARK: AddFolderItemsViewInput
-extension AddFolderItemsViewController: AddFolderItemsViewInput {
-    func showError(error: Error) {
-        UIManager.shared.showAlert(title: "", message: error.localizedDescription)
+// MARK: FolderDetailsViewInput
+extension FolderDetailsViewController: FolderDetailsViewInput {
+    func setTitle(string: String) {
+        title = string
     }
     
+  
     func reloadTable() {
         tableView.reloadData()
     }
+    
 
 	func setupInitialState() {
 
 	}
-    
 
 }
 
-
-extension AddFolderItemsViewController: NibIdentifiable {
+extension FolderDetailsViewController: NibIdentifiable {
     static var nibNameIdentifier: String {
         return "Main"
     }
     static var controllerIdentifier: String {
-        return "AddFolderItemsViewController"
+        return "FolderDetailsViewController"
     }
 }

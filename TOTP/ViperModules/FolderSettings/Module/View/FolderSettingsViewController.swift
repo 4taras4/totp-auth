@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import GoogleMobileAds
 
 class FolderSettingsViewController: UITableViewController {
 
 	// MARK: -
 	// MARK: Properties
 	var output: FolderSettingsViewOutput!
-    
+    var bannerView: GADBannerView!
+
     @IBAction func editAction(_ sender: Any) {
         output.editButtonPressed()
     }
@@ -24,7 +27,21 @@ class FolderSettingsViewController: UITableViewController {
         tableView.delegate = output
         tableView.dataSource = output
 		output.viewIsReady()
-	}
+        setupAddsViewElements()
+    }
+    
+    
+    func setupAddsViewElements() {
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = Constants.adds.bannerId
+        bannerView.rootViewController = self
+        bannerView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        bannerView.load(GADRequest())
+    }
 
 }
 

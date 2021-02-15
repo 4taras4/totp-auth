@@ -14,5 +14,7 @@ protocol MainListViewInput: class {
     
     func reloadFoldersCollectionView()
 
+    func changeCollectionView(isHidden: Bool)
+
     func changeIsEdit()
 }

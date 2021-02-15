@@ -20,4 +20,9 @@ final class MainListRouter: MainListRouterInput {
         let newItemViewController = AddItemViewController.instantiate(useSwinject: true)
         transitionHandler.navigationController?.pushViewController(newItemViewController, animated: true)
     }
+    
+    func openFolder(item: Folder) {
+        let newItemViewController = FolderDetailsViewController.instantiate(with: item)
+        transitionHandler.navigationController?.pushViewController(newItemViewController, animated: true)
+    }
 }

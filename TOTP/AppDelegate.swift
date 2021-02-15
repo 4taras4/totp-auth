@@ -28,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                      AddItemAssemblyContainer(),
                                      AddItemManualyAssemblyContainer(),
                                      FolderSettingsAssemblyContainer(),
-                                     AddFolderItemsAssemblyContainer()])
+                                     AddFolderItemsAssemblyContainer(),
+                                     FolderDetailsAssemblyContainer()])
         window = UIWindow(frame: UIScreen.main.bounds)
        
         UIManager.shared.configure(with: window!)

@@ -65,6 +65,7 @@ extension AddFolderItemsPresenter: AddFolderItemsModuleInput, UITableViewDelegat
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountItemCell", for: indexPath)
         guard let item = allAccounts?[indexPath.row] , let selected = selectedAccounts else { return cell }
         cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = item.
         if selected.contains(item) {
             cell.accessoryType = .checkmark
         } else {
