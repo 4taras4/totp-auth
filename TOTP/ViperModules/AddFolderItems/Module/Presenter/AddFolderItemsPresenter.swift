@@ -8,8 +8,6 @@
 import UIKit
 import RealmSwift
 final class AddFolderItemsPresenter: NSObject , AddFolderItemsViewOutput {
-    
-
     // MARK: -
     // MARK: Properties
 
@@ -23,7 +21,6 @@ final class AddFolderItemsPresenter: NSObject , AddFolderItemsViewOutput {
     // MARK: AddFolderItemsViewOutput
     func viewIsReady() {
         view.reloadTable()
-
     }
 
 }
@@ -65,7 +62,7 @@ extension AddFolderItemsPresenter: AddFolderItemsModuleInput, UITableViewDelegat
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountItemCell", for: indexPath)
         guard let item = allAccounts?[indexPath.row] , let selected = selectedAccounts else { return cell }
         cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = item.
+        cell.detailTextLabel?.text = item.issuer
         if selected.contains(item) {
             cell.accessoryType = .checkmark
         } else {
@@ -81,6 +78,6 @@ extension AddFolderItemsPresenter: AddFolderItemsModuleInput, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Select account which you wish to add on \(folderName) folder"
+        return "Select account which you wish to add on folder:\(folderName).\n Unselect if you want to remove item from folder"
     }
 }

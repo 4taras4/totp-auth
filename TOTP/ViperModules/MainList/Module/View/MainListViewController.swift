@@ -14,7 +14,8 @@ class MainListViewController: UIViewController {
 
 	// MARK: -
 	// MARK: Properties
-	var output: MainListViewOutput!
+    @IBOutlet weak var heightFolderConstrain: NSLayoutConstraint!
+    var output: MainListViewOutput!
    
     @IBAction func addAction(_ sender: Any) {
         output.addItemButtonPressed()
@@ -78,6 +79,7 @@ class MainListViewController: UIViewController {
 // MARK: MainListViewInput
 extension MainListViewController: MainListViewInput {
     func changeCollectionView(isHidden: Bool) {
+        heightFolderConstrain.constant = isHidden ? 0 : 60
         foldersCollectionView.isHidden = isHidden
     }
     

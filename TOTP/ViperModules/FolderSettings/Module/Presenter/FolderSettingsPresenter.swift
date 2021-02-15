@@ -72,6 +72,8 @@ extension FolderSettingsPresenter: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = folders[indexPath.row].name
         if indexPath.row == folders.count - 1 {
             cell.textLabel?.textColor = .systemIndigo
+        } else {
+            cell.textLabel?.textColor = .label
         }
         return cell
     }
