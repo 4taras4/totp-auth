@@ -25,12 +25,12 @@ final class AddFolderItemsAssemblyContainer: Assembly {
 			return router
 		}
 
-		container.register(AddFolderItemsPresenter.self) { (r, viewController: AddFolderItemsViewController) in
+        container.register(AddFolderItemsPresenter.self) { (r, viewController: AddFolderItemsViewController, folder: Folder) in
 			let presenter = AddFolderItemsPresenter()
 			presenter.view = viewController
 			presenter.interactor = r.resolve(AddFolderItemsInteractor.self, argument: presenter)
 			presenter.router = r.resolve(AddFolderItemsRouter.self, argument: viewController)
-
+            presenter.addItemsFor(folder: folder)
 			return presenter
 		}
 

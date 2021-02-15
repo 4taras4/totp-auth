@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
 
 protocol AddFolderItemsInteractorOutput: class {
-
+    func getAllAccounts(list: List<User>?)
+    func getAccountsError(error: Error)
+    func updatedSelected(list: List<User>)
 }

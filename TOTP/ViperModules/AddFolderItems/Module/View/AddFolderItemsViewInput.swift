@@ -9,4 +9,8 @@
 protocol AddFolderItemsViewInput: class {
 	/// - author: Tarik
 	func setupInitialState()
+    
+    func reloadTable()
+    
+    func showError(error: Error)
 }

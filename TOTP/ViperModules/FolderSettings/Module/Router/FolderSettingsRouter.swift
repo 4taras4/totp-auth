@@ -8,7 +8,11 @@
 import UIKit
 
 final class FolderSettingsRouter: FolderSettingsRouterInput {
-
 	weak var transitionHandler: UITableViewController!
+    
+    func openSettings(for folder: Folder) {
+        let vc = AddFolderItemsViewController.instantiate(with: folder)
+        transitionHandler.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }

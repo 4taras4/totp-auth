@@ -9,5 +9,5 @@
 import Foundation
 
 protocol FolderSettingsRouterInput: class {
-
+    func openSettings(for folder: Folder)
 }

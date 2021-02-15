@@ -7,5 +7,5 @@
 //
 
 protocol AddFolderItemsModuleInput: class {
-
+    func addItemsFor(folder: Folder)
 }

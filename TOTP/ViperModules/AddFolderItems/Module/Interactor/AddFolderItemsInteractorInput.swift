@@ -7,7 +7,9 @@
 //
 
 import Foundation
-
+import RealmSwift
 protocol AddFolderItemsInteractorInput: class {
-
+    func getAllAccounts()
+    
+    func addOrRemove(item: User,  for list: List<User>)
 }

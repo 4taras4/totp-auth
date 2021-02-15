@@ -453,15 +453,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="YNK-Jh-SvE" rowHeight="50" style="IBUITableViewCellStyleDefault" id="diP-Qk-fAT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AccountItemCell" editingAccessoryType="detailButton" textLabel="YNK-Jh-SvE" rowHeight="50" style="IBUITableViewCellStyleDefault" id="diP-Qk-fAT">
                                 <rect key="frame" x="20" y="55.333332061767578" width="374" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="diP-Qk-fAT" id="4hb-lP-vxI">
-                                    <rect key="frame" x="0.0" y="0.0" width="330" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YNK-Jh-SvE">
-                                            <rect key="frame" x="20" y="0.0" width="302" height="50"/>
+                                            <rect key="frame" x="20" y="0.0" width="334" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>

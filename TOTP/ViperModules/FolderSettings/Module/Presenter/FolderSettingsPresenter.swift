@@ -77,9 +77,10 @@ extension FolderSettingsPresenter: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         if indexPath.row == folders.count - 1 {
             showCreateFolderAlert()
+        } else {
+            router.openSettings(for: folders[indexPath.row])
         }
     }
     
